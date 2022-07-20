@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jul 21 01:29:13 2022
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : arp
+Top-level Entity Name : ramdac
+Family : Cyclone III
+Total logic elements : 57
+    Total combinational functions : 57
+    Dedicated logic registers : 25
+Total registers : 25
+Total pins : 47
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

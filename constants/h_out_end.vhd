@@ -104,6 +104,6 @@ END SYN;
 -- Retrieval info: GEN_FILE: TYPE_NORMAL h_out_end.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL h_out_end.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL h_out_end.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL h_out_end.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL h_out_end.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL h_out_end_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm
