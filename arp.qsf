@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY arp
+set_global_assignment -name TOP_LEVEL_ENTITY toplevel
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:16:57  JULY 13, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -46,6 +46,70 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_L22 -to VGA_VS
+set_location_assignment PIN_L21 -to VGA_HS
+set_location_assignment PIN_H19 -to VGA_R[0]
+set_location_assignment PIN_H17 -to VGA_R[1]
+set_location_assignment PIN_H20 -to VGA_R[2]
+set_location_assignment PIN_H21 -to VGA_R[3]
+set_location_assignment PIN_H22 -to VGA_G[0]
+set_location_assignment PIN_J17 -to VGA_G[1]
+set_location_assignment PIN_K17 -to VGA_G[2]
+set_location_assignment PIN_J21 -to VGA_G[3]
+set_location_assignment PIN_K21 -to VGA_B[1]
+set_location_assignment PIN_J22 -to VGA_B[2]
+set_location_assignment PIN_K18 -to VGA_B[3]
+set_location_assignment PIN_K22 -to VGA_B[0]
+set_global_assignment -name VHDL_FILE constants/v_bp_end.vhd
+set_global_assignment -name VHDL_FILE constants/v_sp_end.vhd
+set_global_assignment -name VHDL_FILE constants/v_out_end.vhd
+set_global_assignment -name VHDL_FILE constants/v_fp_end.vhd
+set_global_assignment -name VHDL_FILE constants/h_sp_end.vhd
+set_global_assignment -name VHDL_FILE constants/h_out_end.vhd
+set_global_assignment -name VHDL_FILE constants/h_fp_end.vhd
+set_global_assignment -name VHDL_FILE constants/h_bp_end.vhd
+set_global_assignment -name BDF_FILE rv/rv.bdf
+set_global_assignment -name BDF_FILE registers/reg32_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg16_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg11_inc_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg10_inc_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg8_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg8_inc_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg4_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg1.bdf
+set_global_assignment -name BDF_FILE arithmetic/xor32.bdf
+set_global_assignment -name BDF_FILE arithmetic/xor16.bdf
+set_global_assignment -name BDF_FILE arithmetic/xor8.bdf
+set_global_assignment -name BDF_FILE arithmetic/sub32.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp16.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp4.bdf
+set_global_assignment -name BDF_FILE arithmetic/add32.bdf
+set_global_assignment -name BDF_FILE arithmetic/add16.bdf
+set_global_assignment -name BDF_FILE arithmetic/add8.bdf
+set_global_assignment -name BDF_FILE arithmetic/add1.bdf
+set_global_assignment -name BDF_FILE per0/ramdac.bdf
+set_global_assignment -name SEARCH_PATH "c:\\arp\\per0"
+set_global_assignment -name SEARCH_PATH "c:\\arp\\constants"
+set_global_assignment -name SEARCH_PATH "c:\\arp\\registers"
+set_global_assignment -name SEARCH_PATH "c:\\arp\\arithmetic"
+set_global_assignment -name BDF_FILE per0/per0.bdf
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name BDF_FILE toplevel.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
