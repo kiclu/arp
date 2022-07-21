@@ -5,3 +5,6 @@ incremental_db
 output_files
 simulation
 arp.*
+
+*.vhd
+!constants/*.vhd
