@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 176 112)
+	(rect 16 16 160 112)
 	(text "add32" (rect 5 0 40 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -40,25 +40,25 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "C_IN" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "C_IN" (rect 21 59 46 73)(font "Arial" (font_size 8)))
+		(text "Cin" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "Cin" (rect 21 59 38 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 160 32)
+		(pt 144 32)
 		(output)
-		(text "SUM[31..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "SUM[31..0]" (rect 78 27 139 41)(font "Arial" (font_size 8)))
-		(line (pt 160 32)(pt 144 32)(line_width 3))
+		(text "F[31..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "F[31..0]" (rect 81 27 123 41)(font "Arial" (font_size 8)))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
 	)
 	(port
-		(pt 160 48)
+		(pt 144 48)
 		(output)
-		(text "C_OUT" (rect 0 0 40 14)(font "Arial" (font_size 8)))
-		(text "C_OUT" (rect 99 43 139 57)(font "Arial" (font_size 8)))
-		(line (pt 160 48)(pt 144 48))
+		(text "C32" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "C32" (rect 101 43 123 57)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 128 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 80))
+		(rectangle (rect 16 16 128 80))
 	)
 )

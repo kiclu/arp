@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 240 136 408 152)
+	(rect 240 184 408 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A" (rect 5 0 13 12)(font "Arial" ))
+	(text "Ci" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 240 152 408 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "B" (rect 5 0 12 12)(font "Arial" ))
+	(text "Bi" (rect 5 0 15 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 240 184 408 200)
+	(rect 240 136 408 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "C_IN" (rect 5 0 30 12)(font "Arial" ))
+	(text "Ai" (rect 5 0 15 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,9 +69,41 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 152 824 168)
+	(rect 736 152 912 168)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "SUM" (rect 90 0 113 12)(font "Arial" ))
+	(text "Fi" (rect 90 0 99 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 736 200 912 216)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Pi" (rect 90 0 99 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 736 336 912 352)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Gi" (rect 90 0 100 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -87,7 +119,7 @@ applicable agreement for further details.
 	(output)
 	(rect 736 264 912 280)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "C_OUT" (rect 90 0 126 12)(font "Arial" ))
+	(text "Cout" (rect 90 0 113 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -321,10 +353,6 @@ applicable agreement for further details.
 	(pt 648 304)
 )
 (connector
-	(pt 648 304)
-	(pt 648 280)
-)
-(connector
 	(pt 648 280)
 	(pt 656 280)
 )
@@ -341,20 +369,12 @@ applicable agreement for further details.
 	(pt 656 264)
 )
 (connector
-	(pt 720 272)
-	(pt 736 272)
-)
-(connector
 	(pt 560 168)
 	(pt 568 168)
 )
 (connector
 	(pt 560 192)
 	(pt 560 168)
-)
-(connector
-	(pt 544 152)
-	(pt 544 232)
 )
 (connector
 	(pt 528 152)
@@ -366,9 +386,39 @@ applicable agreement for further details.
 )
 (connector
 	(pt 632 160)
-	(pt 648 160)
+	(pt 736 160)
+)
+(connector
+	(pt 544 208)
+	(pt 736 208)
+)
+(connector
+	(pt 544 152)
+	(pt 544 208)
+)
+(connector
+	(pt 544 208)
+	(pt 544 232)
+)
+(connector
+	(pt 648 344)
+	(pt 736 344)
+)
+(connector
+	(pt 648 280)
+	(pt 648 304)
+)
+(connector
+	(pt 648 304)
+	(pt 648 344)
+)
+(connector
+	(pt 720 272)
+	(pt 736 272)
 )
 (junction (pt 448 160))
 (junction (pt 432 144))
 (junction (pt 528 192))
 (junction (pt 544 152))
+(junction (pt 648 304))
+(junction (pt 544 208))

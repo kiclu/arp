@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 112 144)
-	(text "add1" (rect 5 0 33 14)(font "Arial" (font_size 8)))
+	(text "log1" (rect 5 0 28 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -40,9 +40,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "Ci" (rect 0 0 10 14)(font "Arial" (font_size 8)))
-		(text "Ci" (rect 21 59 31 73)(font "Arial" (font_size 8)))
+		(text "S0" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S0" (rect 21 59 36 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "S1" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S1" (rect 21 75 36 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
 	)
 	(port
 		(pt 96 32)
@@ -50,27 +57,6 @@ applicable agreement for further details.
 		(text "Fi" (rect 0 0 9 14)(font "Arial" (font_size 8)))
 		(text "Fi" (rect 66 27 75 41)(font "Arial" (font_size 8)))
 		(line (pt 96 32)(pt 80 32))
-	)
-	(port
-		(pt 96 48)
-		(output)
-		(text "Pi" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "Pi" (rect 66 43 75 57)(font "Arial" (font_size 8)))
-		(line (pt 96 48)(pt 80 48))
-	)
-	(port
-		(pt 96 64)
-		(output)
-		(text "Cout" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "Cout" (rect 50 59 75 73)(font "Arial" (font_size 8)))
-		(line (pt 96 64)(pt 80 64))
-	)
-	(port
-		(pt 96 80)
-		(output)
-		(text "Gi" (rect 0 0 11 14)(font "Arial" (font_size 8)))
-		(text "Gi" (rect 64 75 75 89)(font "Arial" (font_size 8)))
-		(line (pt 96 80)(pt 80 80))
 	)
 	(drawing
 		(rectangle (rect 16 16 80 112))
