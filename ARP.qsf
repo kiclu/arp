@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY mx2_32b
+set_global_assignment -name TOP_LEVEL_ENTITY rv32i
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:58:42  FEBRUARY 04, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -46,18 +46,55 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name BDF_FILE arithmetic/add_1.bdf
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\arithmetic"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name BDF_FILE arithmetic/add_8.bdf
-set_global_assignment -name BDF_FILE arithmetic/add_16.bdf
-set_global_assignment -name BDF_FILE arithmetic/add_32.bdf
-set_global_assignment -name BDF_FILE logic/mx2_32b.bdf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/projects/ARP/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\rv32i"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\registers"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\logic"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\arithmetic"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE arithmetic/add_1.bdf
+set_global_assignment -name BDF_FILE arithmetic/add_8.bdf
+set_global_assignment -name BDF_FILE arithmetic/add_16.bdf
+set_global_assignment -name BDF_FILE arithmetic/add_32.bdf
+set_global_assignment -name BDF_FILE arithmetic/add_sub_32.bdf
+set_global_assignment -name BDF_FILE arithmetic/xor32.bdf
+set_global_assignment -name BDF_FILE arithmetic/or32.bdf
+set_global_assignment -name BDF_FILE arithmetic/and32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shftl32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft16l32.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE arithmetic/shft16l32.vwf
+set_global_assignment -name BDF_FILE arithmetic/shft8l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft4l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft2l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft1l32.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/shftl32.vwf
+set_global_assignment -name BDF_FILE arithmetic/shftr32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft16r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft8r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft4r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft2r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft1r32.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/shftr32.vwf
+set_global_assignment -name BDF_FILE logic/dc2_4.bdf
+set_global_assignment -name BDF_FILE logic/dc3_8.bdf
+set_global_assignment -name BDF_FILE logic/mx2_32b.bdf
+set_global_assignment -name BDF_FILE logic/mx4_32b.bdf
+set_global_assignment -name BDF_FILE logic/mx8_32b.bdf
+set_global_assignment -name BDF_FILE registers/reg1_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg8_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg16_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg32_ld_clr.bdf
+set_global_assignment -name BDF_FILE rv32i/regfile.bdf
+set_global_assignment -name BDF_FILE rv32i/rv32i.bdf
+set_global_assignment -name BDF_FILE rv32i/alu.bdf
+set_global_assignment -name BSF_FILE rv32i/alu.bsf
+set_global_assignment -name BDF_FILE rv32i/instrreg.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

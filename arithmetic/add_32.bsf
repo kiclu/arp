@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 144 48)
 		(output)
-		(text "S[15..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
-		(text "S[15..0]" (rect 80 43 123 57)(font "Arial" (font_size 8)))
+		(text "S[31..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "S[31..0]" (rect 80 43 123 57)(font "Arial" (font_size 8)))
 		(line (pt 144 48)(pt 128 48)(line_width 3))
 	)
 	(drawing

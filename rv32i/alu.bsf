@@ -1,0 +1,74 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 232 256)
+	(text "alu" (rect 5 0 21 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 1 175 18 187)(font "Arial" ))
+	(port
+		(pt 96 192)
+		(input)
+		(text "func3[2..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "func3[2..0]" (rect 88 105 102 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 96 192)(pt 96 176)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "A[31..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "A[31..0]" (rect 21 43 65 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "B[31..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "B[31..0]" (rect 21 139 64 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 72 192)
+		(input)
+		(text "func7[6..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "func7[6..0]" (rect 64 105 78 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 192)(pt 72 176)(line_width 3))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "X[31..0]" (rect 8 0 51 14)(font "Arial" (font_size 8)))
+		(text "X[31..0]" (rect 104 91 147 105)(font "Arial" (font_size 8)))
+		(line (pt 168 96)(pt 152 96)(line_width 3))
+	)
+	(drawing
+		(line (pt 8 16)(pt 8 32))
+		(line (pt 8 32)(pt 8 56))
+		(line (pt 8 56)(pt 8 72))
+		(line (pt 8 176)(pt 8 112))
+		(line (pt 8 16)(pt 8 80))
+		(line (pt 160 96)(pt 160 64))
+		(line (pt 160 96)(pt 160 128))
+		(line (pt 8 176)(pt 160 128))
+		(line (pt 160 64)(pt 8 16))
+		(line (pt 8 80)(pt 72 96))
+		(line (pt 72 96)(pt 8 112))
+	)
+)
