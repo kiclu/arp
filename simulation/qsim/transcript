@@ -2,25 +2,25 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module cmp32s
+# -- Compiling module alu
 # 
 # Top level modules:
-# 	cmp32s
+# 	alu
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module cmp32s_vlg_sample_tst
-# -- Compiling module cmp32s_vlg_check_tst
-# -- Compiling module cmp32s_vlg_vec_tst
+# -- Compiling module alu_vlg_sample_tst
+# -- Compiling module alu_vlg_check_tst
+# -- Compiling module alu_vlg_vec_tst
 # 
 # Top level modules:
-# 	cmp32s_vlg_vec_tst
-# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.cmp32s_vlg_vec_tst 
-# Loading work.cmp32s_vlg_vec_tst
-# Loading work.cmp32s
+# 	alu_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.alu_vlg_vec_tst 
+# Loading work.alu_vlg_vec_tst
+# Loading work.alu
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
-# Loading work.cmp32s_vlg_sample_tst
-# Loading work.cmp32s_vlg_check_tst
+# Loading work.alu_vlg_sample_tst
+# Loading work.alu_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : cmp32s.vwf.vt(204)
-#    Time: 1 us  Iteration: 0  Instance: /cmp32s_vlg_vec_tst/tb_out
+# ** Note: $finish    : alu.vwf.vt(711)
+#    Time: 10 us  Iteration: 0  Instance: /alu_vlg_vec_tst/tb_out
