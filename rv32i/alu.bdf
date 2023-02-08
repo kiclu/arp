@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 416 -64 584 -48)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A[31..0]" (rect 5 0 44 12)(font "Arial" ))
+	(text "A[31..0]" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 416 -32 584 -16)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "B[31..0]" (rect 5 0 44 12)(font "Arial" ))
+	(text "B[31..0]" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -72,7 +72,7 @@ applicable agreement for further details.
 	(input)
 	(rect 416 752 584 768)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "func7[6..0]" (rect 5 0 60 12)(font "Arial" ))
+	(text "func7[6..0]" (rect 5 0 59 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -375,8 +375,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 648 136 792 232)
-	(text "xor32" (rect 5 0 38 14)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
+	(text "slt32" (rect 5 0 32 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -404,8 +404,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 648 248 792 344)
-	(text "xor32" (rect 5 0 38 14)(font "Arial" (font_size 8)))
-	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
+	(text "sltu32" (rect 5 0 39 14)(font "Arial" (font_size 8)))
+	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)

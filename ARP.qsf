@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY rv32i
+set_global_assignment -name TOP_LEVEL_ENTITY alu
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:58:42  FEBRUARY 04, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -53,13 +53,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/projects/ARP/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\rv32i"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\registers"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\logic"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\arithmetic"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE arithmetic/add_1.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_8.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_16.bdf
@@ -89,12 +82,48 @@ set_global_assignment -name BDF_FILE logic/mx2_32b.bdf
 set_global_assignment -name BDF_FILE logic/mx4_32b.bdf
 set_global_assignment -name BDF_FILE logic/mx8_32b.bdf
 set_global_assignment -name BDF_FILE registers/reg1_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg4_ld_clr.bdf
 set_global_assignment -name BDF_FILE registers/reg8_ld_clr.bdf
 set_global_assignment -name BDF_FILE registers/reg16_ld_clr.bdf
+set_global_assignment -name BDF_FILE registers/reg20_ld_clr.bdf
 set_global_assignment -name BDF_FILE registers/reg32_ld_clr.bdf
 set_global_assignment -name BDF_FILE rv32i/regfile.bdf
 set_global_assignment -name BDF_FILE rv32i/rv32i.bdf
 set_global_assignment -name BDF_FILE rv32i/alu.bdf
 set_global_assignment -name BSF_FILE rv32i/alu.bsf
 set_global_assignment -name BDF_FILE rv32i/instrreg.bdf
+set_global_assignment -name BDF_FILE rv32i/regimm.bdf
+set_global_assignment -name BDF_FILE rv32i/instrdc.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name BDF_FILE registers/reg1_ld_clr_inc.bdf
+set_global_assignment -name BDF_FILE registers/reg10_ld_clr_inc.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/reg10_ld_clr_inc.vwf
+set_global_assignment -name BDF_FILE registers/reg11_ld_clr_inc.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp4.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/cmp4.vwf
+set_global_assignment -name BDF_FILE arithmetic/cmp8.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp16.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp32.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp32s.bdf
+set_global_assignment -name BDF_FILE logic/mx2_1b.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/cmp32s.vwf
+set_global_assignment -name BDF_FILE arithmetic/sltu32.bdf
+set_global_assignment -name BDF_FILE constants/zero32.bdf
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\constants"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\rv32i"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\registers"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\logic"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\arithmetic"
+set_global_assignment -name BDF_FILE constants/true32.bdf
+set_global_assignment -name BDF_FILE arithmetic/slt32.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
