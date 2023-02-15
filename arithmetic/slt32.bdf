@@ -104,7 +104,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 824 328 936 424)
+	(rect 824 296 936 392)
 	(text "zero32" (rect 5 0 45 14)(font "Arial" (font_size 8)))
 	(text "inst6" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 824 432 936 528)
+	(rect 824 400 936 496)
 	(text "true32" (rect 5 0 41 14)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -177,32 +177,12 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 936 360)
-	(pt 952 360)
-	(bus)
-)
-(connector
-	(pt 936 464)
-	(pt 968 464)
-	(bus)
-)
-(connector
 	(pt 936 256)
 	(pt 984 256)
 )
 (connector
 	(pt 952 272)
 	(pt 984 272)
-	(bus)
-)
-(connector
-	(pt 952 360)
-	(pt 952 272)
-	(bus)
-)
-(connector
-	(pt 968 464)
-	(pt 968 288)
 	(bus)
 )
 (connector
@@ -223,5 +203,25 @@ applicable agreement for further details.
 (connector
 	(pt 840 240)
 	(pt 824 240)
+	(bus)
+)
+(connector
+	(pt 952 328)
+	(pt 936 328)
+	(bus)
+)
+(connector
+	(pt 952 272)
+	(pt 952 328)
+	(bus)
+)
+(connector
+	(pt 968 432)
+	(pt 936 432)
+	(bus)
+)
+(connector
+	(pt 968 288)
+	(pt 968 432)
 	(bus)
 )

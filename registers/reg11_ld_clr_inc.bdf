@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect -16 120 152 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "DIN[10..0]" (rect 5 0 57 12)(font "Arial" ))
+	(text "DIN[10..0]" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1214,11 +1214,6 @@ applicable agreement for further details.
 	(pt 2088 272)
 )
 (connector
-	(pt 536 352)
-	(pt 712 352)
-	(bus)
-)
-(connector
 	(pt 680 336)
 	(pt 856 336)
 )
@@ -1236,11 +1231,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 712 352)
-	(pt 888 352)
-	(bus)
-)
-(connector
 	(pt 872 320)
 	(pt 1048 320)
 )
@@ -1255,11 +1245,6 @@ applicable agreement for further details.
 (connector
 	(pt 856 128)
 	(pt 1032 128)
-	(bus)
-)
-(connector
-	(pt 888 352)
-	(pt 1064 352)
 	(bus)
 )
 (connector
@@ -1295,16 +1280,6 @@ applicable agreement for further details.
 (connector
 	(pt 1208 336)
 	(pt 1384 336)
-)
-(connector
-	(pt 1064 352)
-	(pt 1240 352)
-	(bus)
-)
-(connector
-	(pt 1240 352)
-	(pt 1416 352)
-	(bus)
 )
 (connector
 	(pt 1384 128)
@@ -1375,16 +1350,6 @@ applicable agreement for further details.
 	(pt 2088 336)
 )
 (connector
-	(pt 1416 352)
-	(pt 1592 352)
-	(bus)
-)
-(connector
-	(pt 1592 352)
-	(pt 1768 352)
-	(bus)
-)
-(connector
 	(pt 2120 240)
 	(pt 2120 160)
 )
@@ -1404,10 +1369,6 @@ applicable agreement for further details.
 (connector
 	(pt 504 336)
 	(pt 680 336)
-)
-(connector
-	(pt 152 144)
-	(pt 520 144)
 )
 (connector
 	(pt 376 240)
@@ -1450,18 +1411,6 @@ applicable agreement for further details.
 	(pt 344 224)
 )
 (connector
-	(pt 344 224)
-	(pt 344 160)
-)
-(connector
-	(pt 152 160)
-	(pt 344 160)
-)
-(connector
-	(pt 344 160)
-	(pt 2120 160)
-)
-(connector
 	(pt 312 208)
 	(pt 328 208)
 )
@@ -1480,16 +1429,6 @@ applicable agreement for further details.
 	(pt 184 208)
 )
 (connector
-	(pt 184 352)
-	(pt 360 352)
-	(bus)
-)
-(connector
-	(pt 360 352)
-	(pt 536 352)
-	(bus)
-)
-(connector
 	(text "DOUT[10]" (rect 168 294 180 343)(font "Arial" )(vertical))
 	(pt 184 208)
 	(pt 184 352)
@@ -1501,15 +1440,77 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt 1240 352)
+	(pt 1416 352)
+	(bus)
+)
+(connector
+	(text "DOUT[10..0]" (rect 1426 336 1488 348)(font "Arial" ))
+	(pt 1416 352)
+	(pt 1592 352)
+	(bus)
+)
+(connector
+	(pt 712 352)
+	(pt 888 352)
+	(bus)
+)
+(connector
+	(pt 888 352)
+	(pt 1064 352)
+	(bus)
+)
+(connector
+	(pt 1064 352)
+	(pt 1240 352)
+	(bus)
+)
+(connector
+	(pt 184 352)
+	(pt 360 352)
+	(bus)
+)
+(connector
+	(pt 360 352)
+	(pt 536 352)
+	(bus)
+)
+(connector
+	(pt 536 352)
+	(pt 712 352)
+	(bus)
+)
+(connector
+	(pt 1592 352)
+	(pt 1768 352)
+	(bus)
+)
+(connector
 	(pt 1768 352)
 	(pt 1944 352)
 	(bus)
 )
 (connector
-	(text "DOUT[10..0]" (rect 1944 336 2006 348)(font "Arial" ))
+	(text "DOUT[10..0]" (rect 1954 336 2016 348)(font "Arial" ))
 	(pt 1944 352)
 	(pt 2120 352)
 	(bus)
+)
+(connector
+	(pt 152 160)
+	(pt 2120 160)
+)
+(connector
+	(pt 344 224)
+	(pt 344 144)
+)
+(connector
+	(pt 152 144)
+	(pt 344 144)
+)
+(connector
+	(pt 344 144)
+	(pt 520 144)
 )
 (junction (pt 520 144))
 (junction (pt 520 320))
@@ -1559,5 +1560,5 @@ applicable agreement for further details.
 (junction (pt 360 352))
 (junction (pt 344 320))
 (junction (pt 328 336))
-(junction (pt 344 160))
 (junction (pt 328 128))
+(junction (pt 344 144))
