@@ -12,6 +12,8 @@
 ### GPU
 [VGA timing](http://tinyvga.com/vga-timing/800x600@72Hz)
 
+[42S16400 SDRAM Datasheet](https://web.archive.org/web/20200113214256/http://www.issiusa.com/pdf/42S16400.pdf)
+
 [Bresenham's line algorithm](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
 
 ### PS/2 Controller
