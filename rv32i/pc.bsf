@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 224 256)
+	(text "pc" (rect 5 0 19 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 128 192)
+		(input)
+		(text "brc" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "brc" (rect 120 148 134 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 128 192)(pt 128 176))
+	)
+	(port
+		(pt 48 192)
+		(input)
+		(text "BRANCH" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "BRANCH" (rect 40 116 54 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 192)(pt 48 176))
+	)
+	(port
+		(pt 64 192)
+		(input)
+		(text "JAL" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "JAL" (rect 56 144 70 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 64 192)(pt 64 176))
+	)
+	(port
+		(pt 80 192)
+		(input)
+		(text "JALR" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "JALR" (rect 72 136 86 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 192)(pt 80 176))
+	)
+	(port
+		(pt 160 32)
+		(input)
+		(text "IR[31..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "IR[31..0]" (rect 89 24 135 38)(font "Arial" (font_size 8)))
+		(line (pt 144 32)(pt 160 32)(line_width 3))
+	)
+	(port
+		(pt 32 0)
+		(input)
+		(text "rs1[31..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "rs1[31..0]" (rect 24 25 38 79)(font "Arial" (font_size 8))(vertical))
+		(line (pt 32 0)(pt 32 16)(line_width 3))
+	)
+	(port
+		(pt 96 192)
+		(input)
+		(text "LD" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "LD" (rect 88 152 102 167)(font "Arial" (font_size 8))(vertical))
+		(line (pt 96 176)(pt 96 192))
+	)
+	(port
+		(pt 112 192)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 104 144 118 167)(font "Arial" (font_size 8))(vertical))
+		(line (pt 112 176)(pt 112 192))
+	)
+	(port
+		(pt 32 192)
+		(output)
+		(text "PC[31..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "PC[31..0]" (rect 24 117 38 167)(font "Arial" (font_size 8))(vertical))
+		(line (pt 32 176)(pt 32 192)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 176))
+	)
+)

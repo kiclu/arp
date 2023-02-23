@@ -24,11 +24,11 @@ applicable agreement for further details.
 	(text "alu" (rect 5 0 21 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 1 175 18 187)(font "Arial" ))
 	(port
-		(pt 96 192)
+		(pt 72 192)
 		(input)
 		(text "func3[2..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "func3[2..0]" (rect 88 105 102 166)(font "Arial" (font_size 8))(vertical))
-		(line (pt 96 192)(pt 96 176)(line_width 3))
+		(text "func3[2..0]" (rect 64 105 78 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 192)(pt 72 176)(line_width 3))
 	)
 	(port
 		(pt 0 48)
@@ -45,11 +45,11 @@ applicable agreement for further details.
 		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
-		(pt 72 192)
+		(pt 88 192)
 		(input)
 		(text "func7[6..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "func7[6..0]" (rect 64 105 78 166)(font "Arial" (font_size 8))(vertical))
-		(line (pt 72 192)(pt 72 176)(line_width 3))
+		(text "func7[6..0]" (rect 80 105 94 166)(font "Arial" (font_size 8))(vertical))
+		(line (pt 88 192)(pt 88 176)(line_width 3))
 	)
 	(port
 		(pt 168 96)

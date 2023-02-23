@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 1424 232)
+	(text "bus_interface" (rect 6 1 85 15)(font "Arial" (font_size 8)))
+	(text "inst" (rect 9 145 26 157)(font "Arial" ))
+	(port
+		(pt 32 168)
+		(input)
+		(text "base[31..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "base[31..0]" (rect 25 80 39 143)(font "Arial" (font_size 8))(vertical))
+		(line (pt 32 168)(pt 32 151)(line_width 3))
+	)
+	(port
+		(pt 48 168)
+		(input)
+		(text "offs[11..0]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "offs[11..0]" (rect 41 84 55 143)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 168)(pt 48 151)(line_width 3))
+	)
+	(port
+		(pt 64 168)
+		(input)
+		(text "LOAD" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "LOAD" (rect 57 109 71 143)(font "Arial" (font_size 8))(vertical))
+		(line (pt 64 168)(pt 64 152))
+	)
+	(port
+		(pt 80 168)
+		(input)
+		(text "STORE" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "STORE" (rect 73 103 87 143)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 168)(pt 80 152))
+	)
+	(port
+		(pt 96 168)
+		(input)
+		(text "op[2..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "op[2..0]" (rect 89 101 103 143)(font "Arial" (font_size 8))(vertical))
+		(line (pt 96 168)(pt 96 152)(line_width 3))
+	)
+	(port
+		(pt 1360 32)
+		(output)
+		(text "ABUS[31..0]" (rect 1176 0 1245 14)(font "Arial" (font_size 8)))
+		(text "ABUS[31..0]" (rect 1271 28 1340 42)(font "Arial" (font_size 8)))
+		(line (pt 1360 32)(pt 1344 32)(line_width 3))
+	)
+	(port
+		(pt 1360 64)
+		(output)
+		(text "RD" (rect 1176 0 1192 14)(font "Arial" (font_size 8)))
+		(text "RD" (rect 1324 60 1340 74)(font "Arial" (font_size 8)))
+		(line (pt 1360 64)(pt 1344 64))
+	)
+	(port
+		(pt 1360 80)
+		(output)
+		(text "WR" (rect 1176 0 1196 14)(font "Arial" (font_size 8)))
+		(text "WR" (rect 1320 76 1340 90)(font "Arial" (font_size 8)))
+		(line (pt 1360 80)(pt 1344 80))
+	)
+	(port
+		(pt 1360 96)
+		(output)
+		(text "LEN[1..0]" (rect 1176 0 1226 14)(font "Arial" (font_size 8)))
+		(text "LEN[1..0]" (rect 1290 92 1340 106)(font "Arial" (font_size 8)))
+		(line (pt 1360 96)(pt 1344 96)(line_width 3))
+	)
+	(port
+		(pt 1360 48)
+		(bidir)
+		(text "DBUS[31..0]" (rect 1176 0 1244 14)(font "Arial" (font_size 8)))
+		(text "DBUS[31..0]" (rect 1272 44 1340 58)(font "Arial" (font_size 8)))
+		(line (pt 1360 48)(pt 1344 48)(line_width 3))
+	)
+	(port
+		(pt 112 168)
+		(bidir)
+		(text "DATA[31..0]" (rect 576 0 645 14)(font "Arial" (font_size 8)))
+		(text "DATA[31..0]" (rect 105 76 119 145)(font "Arial" (font_size 8))(vertical))
+		(line (pt 112 168)(pt 112 152)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 1344 144))
+	)
+)

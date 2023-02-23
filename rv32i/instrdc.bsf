@@ -20,15 +20,15 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 192 208)
+	(rect 64 64 240 256)
 	(text "instrdc" (rect 5 0 43 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
-		(pt 0 32)
+		(pt 88 0)
 		(input)
 		(text "opcode[6..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
-		(text "opcode[6..0]" (rect 21 27 91 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "opcode[6..0]" (rect 80 25 94 95)(font "Arial" (font_size 8))(vertical))
+		(line (pt 88 0)(pt 88 17)(line_width 3))
 	)
 	(port
 		(pt 176 32)
