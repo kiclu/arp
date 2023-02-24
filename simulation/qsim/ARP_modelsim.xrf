@@ -85,6 +85,7 @@ source_file = 1, C:/projects/ARP/arithmetic/signext14_32.bdf
 source_file = 1, C:/projects/ARP/arithmetic/signext22_32.bdf
 source_file = 1, C:/projects/ARP/rv32i/cpu.bdf
 source_file = 1, C:/projects/ARP/rv32i/tc.bdf
+source_file = 1, C:/projects/ARP/rv32i/tc.bsf.bak
 source_file = 1, C:/projects/ARP/db/ARP.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
