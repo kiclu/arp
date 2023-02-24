@@ -1,1 +1,2 @@
-sram/* linguist-language=VHDL
+# ingoring these files in linguist as they were falsely labeling the project as mostly HTML
+*.html linguist-generated
