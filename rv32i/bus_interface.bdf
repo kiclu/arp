@@ -184,7 +184,7 @@ applicable agreement for further details.
 	(bidir)
 	(rect 16 232 192 248)
 	(text "BIDIR" (rect 151 0 175 10)(font "Arial" (font_size 6)))
-	(text "DATA[31..0]" (rect 5 0 66 12)(font "Arial" ))
+	(text "DATA[31..0]" (rect 5 0 65 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 120 4)(pt 98 4))
@@ -325,7 +325,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 800 608 960 704)
+	(rect 800 624 960 720)
 	(text "zeroext16_32" (rect 76 0 155 14)(font "Arial" (font_size 8)))
 	(text "inst8" (rect 129 80 152 92)(font "Arial" ))
 	(port
@@ -827,11 +827,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 784 624)
-	(pt 688 624)
-	(bus)
-)
-(connector
 	(pt 528 224)
 	(pt 720 224)
 	(bus)
@@ -856,17 +851,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "DBUS[15..0]" (rect 960 624 1022 636)(font "Arial" )(invisible))
-	(pt 976 640)
-	(pt 960 640)
-	(bus)
-)
-(connector
-	(pt 688 640)
-	(pt 800 640)
-	(bus)
-)
-(connector
 	(pt 784 528)
 	(pt 808 528)
 	(bus)
@@ -878,16 +862,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 784 624)
-	(pt 784 528)
-	(bus)
-)
-(connector
-	(pt 976 528)
-	(pt 976 640)
-	(bus)
-)
-(connector
 	(pt 976 480)
 	(pt 768 480)
 	(bus)
@@ -895,11 +869,6 @@ applicable agreement for further details.
 (connector
 	(pt 768 608)
 	(pt 768 480)
-	(bus)
-)
-(connector
-	(pt 976 480)
-	(pt 976 528)
 	(bus)
 )
 (connector
@@ -1007,6 +976,37 @@ applicable agreement for further details.
 	(text "DATA[31..0]" (rect 297 224 357 236)(font "Arial" )(invisible))
 	(pt 208 240)
 	(pt 304 240)
+	(bus)
+)
+(connector
+	(pt 784 640)
+	(pt 784 528)
+	(bus)
+)
+(connector
+	(pt 784 640)
+	(pt 688 640)
+	(bus)
+)
+(connector
+	(text "DBUS[15..0]" (rect 960 640 1022 652)(font "Arial" )(invisible))
+	(pt 976 656)
+	(pt 960 656)
+	(bus)
+)
+(connector
+	(pt 976 480)
+	(pt 976 528)
+	(bus)
+)
+(connector
+	(pt 976 528)
+	(pt 976 656)
+	(bus)
+)
+(connector
+	(pt 688 656)
+	(pt 800 656)
 	(bus)
 )
 (junction (pt 264 72))
