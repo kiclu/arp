@@ -1,0 +1,3 @@
+# add sram.inc to ignored linguist files since it was changing project
+# languages to mostly HTML on github
+sram/sram.inc linguist-vendored
