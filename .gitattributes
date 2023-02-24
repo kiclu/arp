@@ -1,3 +1,1 @@
-# add .inc files to ignored linguist files since it was changing project
-# languages to mostly HTML on github
-*.inc linguist-vendored
+sram/* linguist-language=VHDL
