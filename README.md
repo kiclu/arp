@@ -8,6 +8,9 @@
 [RISC-V Instruction set manual](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)\
 [RISC-V Instruction set cheatsheet](https://itnext.io/risc-v-instruction-set-cheatsheet-70961b4bbe8)
 
+### SRAM
+[Altera internal memory user guide](https://www.intel.com/programmable/technical-pdfs/654378.pdf)
+
 ### GPU
 [VGA timing](http://tinyvga.com/vga-timing/800x600@72Hz)\
 [42S16400 SDRAM Datasheet](https://web.archive.org/web/20200113214256/http://www.issiusa.com/pdf/42S16400.pdf)\
