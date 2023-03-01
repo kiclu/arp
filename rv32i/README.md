@@ -106,23 +106,23 @@ is given below.
 ## 3.1. Instruction fetch (IF)
 ```
 base[31..0] ← PC[31..0]
-LOAD ← 1
 op[2..0] ← 010
+LOAD ← 1
 LD_IR ← 1
 ```
 ## 3.2. Instruction execute (EX)
 ### 3.2.1. OP
 ```
-LD_PC ← 1
 DATA_REG[31..0] ← ALU_OUT[31..0]
+LD_PC ← 1
 LD_REG ← 1
 ```
 ### 3.2.2. OP-IMM
 ```
-LD_PC ← 1
 DATA_REG[31..0] ← ALU_OUT[31..0]
-LD_REG ← 1
 ALUMX2 ← 1
+LD_REG ← 1
+LD_PC ← 1
 ```
 ### 3.2.3. BRANCH
 ```
@@ -131,30 +131,48 @@ LD_PC ← 1
 ```
 ### 3.2.4. LUI
 ```
-
+DATA_REG[31..0] ← upper[19..0] << 12
+LD_REG ← 1
+LD_PC ← 1
 ```
 ### 3.2.5. AUIPC
 ```
-
+DATA_REG[31..0] ← PC[31..0] + upper[19..0]<<12
+LD_REG ← 1
+LD_PC ← 1
 ```
 ### 3.2.6. JAL
 ```
-
+DATA_REG[31..0] ← PC[31..0] + 4
+LD_REG ← 1
+JAL ← 1
+LD_PC ← 1
 ```
 ### 3.2.7. JALR
 ```
-
+DATA_REG[31..0] ← PC[31..0] + 4
+LD_REG ← 1
+JALR ← 1
+LD_PC ← 1
 ```
 ### 3.2.8. LOAD
 ```
-
+DATA_REG[31..0] ← DATA[31..0]
+LD_REG ← 1
+base[31..0] ← rB[31..0]
+offs[11..0] ← upper[19..8]
+op[2..0] ← func3[2..0]
+LOAD ← 1
+LD_PC ← 1
 ```
 ### 3.2.9. STORE
 ```
-
+BUF_ENABLE ← 1
+base[31..0] ← rB[31..0]
+offs[11..0] ← st_offs[11..0]
+op[2..0] ← func3[2..0]
+STORE ← 1
+LD_PC ← 1
 ```
 
 # 4. Known bugs
-- When executing OP-IMM instructions, immediate bits can affect ADDI and effectivley
-make it SUBI. To fix this a bitmask is needed to set func7[5] to zero in ALU
-when OP-IMM instruction is being executed

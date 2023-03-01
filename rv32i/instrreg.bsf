@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 64 136 240 328)
+	(rect 64 64 240 256)
 	(text "instrreg" (rect 0 0 43 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 136 25 148)(font "Arial" ))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 88 0)
 		(input)

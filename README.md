@@ -1,10 +1,7 @@
 # ARP
 ## 1. TODO
-- [x] Add base register rB input on TC for load/store instructions
-- [x] Add func3 input on TC for load/store word lenght
-- [x] Add a second input for ALUMX1
-- [x] Update TC symbol
-- [ ] Finish TC
+- [ ] Test CPU
+- [ ] Finish the GPU
 ## 2. Links
 
 ### 2.1. FPGA Development board

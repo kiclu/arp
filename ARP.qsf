@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY rv32i_debug
+set_global_assignment -name TOP_LEVEL_ENTITY ARP
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:58:42  FEBRUARY 04, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -83,6 +83,9 @@ set_location_assignment PIN_L21 -to VGA_HS
 set_location_assignment PIN_H21 -to VGA_R[3]
 set_location_assignment PIN_H20 -to VGA_R[2]
 set_location_assignment PIN_L22 -to VGA_VS
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE ARP.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_1.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_8.bdf
@@ -92,18 +95,19 @@ set_global_assignment -name BDF_FILE arithmetic/add_sub_32.bdf
 set_global_assignment -name BDF_FILE arithmetic/xor32.bdf
 set_global_assignment -name BDF_FILE arithmetic/or32.bdf
 set_global_assignment -name BDF_FILE arithmetic/and32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shftl32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft16l32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft8l32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft4l32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft2l32.bdf
 set_global_assignment -name BDF_FILE arithmetic/shft1l32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shftr32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft16r32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft8r32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft4r32.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft2r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft2l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft4l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft8l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft12l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft16l32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shftl32.bdf
 set_global_assignment -name BDF_FILE arithmetic/shft1r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft2r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft4r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft8r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shft16r32.bdf
+set_global_assignment -name BDF_FILE arithmetic/shftr32.bdf
 set_global_assignment -name BDF_FILE arithmetic/cmp4.bdf
 set_global_assignment -name BDF_FILE arithmetic/cmp8.bdf
 set_global_assignment -name BDF_FILE arithmetic/cmp16.bdf
@@ -113,6 +117,7 @@ set_global_assignment -name BDF_FILE arithmetic/slt32.bdf
 set_global_assignment -name BDF_FILE arithmetic/sltu32.bdf
 set_global_assignment -name BDF_FILE arithmetic/signext8_32.bdf
 set_global_assignment -name BDF_FILE arithmetic/signext12_32.bdf
+set_global_assignment -name BDF_FILE arithmetic/signext13_32.bdf
 set_global_assignment -name BDF_FILE arithmetic/signext14_32.bdf
 set_global_assignment -name BDF_FILE arithmetic/signext16_32.bdf
 set_global_assignment -name BDF_FILE arithmetic/signext20_32.bdf
@@ -124,8 +129,10 @@ set_global_assignment -name BDF_FILE logic/cd4_2.bdf
 set_global_assignment -name BDF_FILE logic/dc2_4.bdf
 set_global_assignment -name BDF_FILE logic/dc3_8.bdf
 set_global_assignment -name BDF_FILE logic/mx2_1b.bdf
+set_global_assignment -name BDF_FILE logic/mx2_3b.bdf
 set_global_assignment -name BDF_FILE logic/mx2_32b.bdf
 set_global_assignment -name BDF_FILE logic/mx4_4b.bdf
+set_global_assignment -name BDF_FILE logic/mx4_12b.bdf
 set_global_assignment -name BDF_FILE logic/mx4_32b.bdf
 set_global_assignment -name BDF_FILE logic/mx8_32b.bdf
 set_global_assignment -name BDF_FILE registers/reg1_ld_clr.bdf
@@ -160,13 +167,10 @@ set_global_assignment -name BDF_FILE gpu/vga_vsp.bdf
 set_global_assignment -name BDF_FILE gpu/vga_vbp.bdf
 set_global_assignment -name BDF_FILE constants/zero32.bdf
 set_global_assignment -name BDF_FILE constants/true32.bdf
-set_global_assignment -name BDF_FILE logic/mx4_12b.bdf
-set_global_assignment -name BDF_FILE logic/mx2_3b.bdf
-set_global_assignment -name BDF_FILE arithmetic/shft12l32.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/toplevel.vwf
 set_global_assignment -name BDF_FILE simulations/rv32i_debug.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/rv32i_debug.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/pc.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/regfile.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/rv32i_debug_2.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

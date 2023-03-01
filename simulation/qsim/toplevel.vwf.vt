@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/26/2023 21:45:56"
+// Generated on "03/01/2023 02:22:01"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    ARP
 // 
@@ -334,229 +334,165 @@ initial
 begin
 	ABUS_expected[0] = 1'bX;
 end 
-
-// expected DBUS[31]
+// expected DBUS[ 31 ]
 initial
 begin
-	DBUS_expected[31] = 1'b1;
-	DBUS_expected[31] = #20000 1'bX;
+	DBUS_expected[31] = 1'bX;
 end 
-
-// expected DBUS[30]
+// expected DBUS[ 30 ]
 initial
 begin
-	DBUS_expected[30] = 1'b1;
-	DBUS_expected[30] = #20000 1'bX;
+	DBUS_expected[30] = 1'bX;
 end 
-
-// expected DBUS[29]
+// expected DBUS[ 29 ]
 initial
 begin
-	DBUS_expected[29] = 1'b1;
-	DBUS_expected[29] = #20000 1'bX;
+	DBUS_expected[29] = 1'bX;
 end 
-
-// expected DBUS[28]
+// expected DBUS[ 28 ]
 initial
 begin
-	DBUS_expected[28] = 1'b0;
-	DBUS_expected[28] = #20000 1'bX;
+	DBUS_expected[28] = 1'bX;
 end 
-
-// expected DBUS[27]
+// expected DBUS[ 27 ]
 initial
 begin
-	DBUS_expected[27] = 1'b1;
-	DBUS_expected[27] = #20000 1'bX;
+	DBUS_expected[27] = 1'bX;
 end 
-
-// expected DBUS[26]
+// expected DBUS[ 26 ]
 initial
 begin
-	DBUS_expected[26] = 1'b1;
-	DBUS_expected[26] = #20000 1'bX;
+	DBUS_expected[26] = 1'bX;
 end 
-
-// expected DBUS[25]
+// expected DBUS[ 25 ]
 initial
 begin
-	DBUS_expected[25] = 1'b1;
-	DBUS_expected[25] = #20000 1'bX;
+	DBUS_expected[25] = 1'bX;
 end 
-
-// expected DBUS[24]
+// expected DBUS[ 24 ]
 initial
 begin
-	DBUS_expected[24] = 1'b1;
-	DBUS_expected[24] = #20000 1'bX;
+	DBUS_expected[24] = 1'bX;
 end 
-
-// expected DBUS[23]
+// expected DBUS[ 23 ]
 initial
 begin
-	DBUS_expected[23] = 1'b0;
-	DBUS_expected[23] = #20000 1'bX;
+	DBUS_expected[23] = 1'bX;
 end 
-
-// expected DBUS[22]
+// expected DBUS[ 22 ]
 initial
 begin
-	DBUS_expected[22] = 1'b0;
-	DBUS_expected[22] = #20000 1'bX;
+	DBUS_expected[22] = 1'bX;
 end 
-
-// expected DBUS[21]
+// expected DBUS[ 21 ]
 initial
 begin
-	DBUS_expected[21] = 1'b0;
-	DBUS_expected[21] = #20000 1'bX;
+	DBUS_expected[21] = 1'bX;
 end 
-
-// expected DBUS[20]
+// expected DBUS[ 20 ]
 initial
 begin
-	DBUS_expected[20] = 1'b0;
-	DBUS_expected[20] = #20000 1'bX;
+	DBUS_expected[20] = 1'bX;
 end 
-
-// expected DBUS[19]
+// expected DBUS[ 19 ]
 initial
 begin
-	DBUS_expected[19] = 1'b0;
-	DBUS_expected[19] = #20000 1'bX;
+	DBUS_expected[19] = 1'bX;
 end 
-
-// expected DBUS[18]
+// expected DBUS[ 18 ]
 initial
 begin
-	DBUS_expected[18] = 1'b0;
-	DBUS_expected[18] = #20000 1'bX;
+	DBUS_expected[18] = 1'bX;
 end 
-
-// expected DBUS[17]
+// expected DBUS[ 17 ]
 initial
 begin
-	DBUS_expected[17] = 1'b0;
-	DBUS_expected[17] = #20000 1'bX;
+	DBUS_expected[17] = 1'bX;
 end 
-
-// expected DBUS[16]
+// expected DBUS[ 16 ]
 initial
 begin
-	DBUS_expected[16] = 1'b0;
-	DBUS_expected[16] = #20000 1'bX;
+	DBUS_expected[16] = 1'bX;
 end 
-
-// expected DBUS[15]
+// expected DBUS[ 15 ]
 initial
 begin
-	DBUS_expected[15] = 1'b0;
-	DBUS_expected[15] = #20000 1'bX;
+	DBUS_expected[15] = 1'bX;
 end 
-
-// expected DBUS[14]
+// expected DBUS[ 14 ]
 initial
 begin
-	DBUS_expected[14] = 1'b0;
-	DBUS_expected[14] = #20000 1'bX;
+	DBUS_expected[14] = 1'bX;
 end 
-
-// expected DBUS[13]
+// expected DBUS[ 13 ]
 initial
 begin
-	DBUS_expected[13] = 1'b0;
-	DBUS_expected[13] = #20000 1'bX;
+	DBUS_expected[13] = 1'bX;
 end 
-
-// expected DBUS[12]
+// expected DBUS[ 12 ]
 initial
 begin
-	DBUS_expected[12] = 1'b0;
-	DBUS_expected[12] = #20000 1'bX;
+	DBUS_expected[12] = 1'bX;
 end 
-
-// expected DBUS[11]
+// expected DBUS[ 11 ]
 initial
 begin
-	DBUS_expected[11] = 1'b1;
-	DBUS_expected[11] = #20000 1'bX;
+	DBUS_expected[11] = 1'bX;
 end 
-
-// expected DBUS[10]
+// expected DBUS[ 10 ]
 initial
 begin
-	DBUS_expected[10] = 1'b1;
-	DBUS_expected[10] = #20000 1'bX;
+	DBUS_expected[10] = 1'bX;
 end 
-
-// expected DBUS[9]
+// expected DBUS[ 9 ]
 initial
 begin
-	DBUS_expected[9] = 1'b0;
-	DBUS_expected[9] = #20000 1'bX;
+	DBUS_expected[9] = 1'bX;
 end 
-
-// expected DBUS[8]
+// expected DBUS[ 8 ]
 initial
 begin
-	DBUS_expected[8] = 1'b0;
-	DBUS_expected[8] = #20000 1'bX;
+	DBUS_expected[8] = 1'bX;
 end 
-
-// expected DBUS[7]
+// expected DBUS[ 7 ]
 initial
 begin
-	DBUS_expected[7] = 1'b0;
-	DBUS_expected[7] = #20000 1'bX;
+	DBUS_expected[7] = 1'bX;
 end 
-
-// expected DBUS[6]
+// expected DBUS[ 6 ]
 initial
 begin
-	DBUS_expected[6] = 1'b0;
-	DBUS_expected[6] = #20000 1'bX;
+	DBUS_expected[6] = 1'bX;
 end 
-
-// expected DBUS[5]
+// expected DBUS[ 5 ]
 initial
 begin
-	DBUS_expected[5] = 1'b0;
-	DBUS_expected[5] = #20000 1'bX;
+	DBUS_expected[5] = 1'bX;
 end 
-
-// expected DBUS[4]
+// expected DBUS[ 4 ]
 initial
 begin
-	DBUS_expected[4] = 1'b0;
-	DBUS_expected[4] = #20000 1'bX;
+	DBUS_expected[4] = 1'bX;
 end 
-
-// expected DBUS[3]
+// expected DBUS[ 3 ]
 initial
 begin
-	DBUS_expected[3] = 1'b0;
-	DBUS_expected[3] = #20000 1'bX;
+	DBUS_expected[3] = 1'bX;
 end 
-
-// expected DBUS[2]
+// expected DBUS[ 2 ]
 initial
 begin
-	DBUS_expected[2] = 1'b1;
-	DBUS_expected[2] = #20000 1'bX;
+	DBUS_expected[2] = 1'bX;
 end 
-
-// expected DBUS[1]
+// expected DBUS[ 1 ]
 initial
 begin
-	DBUS_expected[1] = 1'b1;
-	DBUS_expected[1] = #20000 1'bX;
+	DBUS_expected[1] = 1'bX;
 end 
-
-// expected DBUS[0]
+// expected DBUS[ 0 ]
 initial
 begin
-	DBUS_expected[0] = 1'b0;
-	DBUS_expected[0] = #20000 1'bX;
+	DBUS_expected[0] = 1'bX;
 end 
 
 // expected RD
@@ -1790,198 +1726,6 @@ begin
 	CLK = 1'b0;
 	CLK = #10000 1'b1;
 	#10000;
-end 
-// DBUS[ 31 ]
-initial
-begin
-	treg_DBUS[31] = 1'b1;
-	treg_DBUS[31] = #20000 1'bX;
-end 
-// DBUS[ 30 ]
-initial
-begin
-	treg_DBUS[30] = 1'b1;
-	treg_DBUS[30] = #20000 1'bX;
-end 
-// DBUS[ 29 ]
-initial
-begin
-	treg_DBUS[29] = 1'b1;
-	treg_DBUS[29] = #20000 1'bX;
-end 
-// DBUS[ 28 ]
-initial
-begin
-	treg_DBUS[28] = 1'b0;
-	treg_DBUS[28] = #20000 1'bX;
-end 
-// DBUS[ 27 ]
-initial
-begin
-	treg_DBUS[27] = 1'b1;
-	treg_DBUS[27] = #20000 1'bX;
-end 
-// DBUS[ 26 ]
-initial
-begin
-	treg_DBUS[26] = 1'b1;
-	treg_DBUS[26] = #20000 1'bX;
-end 
-// DBUS[ 25 ]
-initial
-begin
-	treg_DBUS[25] = 1'b1;
-	treg_DBUS[25] = #20000 1'bX;
-end 
-// DBUS[ 24 ]
-initial
-begin
-	treg_DBUS[24] = 1'b1;
-	treg_DBUS[24] = #20000 1'bX;
-end 
-// DBUS[ 23 ]
-initial
-begin
-	treg_DBUS[23] = 1'b0;
-	treg_DBUS[23] = #20000 1'bX;
-end 
-// DBUS[ 22 ]
-initial
-begin
-	treg_DBUS[22] = 1'b0;
-	treg_DBUS[22] = #20000 1'bX;
-end 
-// DBUS[ 21 ]
-initial
-begin
-	treg_DBUS[21] = 1'b0;
-	treg_DBUS[21] = #20000 1'bX;
-end 
-// DBUS[ 20 ]
-initial
-begin
-	treg_DBUS[20] = 1'b0;
-	treg_DBUS[20] = #20000 1'bX;
-end 
-// DBUS[ 19 ]
-initial
-begin
-	treg_DBUS[19] = 1'b0;
-	treg_DBUS[19] = #20000 1'bX;
-end 
-// DBUS[ 18 ]
-initial
-begin
-	treg_DBUS[18] = 1'b0;
-	treg_DBUS[18] = #20000 1'bX;
-end 
-// DBUS[ 17 ]
-initial
-begin
-	treg_DBUS[17] = 1'b0;
-	treg_DBUS[17] = #20000 1'bX;
-end 
-// DBUS[ 16 ]
-initial
-begin
-	treg_DBUS[16] = 1'b0;
-	treg_DBUS[16] = #20000 1'bX;
-end 
-// DBUS[ 15 ]
-initial
-begin
-	treg_DBUS[15] = 1'b0;
-	treg_DBUS[15] = #20000 1'bX;
-end 
-// DBUS[ 14 ]
-initial
-begin
-	treg_DBUS[14] = 1'b0;
-	treg_DBUS[14] = #20000 1'bX;
-end 
-// DBUS[ 13 ]
-initial
-begin
-	treg_DBUS[13] = 1'b0;
-	treg_DBUS[13] = #20000 1'bX;
-end 
-// DBUS[ 12 ]
-initial
-begin
-	treg_DBUS[12] = 1'b0;
-	treg_DBUS[12] = #20000 1'bX;
-end 
-// DBUS[ 11 ]
-initial
-begin
-	treg_DBUS[11] = 1'b1;
-	treg_DBUS[11] = #20000 1'bX;
-end 
-// DBUS[ 10 ]
-initial
-begin
-	treg_DBUS[10] = 1'b1;
-	treg_DBUS[10] = #20000 1'bX;
-end 
-// DBUS[ 9 ]
-initial
-begin
-	treg_DBUS[9] = 1'b0;
-	treg_DBUS[9] = #20000 1'bX;
-end 
-// DBUS[ 8 ]
-initial
-begin
-	treg_DBUS[8] = 1'b0;
-	treg_DBUS[8] = #20000 1'bX;
-end 
-// DBUS[ 7 ]
-initial
-begin
-	treg_DBUS[7] = 1'b0;
-	treg_DBUS[7] = #20000 1'bX;
-end 
-// DBUS[ 6 ]
-initial
-begin
-	treg_DBUS[6] = 1'b0;
-	treg_DBUS[6] = #20000 1'bX;
-end 
-// DBUS[ 5 ]
-initial
-begin
-	treg_DBUS[5] = 1'b0;
-	treg_DBUS[5] = #20000 1'bX;
-end 
-// DBUS[ 4 ]
-initial
-begin
-	treg_DBUS[4] = 1'b0;
-	treg_DBUS[4] = #20000 1'bX;
-end 
-// DBUS[ 3 ]
-initial
-begin
-	treg_DBUS[3] = 1'b0;
-	treg_DBUS[3] = #20000 1'bX;
-end 
-// DBUS[ 2 ]
-initial
-begin
-	treg_DBUS[2] = 1'b1;
-	treg_DBUS[2] = #20000 1'bX;
-end 
-// DBUS[ 1 ]
-initial
-begin
-	treg_DBUS[1] = 1'b1;
-	treg_DBUS[1] = #20000 1'bX;
-end 
-// DBUS[ 0 ]
-initial
-begin
-	treg_DBUS[0] = 1'b0;
-	treg_DBUS[0] = #20000 1'bX;
 end 
 
 ARP_vlg_sample_tst tb_sample (

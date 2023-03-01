@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 64 64 1472 264)
+	(rect 64 64 1424 264)
 	(text "tc" (rect 5 0 15 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 184 25 196)(font "Arial" ))
 	(port
@@ -45,18 +45,18 @@ applicable agreement for further details.
 		(line (pt 384 0)(pt 384 17)(line_width 3))
 	)
 	(port
-		(pt 1408 168)
+		(pt 1360 168)
 		(input)
 		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 1360 160 1383 174)(font "Arial" (font_size 8)))
-		(line (pt 1392 168)(pt 1408 168))
+		(text "CLK" (rect 1313 160 1336 174)(font "Arial" (font_size 8)))
+		(line (pt 1360 168)(pt 1345 168))
 	)
 	(port
-		(pt 1376 0)
+		(pt 1328 0)
 		(input)
 		(text "ALUOUT[31..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
-		(text "ALUOUT[31..0]" (rect 1368 25 1382 109)(font "Arial" (font_size 8))(vertical))
-		(line (pt 1376 0)(pt 1376 16)(line_width 3))
+		(text "ALUOUT[31..0]" (rect 1320 25 1334 109)(font "Arial" (font_size 8))(vertical))
+		(line (pt 1328 0)(pt 1328 16)(line_width 3))
 	)
 	(port
 		(pt 400 0)
@@ -220,6 +220,6 @@ applicable agreement for further details.
 		(line (pt 48 0)(pt 48 16)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 1392 184))
+		(rectangle (rect 16 16 1344 184))
 	)
 )

@@ -101,9 +101,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 16 896 192 912)
+	(rect 0 928 176 944)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "st_offs[11..0]" (rect 5 0 74 12)(font "Arial" ))
+	(text "st_offs[11..0]" (rect 5 0 73 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -165,7 +165,7 @@ applicable agreement for further details.
 	)
 	(flipx_rotate90)
 	(text "GND" (rect -1 19 9 40)(font "Arial" (font_size 6))(vertical))
-	(annotation_block (location)(rect 1344 216 1400 232))
+	(annotation_block (location)(rect -376 688 -320 704))
 )
 (pin
 	(output)
@@ -1632,11 +1632,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 208 904)
-	(pt 192 904)
-	(bus)
-)
-(connector
 	(pt 192 920)
 	(pt 192 984)
 	(bus)
@@ -2348,6 +2343,11 @@ applicable agreement for further details.
 (connector
 	(pt -312 480)
 	(pt -296 480)
+)
+(connector
+	(pt 208 936)
+	(pt 176 936)
+	(bus)
 )
 (junction (pt 368 1016))
 (junction (pt 560 1192))
