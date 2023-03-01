@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/06/2023 20:25:24"
+// Generated on "03/01/2023 00:36:31"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    regfile
 // 
@@ -1293,7 +1293,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1000000;
+#5000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -1331,29 +1331,42 @@ regfile i1 (
 	.DATAOUT2(DATAOUT2),
 	.LD(LD)
 );
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #10000 1'b1;
+	#10000;
+end 
 // ADDRIN[ 4 ]
 initial
 begin
+	repeat(7)
+	begin
+		ADDRIN[4] = 1'b0;
+		ADDRIN[4] = #320000 1'b1;
+		# 320000;
+	end
 	ADDRIN[4] = 1'b0;
-	ADDRIN[4] = #320000 1'b1;
-	ADDRIN[4] = #320000 1'b0;
 	ADDRIN[4] = #320000 1'b1;
 end 
 // ADDRIN[ 3 ]
 initial
 begin
-	repeat(3)
+	repeat(15)
 	begin
 		ADDRIN[3] = 1'b0;
 		ADDRIN[3] = #160000 1'b1;
 		# 160000;
 	end
 	ADDRIN[3] = 1'b0;
+	ADDRIN[3] = #160000 1'b1;
 end 
 // ADDRIN[ 2 ]
 initial
 begin
-	repeat(6)
+	repeat(31)
 	begin
 		ADDRIN[2] = 1'b0;
 		ADDRIN[2] = #80000 1'b1;
@@ -1364,7 +1377,7 @@ end
 // ADDRIN[ 1 ]
 initial
 begin
-	repeat(12)
+	repeat(62)
 	begin
 		ADDRIN[1] = 1'b0;
 		ADDRIN[1] = #40000 1'b1;
@@ -1382,113 +1395,115 @@ end
 // ADDROUT1[ 4 ]
 initial
 begin
+	repeat(7)
+	begin
+		ADDROUT1[4] = 1'b0;
+		ADDROUT1[4] = #320000 1'b1;
+		# 320000;
+	end
 	ADDROUT1[4] = 1'b0;
-	ADDROUT1[4] = #800000 1'b1;
-	ADDROUT1[4] = #160000 1'b0;
+	ADDROUT1[4] = #320000 1'b1;
 end 
 // ADDROUT1[ 3 ]
 initial
 begin
+	repeat(15)
+	begin
+		ADDROUT1[3] = 1'b0;
+		ADDROUT1[3] = #160000 1'b1;
+		# 160000;
+	end
 	ADDROUT1[3] = 1'b0;
-	ADDROUT1[3] = #720000 1'b1;
-	ADDROUT1[3] = #80000 1'b0;
-	ADDROUT1[3] = #80000 1'b1;
-	ADDROUT1[3] = #80000 1'b0;
+	ADDROUT1[3] = #160000 1'b1;
 end 
 // ADDROUT1[ 2 ]
 initial
 begin
-	ADDROUT1[2] = 1'b0;
-	ADDROUT1[2] = #680000 1'b1;
-	# 40000;
-	repeat(3)
+	repeat(31)
 	begin
 		ADDROUT1[2] = 1'b0;
-		ADDROUT1[2] = #40000 1'b1;
-		# 40000;
+		ADDROUT1[2] = #80000 1'b1;
+		# 80000;
 	end
 	ADDROUT1[2] = 1'b0;
 end 
 // ADDROUT1[ 1 ]
 initial
 begin
-	ADDROUT1[1] = 1'b0;
-	ADDROUT1[1] = #660000 1'b1;
-	# 20000;
-	repeat(8)
+	repeat(62)
 	begin
 		ADDROUT1[1] = 1'b0;
-		ADDROUT1[1] = #20000 1'b1;
-		# 20000;
+		ADDROUT1[1] = #40000 1'b1;
+		# 40000;
 	end
+	ADDROUT1[1] = 1'b0;
 end 
 // ADDROUT1[ 0 ]
-initial
+always
 begin
 	ADDROUT1[0] = 1'b0;
+	ADDROUT1[0] = #20000 1'b1;
+	#20000;
 end 
 // ADDROUT2[ 4 ]
 initial
 begin
 	ADDROUT2[4] = 1'b0;
-	ADDROUT2[4] = #800000 1'b1;
-	ADDROUT2[4] = #160000 1'b0;
+	# 300000;
+	repeat(7)
+	begin
+		ADDROUT2[4] = 1'b1;
+		ADDROUT2[4] = #320000 1'b0;
+		# 320000;
+	end
+	ADDROUT2[4] = 1'b1;
 end 
 // ADDROUT2[ 3 ]
 initial
 begin
 	ADDROUT2[3] = 1'b0;
-	ADDROUT2[3] = #720000 1'b1;
-	ADDROUT2[3] = #80000 1'b0;
-	ADDROUT2[3] = #80000 1'b1;
-	ADDROUT2[3] = #80000 1'b0;
+	# 140000;
+	repeat(15)
+	begin
+		ADDROUT2[3] = 1'b1;
+		ADDROUT2[3] = #160000 1'b0;
+		# 160000;
+	end
+	ADDROUT2[3] = 1'b1;
 end 
 // ADDROUT2[ 2 ]
 initial
 begin
 	ADDROUT2[2] = 1'b0;
-	ADDROUT2[2] = #680000 1'b1;
-	# 40000;
-	repeat(3)
+	# 60000;
+	repeat(30)
 	begin
-		ADDROUT2[2] = 1'b0;
-		ADDROUT2[2] = #40000 1'b1;
-		# 40000;
+		ADDROUT2[2] = 1'b1;
+		ADDROUT2[2] = #80000 1'b0;
+		# 80000;
 	end
-	ADDROUT2[2] = 1'b0;
+	ADDROUT2[2] = 1'b1;
+	ADDROUT2[2] = #80000 1'b0;
 end 
 // ADDROUT2[ 1 ]
 initial
 begin
 	ADDROUT2[1] = 1'b0;
-	ADDROUT2[1] = #660000 1'b1;
 	# 20000;
-	repeat(8)
+	repeat(62)
 	begin
-		ADDROUT2[1] = 1'b0;
-		ADDROUT2[1] = #20000 1'b1;
-		# 20000;
+		ADDROUT2[1] = 1'b1;
+		ADDROUT2[1] = #40000 1'b0;
+		# 40000;
 	end
+	ADDROUT2[1] = 1'b1;
 end 
 // ADDROUT2[ 0 ]
-initial
-begin
-	ADDROUT2[0] = 1'b0;
-	ADDROUT2[0] = #640000 1'b1;
-end 
-
-// CLK
 always
 begin
-	CLK = 1'b0;
-	CLK = #10000 1'b1;
-	#10000;
-end 
-
-// CLR
-initial
-begin
-	CLR = 1'b0;
+	ADDROUT2[0] = 1'b1;
+	ADDROUT2[0] = #20000 1'b0;
+	#20000;
 end 
 // DATAIN[ 31 ]
 initial
@@ -1544,184 +1559,105 @@ end
 initial
 begin
 	DATAIN[21] = 1'b0;
-	DATAIN[21] = #620000 1'b1;
-	DATAIN[21] = #20000 1'b0;
 end 
 // DATAIN[ 20 ]
 initial
 begin
 	DATAIN[20] = 1'b0;
-	DATAIN[20] = #320000 1'b1;
-	DATAIN[20] = #300000 1'b0;
 end 
 // DATAIN[ 19 ]
 initial
 begin
 	DATAIN[19] = 1'b0;
-	DATAIN[19] = #160000 1'b1;
-	DATAIN[19] = #160000 1'b0;
-	DATAIN[19] = #140000 1'b1;
-	DATAIN[19] = #160000 1'b0;
 end 
 // DATAIN[ 18 ]
 initial
 begin
-	repeat(2)
-	begin
-		DATAIN[18] = 1'b0;
-		DATAIN[18] = #80000 1'b1;
-		# 80000;
-	end
 	DATAIN[18] = 1'b0;
-	DATAIN[18] = #60000 1'b1;
-	DATAIN[18] = #80000 1'b0;
-	DATAIN[18] = #80000 1'b1;
-	DATAIN[18] = #80000 1'b0;
 end 
 // DATAIN[ 17 ]
 initial
 begin
-	repeat(4)
-	begin
-		DATAIN[17] = 1'b0;
-		DATAIN[17] = #40000 1'b1;
-		# 40000;
-	end
 	DATAIN[17] = 1'b0;
-	# 20000;
-	repeat(3)
-	begin
-		DATAIN[17] = 1'b1;
-		DATAIN[17] = #40000 1'b0;
-		# 40000;
-	end
-	DATAIN[17] = 1'b1;
-	DATAIN[17] = #40000 1'b0;
 end 
 // DATAIN[ 16 ]
 initial
 begin
-	repeat(7)
-	begin
-		DATAIN[16] = 1'b0;
-		DATAIN[16] = #20000 1'b1;
-		# 20000;
-	end
 	DATAIN[16] = 1'b0;
-	DATAIN[16] = #20000 1'b1;
-	# 40000;
-	repeat(6)
-	begin
-		DATAIN[16] = 1'b0;
-		DATAIN[16] = #20000 1'b1;
-		# 20000;
-	end
-	DATAIN[16] = 1'b0;
-	DATAIN[16] = #20000 1'b1;
-	DATAIN[16] = #40000 1'b0;
 end 
 // DATAIN[ 15 ]
 initial
 begin
 	DATAIN[15] = 1'b0;
-	DATAIN[15] = #160000 1'b1;
-	DATAIN[15] = #160000 1'b0;
-	DATAIN[15] = #140000 1'b1;
-	DATAIN[15] = #160000 1'b0;
+	DATAIN[15] = #2580000 1'b1;
 end 
 // DATAIN[ 14 ]
 initial
 begin
-	repeat(2)
-	begin
-		DATAIN[14] = 1'b0;
-		DATAIN[14] = #80000 1'b1;
-		# 80000;
-	end
 	DATAIN[14] = 1'b0;
-	DATAIN[14] = #60000 1'b1;
-	DATAIN[14] = #80000 1'b0;
-	DATAIN[14] = #80000 1'b1;
-	DATAIN[14] = #80000 1'b0;
+	DATAIN[14] = #1300000 1'b1;
+	DATAIN[14] = #1280000 1'b0;
+	DATAIN[14] = #1280000 1'b1;
 end 
 // DATAIN[ 13 ]
 initial
 begin
-	repeat(4)
-	begin
-		DATAIN[13] = 1'b0;
-		DATAIN[13] = #40000 1'b1;
-		# 40000;
-	end
 	DATAIN[13] = 1'b0;
-	# 20000;
+	# 660000;
 	repeat(3)
 	begin
 		DATAIN[13] = 1'b1;
-		DATAIN[13] = #40000 1'b0;
-		# 40000;
+		DATAIN[13] = #640000 1'b0;
+		# 640000;
 	end
 	DATAIN[13] = 1'b1;
-	DATAIN[13] = #40000 1'b0;
 end 
 // DATAIN[ 12 ]
 initial
 begin
+	DATAIN[12] = 1'b0;
+	# 340000;
 	repeat(7)
 	begin
-		DATAIN[12] = 1'b0;
-		DATAIN[12] = #20000 1'b1;
-		# 20000;
+		DATAIN[12] = 1'b1;
+		DATAIN[12] = #320000 1'b0;
+		# 320000;
 	end
-	DATAIN[12] = 1'b0;
-	DATAIN[12] = #20000 1'b1;
-	# 40000;
-	repeat(6)
-	begin
-		DATAIN[12] = 1'b0;
-		DATAIN[12] = #20000 1'b1;
-		# 20000;
-	end
-	DATAIN[12] = 1'b0;
-	DATAIN[12] = #20000 1'b1;
-	DATAIN[12] = #40000 1'b0;
+	DATAIN[12] = 1'b1;
 end 
 // DATAIN[ 11 ]
 initial
 begin
 	DATAIN[11] = 1'b0;
-	DATAIN[11] = #160000 1'b1;
-	DATAIN[11] = #160000 1'b0;
-	DATAIN[11] = #140000 1'b1;
-	DATAIN[11] = #160000 1'b0;
+	# 180000;
+	repeat(15)
+	begin
+		DATAIN[11] = 1'b1;
+		DATAIN[11] = #160000 1'b0;
+		# 160000;
+	end
+	DATAIN[11] = 1'b1;
 end 
 // DATAIN[ 10 ]
 initial
 begin
-	repeat(2)
+	DATAIN[10] = 1'b0;
+	# 100000;
+	repeat(30)
 	begin
-		DATAIN[10] = 1'b0;
-		DATAIN[10] = #80000 1'b1;
+		DATAIN[10] = 1'b1;
+		DATAIN[10] = #80000 1'b0;
 		# 80000;
 	end
-	DATAIN[10] = 1'b0;
-	DATAIN[10] = #60000 1'b1;
-	DATAIN[10] = #80000 1'b0;
-	DATAIN[10] = #80000 1'b1;
+	DATAIN[10] = 1'b1;
 	DATAIN[10] = #80000 1'b0;
 end 
 // DATAIN[ 9 ]
 initial
 begin
-	repeat(4)
-	begin
-		DATAIN[9] = 1'b0;
-		DATAIN[9] = #40000 1'b1;
-		# 40000;
-	end
 	DATAIN[9] = 1'b0;
-	# 20000;
-	repeat(3)
+	# 60000;
+	repeat(61)
 	begin
 		DATAIN[9] = 1'b1;
 		DATAIN[9] = #40000 1'b0;
@@ -1733,132 +1669,105 @@ end
 // DATAIN[ 8 ]
 initial
 begin
-	repeat(7)
-	begin
-		DATAIN[8] = 1'b0;
-		DATAIN[8] = #20000 1'b1;
-		# 20000;
-	end
 	DATAIN[8] = 1'b0;
-	DATAIN[8] = #20000 1'b1;
 	# 40000;
-	repeat(6)
+	repeat(124)
 	begin
-		DATAIN[8] = 1'b0;
-		DATAIN[8] = #20000 1'b1;
+		DATAIN[8] = 1'b1;
+		DATAIN[8] = #20000 1'b0;
 		# 20000;
 	end
-	DATAIN[8] = 1'b0;
-	DATAIN[8] = #20000 1'b1;
-	DATAIN[8] = #40000 1'b0;
 end 
 // DATAIN[ 7 ]
 initial
 begin
 	DATAIN[7] = 1'b0;
-	DATAIN[7] = #160000 1'b1;
-	DATAIN[7] = #160000 1'b0;
-	DATAIN[7] = #140000 1'b1;
-	DATAIN[7] = #160000 1'b0;
+	DATAIN[7] = #20000 1'b1;
+	DATAIN[7] = #2560000 1'b0;
 end 
 // DATAIN[ 6 ]
 initial
 begin
-	repeat(2)
-	begin
-		DATAIN[6] = 1'b0;
-		DATAIN[6] = #80000 1'b1;
-		# 80000;
-	end
 	DATAIN[6] = 1'b0;
-	DATAIN[6] = #60000 1'b1;
-	DATAIN[6] = #80000 1'b0;
-	DATAIN[6] = #80000 1'b1;
-	DATAIN[6] = #80000 1'b0;
+	DATAIN[6] = #20000 1'b1;
+	DATAIN[6] = #1280000 1'b0;
+	DATAIN[6] = #1280000 1'b1;
+	DATAIN[6] = #1280000 1'b0;
 end 
 // DATAIN[ 5 ]
 initial
 begin
-	repeat(4)
-	begin
-		DATAIN[5] = 1'b0;
-		DATAIN[5] = #40000 1'b1;
-		# 40000;
-	end
 	DATAIN[5] = 1'b0;
 	# 20000;
 	repeat(3)
 	begin
 		DATAIN[5] = 1'b1;
-		DATAIN[5] = #40000 1'b0;
-		# 40000;
+		DATAIN[5] = #640000 1'b0;
+		# 640000;
 	end
 	DATAIN[5] = 1'b1;
-	DATAIN[5] = #40000 1'b0;
+	DATAIN[5] = #640000 1'b0;
 end 
 // DATAIN[ 4 ]
 initial
 begin
+	DATAIN[4] = 1'b0;
+	# 20000;
 	repeat(7)
 	begin
-		DATAIN[4] = 1'b0;
-		DATAIN[4] = #20000 1'b1;
-		# 20000;
+		DATAIN[4] = 1'b1;
+		DATAIN[4] = #320000 1'b0;
+		# 320000;
 	end
-	DATAIN[4] = 1'b0;
-	DATAIN[4] = #20000 1'b1;
-	# 40000;
-	repeat(7)
-	begin
-		DATAIN[4] = 1'b0;
-		DATAIN[4] = #20000 1'b1;
-		# 20000;
-	end
-	DATAIN[4] = 1'b0;
+	DATAIN[4] = 1'b1;
+	DATAIN[4] = #320000 1'b0;
 end 
 // DATAIN[ 3 ]
 initial
 begin
-	repeat(2)
+	DATAIN[3] = 1'b0;
+	# 20000;
+	repeat(15)
 	begin
-		DATAIN[3] = 1'b0;
-		DATAIN[3] = #160000 1'b1;
+		DATAIN[3] = 1'b1;
+		DATAIN[3] = #160000 1'b0;
 		# 160000;
 	end
-	DATAIN[3] = 1'b0;
+	DATAIN[3] = 1'b1;
+	DATAIN[3] = #160000 1'b0;
 end 
 // DATAIN[ 2 ]
 initial
 begin
-	repeat(4)
+	DATAIN[2] = 1'b0;
+	# 20000;
+	repeat(31)
 	begin
-		DATAIN[2] = 1'b0;
-		DATAIN[2] = #80000 1'b1;
+		DATAIN[2] = 1'b1;
+		DATAIN[2] = #80000 1'b0;
 		# 80000;
 	end
-	DATAIN[2] = 1'b0;
+	DATAIN[2] = 1'b1;
 end 
 // DATAIN[ 1 ]
 initial
 begin
-	repeat(8)
+	DATAIN[1] = 1'b0;
+	# 20000;
+	repeat(62)
 	begin
-		DATAIN[1] = 1'b0;
-		DATAIN[1] = #40000 1'b1;
+		DATAIN[1] = 1'b1;
+		DATAIN[1] = #40000 1'b0;
 		# 40000;
 	end
-	DATAIN[1] = 1'b0;
+	DATAIN[1] = 1'b1;
 end 
 // DATAIN[ 0 ]
-initial
+always
 begin
-	repeat(16)
-	begin
-		DATAIN[0] = 1'b0;
-		DATAIN[0] = #20000 1'b1;
-		# 20000;
-	end
 	DATAIN[0] = 1'b0;
+	DATAIN[0] = #20000 1'b1;
+	#20000;
 end 
 
 // LD
@@ -1866,6 +1775,12 @@ initial
 begin
 	LD = 1'b1;
 	LD = #640000 1'b0;
+end 
+
+// CLR
+initial
+begin
+	CLR = 1'b0;
 end 
 
 regfile_vlg_sample_tst tb_sample (

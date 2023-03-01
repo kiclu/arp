@@ -1,5 +1,7 @@
 # CPU
 
+
+
 # 1. ISA
 
 The ISA choice for this project is quite easy. RV32I is the core RISC-V ISA and
@@ -81,4 +83,96 @@ Both load and store instructions support one, two and four byte transfers.
 | SBU           | Store byte unsigned               | MEM[rB + offs12] ← rS
 | SHU           | Store halfword unsigned           | MEM[rB + offs12] ← rS
 
-While the base ISA supports misaligned memory access for two and four byte data, the authors of RISC-V Instruction Set Manual do not recommend it, also almost nothing would be gained by implementing it in this project, and therefore strictly using naturally aligned addresses is the clear choice here. This does mean that aligned addresses are **MANDATORY**.
+While the base ISA supports misaligned memory access for two and four byte data, 
+the authors of RISC-V Instruction Set Manual do not recommend it, also almost nothing 
+would be gained by implementing it in this project, and therefore strictly using 
+naturally aligned addresses is the clear choice here. 
+This does mean that aligned addresses are **MANDATORY**.
+
+# 3. CPU timing control module
+
+Each and every instruction is executed in exactly two clock cycles. Instruction
+is fetched in the first clock cycle (IF), while the second cycle is used for
+instruction decoding (ID), execution (EX), memory access (MEM) and register write-back (WB).
+For the sake of simplicity, the first instruction cycle will from now on be shortened
+to just **IF**, while the second will be shortened to **EX**.\
+This design can further be improved by designing a simple pipeline where the processor
+would only stall on load/store instructions and missed branch predictions.
+
+To keep the CPU design clean, the whole control block has been moved into a new
+module, CPU timing control module (**TC**). The truth table for all its output signals
+is given below.
+
+## 3.1. Instruction fetch (IF)
+```
+base[31..0] ← PC[31..0]
+op[2..0] ← 010
+LOAD ← 1
+LD_IR ← 1
+```
+## 3.2. Instruction execute (EX)
+### 3.2.1. OP
+```
+DATA_REG[31..0] ← ALU_OUT[31..0]
+LD_PC ← 1
+LD_REG ← 1
+```
+### 3.2.2. OP-IMM
+```
+DATA_REG[31..0] ← ALU_OUT[31..0]
+ALUMX2 ← 1
+LD_REG ← 1
+LD_PC ← 1
+```
+### 3.2.3. BRANCH
+```
+BRANCH ← 1
+LD_PC ← 1
+```
+### 3.2.4. LUI
+```
+DATA_REG[31..0] ← upper[19..0] << 12
+LD_REG ← 1
+LD_PC ← 1
+```
+### 3.2.5. AUIPC
+```
+DATA_REG[31..0] ← PC[31..0] + upper[19..0]<<12
+LD_REG ← 1
+LD_PC ← 1
+```
+### 3.2.6. JAL
+```
+DATA_REG[31..0] ← PC[31..0] + 4
+LD_REG ← 1
+JAL ← 1
+LD_PC ← 1
+```
+### 3.2.7. JALR
+```
+DATA_REG[31..0] ← PC[31..0] + 4
+LD_REG ← 1
+JALR ← 1
+LD_PC ← 1
+```
+### 3.2.8. LOAD
+```
+DATA_REG[31..0] ← DATA[31..0]
+LD_REG ← 1
+base[31..0] ← rB[31..0]
+offs[11..0] ← upper[19..8]
+op[2..0] ← func3[2..0]
+LOAD ← 1
+LD_PC ← 1
+```
+### 3.2.9. STORE
+```
+BUF_ENABLE ← 1
+base[31..0] ← rB[31..0]
+offs[11..0] ← st_offs[11..0]
+op[2..0] ← func3[2..0]
+STORE ← 1
+LD_PC ← 1
+```
+
+# 4. Known bugs

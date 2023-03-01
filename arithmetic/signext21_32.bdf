@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 456 216 624 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN[20..0]" (rect 5 0 49 12)(font "Arial" ))
+	(text "IN[20..0]" (rect 5 0 48 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -63,7 +63,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20..0]" (rect 656 240 1110 252)(font "Arial" )(invisible))
+	(text "IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20],IN[20..0]" (rect 656 240 1076 252)(font "Arial" )(invisible))
 	(pt 688 256)
 	(pt 656 256)
 	(bus)
