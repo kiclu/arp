@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY ARP
+set_global_assignment -name TOP_LEVEL_ENTITY gpu
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:58:42  FEBRUARY 04, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -51,7 +51,7 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/projects/ARP/simulation/qsim/" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
@@ -83,9 +83,44 @@ set_location_assignment PIN_L21 -to VGA_HS
 set_location_assignment PIN_H21 -to VGA_R[3]
 set_location_assignment PIN_H20 -to VGA_R[2]
 set_location_assignment PIN_L22 -to VGA_VS
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_A7 -to DRAM_ADDR[11]
+set_location_assignment PIN_B4 -to DRAM_ADDR[10]
+set_location_assignment PIN_B7 -to DRAM_ADDR[9]
+set_location_assignment PIN_C7 -to DRAM_ADDR[8]
+set_location_assignment PIN_A6 -to DRAM_ADDR[7]
+set_location_assignment PIN_B6 -to DRAM_ADDR[6]
+set_location_assignment PIN_C6 -to DRAM_ADDR[5]
+set_location_assignment PIN_A5 -to DRAM_ADDR[4]
+set_location_assignment PIN_C3 -to DRAM_ADDR[3]
+set_location_assignment PIN_B3 -to DRAM_ADDR[2]
+set_location_assignment PIN_A3 -to DRAM_ADDR[1]
+set_location_assignment PIN_C4 -to DRAM_ADDR[0]
+set_location_assignment PIN_B5 -to DRAM_BA_0
+set_location_assignment PIN_A4 -to DRAM_BA_1
+set_location_assignment PIN_G8 -to DRAM_CAS_N
+set_location_assignment PIN_E6 -to DRAM_CKE
+set_location_assignment PIN_E5 -to DRAM_CLK
+set_location_assignment PIN_G7 -to DRAM_CS_N
+set_location_assignment PIN_F10 -to DRAM_DQ[15]
+set_location_assignment PIN_E10 -to DRAM_DQ[14]
+set_location_assignment PIN_A10 -to DRAM_DQ[13]
+set_location_assignment PIN_B10 -to DRAM_DQ[12]
+set_location_assignment PIN_C10 -to DRAM_DQ[11]
+set_location_assignment PIN_A9 -to DRAM_DQ[10]
+set_location_assignment PIN_B9 -to DRAM_DQ[9]
+set_location_assignment PIN_A8 -to DRAM_DQ[8]
+set_location_assignment PIN_F8 -to DRAM_DQ[7]
+set_location_assignment PIN_H9 -to DRAM_DQ[6]
+set_location_assignment PIN_G9 -to DRAM_DQ[5]
+set_location_assignment PIN_F9 -to DRAM_DQ[4]
+set_location_assignment PIN_E9 -to DRAM_DQ[3]
+set_location_assignment PIN_H10 -to DRAM_DQ[2]
+set_location_assignment PIN_G10 -to DRAM_DQ[1]
+set_location_assignment PIN_D10 -to DRAM_DQ[0]
+set_location_assignment PIN_E7 -to DRAM_LDQM
+set_location_assignment PIN_F7 -to DRAM_RAS_N
+set_location_assignment PIN_B8 -to DRAM_UDQM
+set_location_assignment PIN_D6 -to DRAM_WE_N
 set_global_assignment -name BDF_FILE ARP.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_1.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_8.bdf
@@ -156,6 +191,7 @@ set_global_assignment -name BDF_FILE rv32i/regfile.bdf
 set_global_assignment -name BDF_FILE rv32i/tc.bdf
 set_global_assignment -name QIP_FILE sram/sram.qip
 set_global_assignment -name BDF_FILE sram/sram_controller.bdf
+set_global_assignment -name BDF_FILE gpu/gpu.bdf
 set_global_assignment -name BDF_FILE gpu/dif.bdf
 set_global_assignment -name BDF_FILE gpu/vga_hva.bdf
 set_global_assignment -name BDF_FILE gpu/vga_hfp.bdf
@@ -173,4 +209,44 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/rv32i_debug.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/pc.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/regfile.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/rv32i_debug_2.vwf
+set_global_assignment -name BDF_FILE gpu/gmc.bdf
+set_global_assignment -name BDF_FILE registers/reg13_ld_clr_inc.bdf
+set_global_assignment -name BDF_FILE gpu/dram_init.bdf
+set_global_assignment -name BDF_FILE logic/mx2_2b.bdf
+set_global_assignment -name BDF_FILE logic/cd8_3.bdf
+set_global_assignment -name BDF_FILE gpu/rtc.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp32u.bdf
+set_global_assignment -name BDF_FILE gpu/dram_act_b1.bdf
+set_global_assignment -name BDF_FILE gpu/dram_rd_b1.bdf
+set_global_assignment -name BDF_FILE gpu/dram_init_precharge.bdf
+set_global_assignment -name BDF_FILE gpu/dram_init_autoref1.bdf
+set_global_assignment -name BDF_FILE gpu/dram_init_autoref2.bdf
+set_global_assignment -name BDF_FILE gpu/dram_init_ldmr.bdf
+set_global_assignment -name BDF_FILE gpu/dram_mr.bdf
+set_global_assignment -name BDF_FILE gpu/dram_init_done.bdf
+set_global_assignment -name BDF_FILE gpu/dram_act_b2.bdf
+set_global_assignment -name BDF_FILE gpu/dram_rd_b2.bdf
+set_global_assignment -name BDF_FILE gpu/dram_act_b3.bdf
+set_global_assignment -name BDF_FILE gpu/dram_rd_b3.bdf
+set_global_assignment -name BDF_FILE gpu/dram_rd_b0.bdf
+set_global_assignment -name BDF_FILE gpu/dram_precharge.bdf
+set_global_assignment -name BDF_FILE gpu/dram_act_b0.bdf
+set_global_assignment -name BDF_FILE arithmetic/cmp10u.bdf
+set_global_assignment -name BDF_FILE constants/dram_cond_va.bdf
+set_global_assignment -name BDF_FILE constants/dram_cond_bp.bdf
+set_global_assignment -name BDF_FILE arithmetic/inc12.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/ARP_GPU.vwf
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
+set_global_assignment -name FITTER_EFFORT "AUTO FIT"
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/gpu.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/dram_init.vwf
+set_global_assignment -name ALLOW_POWER_UP_DONT_CARE OFF
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE gpu/dram_inst_dc.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
