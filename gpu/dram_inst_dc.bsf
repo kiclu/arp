@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 296 224)
+	(text "dram_inst_dc" (rect 5 0 81 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 128)
+		(input)
+		(text "init_done" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "init_done" (rect 21 123 71 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "precharge_init" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "precharge_init" (rect 21 27 102 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "precharge_read" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "precharge_read" (rect 21 107 113 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "autorefresh" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "autorefresh" (rect 21 43 88 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "read" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "read" (rect 21 91 46 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "active" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "active" (rect 21 75 55 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "loadmr" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "loadmr" (rect 21 59 58 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "DRAM_WE_N" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "DRAM_WE_N" (rect 135 27 211 41)(font "Arial" (font_size 8)))
+		(line (pt 232 32)(pt 216 32))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "DRAM_CAS_N" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "DRAM_CAS_N" (rect 128 43 211 57)(font "Arial" (font_size 8)))
+		(line (pt 232 48)(pt 216 48))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "DRAM_RAS_N" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "DRAM_RAS_N" (rect 128 59 211 73)(font "Arial" (font_size 8)))
+		(line (pt 232 64)(pt 216 64))
+	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "DRAM_CS_N" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "DRAM_CS_N" (rect 137 75 211 89)(font "Arial" (font_size 8)))
+		(line (pt 232 80)(pt 216 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 144))
+	)
+)

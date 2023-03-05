@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 64 64 264 216)
+	(rect 64 64 296 224)
 	(text "sram_controller" (rect 5 0 93 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 136 25 148)(font "Arial" ))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -31,11 +31,11 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 112)
+		(pt 0 96)
 		(input)
 		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 107 44 121)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 16 112))
+		(text "CLK" (rect 21 91 44 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 0 80)
@@ -52,11 +52,11 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 0 96)
+		(pt 0 112)
 		(input)
 		(text "LEN[1..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
-		(text "LEN[1..0]" (rect 21 91 71 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
+		(text "LEN[1..0]" (rect 21 107 71 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
 		(pt 0 48)
@@ -66,6 +66,6 @@ applicable agreement for further details.
 		(line (pt 16 48)(pt 0 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 176 136))
+		(rectangle (rect 16 16 216 144))
 	)
 )
