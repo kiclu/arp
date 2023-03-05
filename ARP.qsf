@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY gpu
+set_global_assignment -name TOP_LEVEL_ENTITY ARP
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:58:42  FEBRUARY 04, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -61,13 +61,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\gpu"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\sram"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\constants"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\rv32i"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\registers"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\logic"
-set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\arithmetic"
 set_location_assignment PIN_G21 -to CLK
 set_location_assignment PIN_H19 -to VGA_R[0]
 set_location_assignment PIN_H17 -to VGA_R[1]
@@ -245,8 +238,74 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/dram_init.vwf
 set_global_assignment -name ALLOW_POWER_UP_DONT_CARE OFF
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
 set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
+set_global_assignment -name BDF_FILE gpu/dram_inst_dc.bdf
+set_global_assignment -name BDF_FILE misc/dbgif.bdf
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\misc"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\gpu"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\sram"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\constants"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\rv32i"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\registers"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\logic"
+set_global_assignment -name SEARCH_PATH "c:\\projects\\arp\\arithmetic"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name BDF_FILE gpu/dram_inst_dc.bdf
+set_location_assignment PIN_G16 -to 7SEG[31]
+set_location_assignment PIN_G15 -to 7SEG[30]
+set_location_assignment PIN_D19 -to 7SEG[29]
+set_location_assignment PIN_C19 -to 7SEG[28]
+set_location_assignment PIN_B19 -to 7SEG[27]
+set_location_assignment PIN_A19 -to 7SEG[26]
+set_location_assignment PIN_F15 -to 7SEG[25]
+set_location_assignment PIN_B18 -to 7SEG[24]
+set_location_assignment PIN_A18 -to 7SEG[23]
+set_location_assignment PIN_F14 -to 7SEG[22]
+set_location_assignment PIN_B17 -to 7SEG[21]
+set_location_assignment PIN_A17 -to 7SEG[20]
+set_location_assignment PIN_E15 -to 7SEG[19]
+set_location_assignment PIN_B16 -to 7SEG[18]
+set_location_assignment PIN_A16 -to 7SEG[17]
+set_location_assignment PIN_D15 -to 7SEG[16]
+set_location_assignment PIN_B15 -to 7SEG[15]
+set_location_assignment PIN_A15 -to 7SEG[14]
+set_location_assignment PIN_E14 -to 7SEG[13]
+set_location_assignment PIN_B14 -to 7SEG[12]
+set_location_assignment PIN_A14 -to 7SEG[11]
+set_location_assignment PIN_C13 -to 7SEG[10]
+set_location_assignment PIN_B13 -to 7SEG[9]
+set_location_assignment PIN_A13 -to 7SEG[8]
+set_location_assignment PIN_D13 -to 7SEG[7]
+set_location_assignment PIN_F13 -to 7SEG[6]
+set_location_assignment PIN_F12 -to 7SEG[5]
+set_location_assignment PIN_G12 -to 7SEG[4]
+set_location_assignment PIN_H13 -to 7SEG[3]
+set_location_assignment PIN_H12 -to 7SEG[2]
+set_location_assignment PIN_F11 -to 7SEG[1]
+set_location_assignment PIN_E11 -to 7SEG[0]
+set_location_assignment PIN_F1 -to BTN[2]
+set_location_assignment PIN_G3 -to BTN[1]
+set_location_assignment PIN_H2 -to BTN[0]
+set_location_assignment PIN_J6 -to SW[0]
+set_location_assignment PIN_D2 -to SW[9]
+set_location_assignment PIN_E4 -to SW[8]
+set_location_assignment PIN_E3 -to SW[7]
+set_location_assignment PIN_H7 -to SW[6]
+set_location_assignment PIN_J7 -to SW[5]
+set_location_assignment PIN_G5 -to SW[4]
+set_location_assignment PIN_G4 -to SW[3]
+set_location_assignment PIN_H6 -to SW[2]
+set_location_assignment PIN_H5 -to SW[1]
+set_location_assignment PIN_B1 -to LED[9]
+set_location_assignment PIN_B2 -to LED[8]
+set_location_assignment PIN_C2 -to LED[7]
+set_location_assignment PIN_C1 -to LED[6]
+set_location_assignment PIN_E1 -to LED[5]
+set_location_assignment PIN_F2 -to LED[4]
+set_location_assignment PIN_H1 -to LED[3]
+set_location_assignment PIN_J3 -to LED[2]
+set_location_assignment PIN_J2 -to LED[1]
+set_location_assignment PIN_J1 -to LED[0]
+set_global_assignment -name CDF_FILE arppc.cdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/ARP.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

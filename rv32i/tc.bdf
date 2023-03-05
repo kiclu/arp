@@ -329,22 +329,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 912 360 1088 376)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LD_PC" (rect 136 1 171 13)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect 912 440 1088 456)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LD_IR" (rect 140 0 171 12)(font "Arial" ))
@@ -474,6 +458,22 @@ applicable agreement for further details.
 		(line (pt 4 78)(pt 8 82))
 	)
 	(rotate270)
+)
+(pin
+	(output)
+	(rect 912 360 1088 376)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LD_PC" (rect 136 1 171 13)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect -368 128 -192 320)
@@ -2274,14 +2274,6 @@ applicable agreement for further details.
 	(pt 912 576)
 )
 (connector
-	(pt 632 368)
-	(pt 736 368)
-)
-(connector
-	(pt 736 368)
-	(pt 912 368)
-)
-(connector
 	(pt 720 1176)
 	(pt 912 1176)
 	(bus)
@@ -2348,6 +2340,14 @@ applicable agreement for further details.
 	(pt 208 936)
 	(pt 176 936)
 	(bus)
+)
+(connector
+	(pt 632 368)
+	(pt 736 368)
+)
+(connector
+	(pt 736 368)
+	(pt 912 368)
 )
 (junction (pt 368 1016))
 (junction (pt 560 1192))
