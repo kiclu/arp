@@ -20,23 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 72 56 1432 216)
+	(rect 64 64 1424 224)
 	(text "bus_interface" (rect 1 1 80 15)(font "Arial" (font_size 8)))
 	(text "inst" (rect 0 144 17 156)(font "Arial" ))
-	(port
-		(pt 32 160)
-		(input)
-		(text "base[31..0]" (rect -8 -8 55 6)(font "Arial" (font_size 8)))
-		(text "base[31..0]" (rect 25 72 39 135)(font "Arial" (font_size 8))(vertical))
-		(line (pt 32 160)(pt 32 144)(line_width 3))
-	)
-	(port
-		(pt 48 160)
-		(input)
-		(text "offs[11..0]" (rect -8 -8 51 6)(font "Arial" (font_size 8)))
-		(text "offs[11..0]" (rect 41 76 55 135)(font "Arial" (font_size 8))(vertical))
-		(line (pt 48 160)(pt 48 144)(line_width 3))
-	)
 	(port
 		(pt 64 160)
 		(input)
@@ -57,6 +43,13 @@ applicable agreement for further details.
 		(text "op[2..0]" (rect -8 -8 34 6)(font "Arial" (font_size 8)))
 		(text "op[2..0]" (rect 89 93 103 135)(font "Arial" (font_size 8))(vertical))
 		(line (pt 96 160)(pt 96 144)(line_width 3))
+	)
+	(port
+		(pt 48 160)
+		(input)
+		(text "ADDR[31..0]" (rect -8 -8 61 6)(font "Arial" (font_size 8)))
+		(text "ADDR[31..0]" (rect 41 72 55 141)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 160)(pt 48 144)(line_width 3))
 	)
 	(port
 		(pt 1360 32)

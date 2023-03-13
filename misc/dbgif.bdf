@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -24 376 144 392)
+	(rect -24 392 144 408)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "RD" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -24 328 144 344)
+	(rect -24 336 144 352)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "WR" (rect 5 0 23 12)(font "Arial" ))
 	(pt 168 8)
@@ -184,9 +184,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -24 392 144 408)
+	(rect -24 408 144 424)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LD_IR" (rect 5 0 37 12)(font "Arial" ))
+	(text "LD_IR" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -421,7 +421,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 280 304 456 432)
+	(rect 296 304 472 432)
 	(text "reg32_ld_clr" (rect 5 0 75 14)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -464,7 +464,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 184 320 248 368)
+	(rect 184 328 248 376)
 	(text "AND3" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst77" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -560,22 +560,6 @@ applicable agreement for further details.
 	(pt 440 136)
 )
 (connector
-	(pt 688 96)
-	(pt 688 440)
-)
-(connector
-	(pt 688 440)
-	(pt 264 440)
-)
-(connector
-	(pt 704 96)
-	(pt 688 96)
-)
-(connector
-	(pt 688 96)
-	(pt 608 96)
-)
-(connector
 	(pt 416 136)
 	(pt 416 144)
 	(bus)
@@ -613,74 +597,9 @@ applicable agreement for further details.
 	(pt 512 112)
 )
 (connector
-	(text "ABUS[31]" (rect 160 336 208 348)(font "Arial" )(invisible))
-	(pt 184 352)
-	(pt 160 352)
-)
-(connector
-	(text "ABUS[30]" (rect 160 328 208 340)(font "Arial" )(invisible))
-	(pt 184 344)
-	(pt 160 344)
-)
-(connector
 	(text "0" (rect 800 323 812 328)(font "Arial" )(vertical))
 	(pt 816 344)
 	(pt 816 328)
-)
-(connector
-	(pt 264 336)
-	(pt 280 336)
-	(bus)
-)
-(connector
-	(pt 264 240)
-	(pt 264 336)
-	(bus)
-)
-(connector
-	(pt 264 368)
-	(pt 280 368)
-)
-(connector
-	(pt 264 440)
-	(pt 264 368)
-)
-(connector
-	(pt 272 344)
-	(pt 272 352)
-)
-(connector
-	(pt 248 344)
-	(pt 272 344)
-)
-(connector
-	(pt 272 352)
-	(pt 280 352)
-)
-(connector
-	(pt 144 240)
-	(pt 264 240)
-	(bus)
-)
-(connector
-	(pt 264 240)
-	(pt 488 240)
-	(bus)
-)
-(connector
-	(pt 488 336)
-	(pt 456 336)
-	(bus)
-)
-(connector
-	(text "wr" (rect 154 320 164 332)(font "Arial" ))
-	(pt 144 336)
-	(pt 184 336)
-)
-(connector
-	(text "rd" (rect 154 368 163 380)(font "Arial" ))
-	(pt 144 384)
-	(pt 160 384)
 )
 (connector
 	(pt 488 256)
@@ -698,17 +617,90 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ld_ir" (rect 144 384 164 396)(font "Arial" ))
-	(pt 144 400)
-	(pt 160 400)
-)
-(connector
 	(text "0,0,0,0,0,0,0,ld_ir,rd,wr" (rect 696 232 809 244)(font "Arial" ))
 	(pt 712 248)
 	(pt 696 248)
 	(bus)
 )
+(connector
+	(pt 488 336)
+	(pt 472 336)
+	(bus)
+)
+(connector
+	(pt 280 240)
+	(pt 280 336)
+	(bus)
+)
+(connector
+	(pt 296 336)
+	(pt 280 336)
+	(bus)
+)
+(connector
+	(pt 144 240)
+	(pt 280 240)
+	(bus)
+)
+(connector
+	(pt 280 240)
+	(pt 488 240)
+	(bus)
+)
+(connector
+	(text "ABUS[31]" (rect 160 344 208 356)(font "Arial" )(invisible))
+	(pt 184 360)
+	(pt 160 360)
+)
+(connector
+	(text "ABUS[30]" (rect 160 336 208 348)(font "Arial" )(invisible))
+	(pt 184 352)
+	(pt 160 352)
+)
+(connector
+	(pt 248 352)
+	(pt 296 352)
+)
+(connector
+	(text "wr" (rect 154 328 164 340)(font "Arial" ))
+	(pt 144 344)
+	(pt 184 344)
+)
+(connector
+	(text "rd" (rect 154 384 163 396)(font "Arial" ))
+	(pt 144 400)
+	(pt 160 400)
+)
+(connector
+	(text "ld_ir" (rect 144 400 164 412)(font "Arial" ))
+	(pt 144 416)
+	(pt 160 416)
+)
+(connector
+	(pt 296 368)
+	(pt 280 368)
+)
+(connector
+	(pt 688 96)
+	(pt 688 448)
+)
+(connector
+	(pt 688 448)
+	(pt 280 448)
+)
+(connector
+	(pt 280 368)
+	(pt 280 448)
+)
+(connector
+	(pt 608 96)
+	(pt 688 96)
+)
+(connector
+	(pt 688 96)
+	(pt 704 96)
+)
 (junction (pt 432 192))
 (junction (pt 432 120))
-(junction (pt 264 240))
 (junction (pt 688 96))
+(junction (pt 280 240))

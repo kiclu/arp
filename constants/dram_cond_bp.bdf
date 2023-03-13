@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(output)
-	(rect 648 333 843 349)
+	(rect 648 333 841 349)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "dram_cond_va[9..0]" (rect 90 0 189 12)(font "Arial" ))
+	(text "dram_cond_bp[9..0]" (rect 90 0 187 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))

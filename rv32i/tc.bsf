@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 64 64 1424 264)
-	(text "tc" (rect 5 0 15 14)(font "Arial" (font_size 8)))
+	(text "tc" (rect 8 0 18 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 184 25 196)(font "Arial" ))
 	(port
 		(pt 368 0)
@@ -206,17 +206,10 @@ applicable agreement for further details.
 		(line (pt 936 0)(pt 936 16))
 	)
 	(port
-		(pt 32 0)
-		(output)
-		(text "base[31..0]" (rect 576 0 639 14)(font "Arial" (font_size 8)))
-		(text "base[31..0]" (rect 24 23 38 86)(font "Arial" (font_size 8))(vertical))
-		(line (pt 32 0)(pt 32 16)(line_width 3))
-	)
-	(port
 		(pt 48 0)
 		(output)
-		(text "offs[11..0]" (rect 576 0 635 14)(font "Arial" (font_size 8)))
-		(text "offs[11..0]" (rect 40 23 54 82)(font "Arial" (font_size 8))(vertical))
+		(text "ADDR[31..0]" (rect 576 0 645 14)(font "Arial" (font_size 8)))
+		(text "ADDR[31..0]" (rect 40 23 54 92)(font "Arial" (font_size 8))(vertical))
 		(line (pt 48 0)(pt 48 16)(line_width 3))
 	)
 	(drawing

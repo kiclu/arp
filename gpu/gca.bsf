@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 352 320)
+	(text "gca" (rect 8 0 29 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(port
+		(pt 112 256)
+		(input)
+		(text "coord0[31..0]" (rect 0 24 75 38)(font "Arial" (font_size 8)))
+		(text "coord0[31..0]" (rect 104 155 118 230)(font "Arial" (font_size 8))(vertical))
+		(line (pt 112 256)(pt 112 240)(line_width 3))
+	)
+	(port
+		(pt 128 256)
+		(input)
+		(text "coord1[31..0]" (rect 0 24 75 38)(font "Arial" (font_size 8)))
+		(text "coord1[31..0]" (rect 120 155 134 230)(font "Arial" (font_size 8))(vertical))
+		(line (pt 128 256)(pt 128 240)(line_width 3))
+	)
+	(port
+		(pt 160 256)
+		(input)
+		(text "spr0[31..0]" (rect 0 24 61 38)(font "Arial" (font_size 8)))
+		(text "spr0[31..0]" (rect 152 169 166 230)(font "Arial" (font_size 8))(vertical))
+		(line (pt 160 256)(pt 160 240)(line_width 3))
+	)
+	(port
+		(pt 176 256)
+		(input)
+		(text "spr1[31..0]" (rect 0 24 61 38)(font "Arial" (font_size 8)))
+		(text "spr1[31..0]" (rect 168 169 182 230)(font "Arial" (font_size 8))(vertical))
+		(line (pt 176 256)(pt 176 240)(line_width 3))
+	)
+	(port
+		(pt 288 224)
+		(input)
+		(text "CLK" (rect 0 24 23 38)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 240 216 263 230)(font "Arial" (font_size 8)))
+		(line (pt 272 224)(pt 288 224))
+	)
+	(port
+		(pt 288 128)
+		(input)
+		(text "FCGMC" (rect 237 88 279 102)(font "Arial" (font_size 8)))
+		(text "FCGMC" (rect 232 120 274 134)(font "Arial" (font_size 8)))
+		(line (pt 288 128)(pt 272 128))
+	)
+	(port
+		(pt 96 256)
+		(input)
+		(text "csr[7..0]" (rect 0 24 47 38)(font "Arial" (font_size 8)))
+		(text "csr[7..0]" (rect 88 176 102 223)(font "Arial" (font_size 8))(vertical))
+		(line (pt 96 256)(pt 96 240)(line_width 3))
+	)
+	(port
+		(pt 144 256)
+		(input)
+		(text "color[15..0]" (rect 0 24 63 38)(font "Arial" (font_size 8)))
+		(text "color[15..0]" (rect 136 167 150 230)(font "Arial" (font_size 8))(vertical))
+		(line (pt 144 256)(pt 144 240)(line_width 3))
+	)
+	(port
+		(pt 224 256)
+		(output)
+		(text "ld_csr" (rect 96 24 131 38)(font "Arial" (font_size 8)))
+		(text "ld_csr" (rect 216 197 230 232)(font "Arial" (font_size 8))(vertical))
+		(line (pt 224 256)(pt 224 240))
+	)
+	(port
+		(pt 288 80)
+		(output)
+		(text "PX_ADDR[20..0]" (rect 237 40 329 54)(font "Arial" (font_size 8)))
+		(text "PX_ADDR[20..0]" (rect 192 72 284 86)(font "Arial" (font_size 8)))
+		(line (pt 288 80)(pt 272 80)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "DATA[15..0]" (rect 237 24 306 38)(font "Arial" (font_size 8)))
+		(text "DATA[15..0]" (rect 208 56 277 70)(font "Arial" (font_size 8)))
+		(line (pt 288 64)(pt 272 64)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 288 112)
+		(output)
+		(text "FCGCA" (rect 237 56 279 70)(font "Arial" (font_size 8)))
+		(text "FCGCA" (rect 232 104 274 118)(font "Arial" (font_size 8)))
+		(line (pt 288 112)(pt 272 112))
+	)
+	(port
+		(pt 288 96)
+		(output)
+		(text "WR" (rect 237 88 257 102)(font "Arial" (font_size 8)))
+		(text "WR" (rect 237 88 257 102)(font "Arial" (font_size 8)))
+		(line (pt 288 96)(pt 272 96))
+	)
+	(port
+		(pt 208 256)
+		(output)
+		(text "ncsr[7..0]" (rect 96 24 150 38)(font "Arial" (font_size 8)))
+		(text "ncsr[7..0]" (rect 200 171 214 225)(font "Arial" (font_size 8))(vertical))
+		(line (pt 208 256)(pt 208 240)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 240))
+	)
+)

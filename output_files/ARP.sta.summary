@@ -1,0 +1,41 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'BTN[2]'
+Slack : -15.991
+TNS   : -18727.193
+
+Type  : Slow 1200mV 85C Model Hold 'BTN[2]'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BTN[2]'
+Slack : -3.000
+TNS   : -1822.408
+
+Type  : Slow 1200mV 0C Model Setup 'BTN[2]'
+Slack : -14.268
+TNS   : -16667.709
+
+Type  : Slow 1200mV 0C Model Hold 'BTN[2]'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BTN[2]'
+Slack : -3.000
+TNS   : -1822.408
+
+Type  : Fast 1200mV 0C Model Setup 'BTN[2]'
+Slack : -9.183
+TNS   : -10491.160
+
+Type  : Fast 1200mV 0C Model Hold 'BTN[2]'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BTN[2]'
+Slack : -3.000
+TNS   : -1886.264
+
+------------------------------------------------------------
