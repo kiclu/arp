@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 808 48 976 64)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ADDR[31..0]" (rect 5 0 69 12)(font "Arial" ))
+	(text "ADDR[31..0]" (rect 5 0 68 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
