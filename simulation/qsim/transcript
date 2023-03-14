@@ -2,20 +2,20 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module gpu
+# -- Compiling module rv32i_debug
 # 
 # Top level modules:
-# 	gpu
+# 	rv32i_debug
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module gpu_vlg_sample_tst
-# -- Compiling module gpu_vlg_check_tst
-# -- Compiling module gpu_vlg_vec_tst
+# -- Compiling module rv32i_debug_vlg_sample_tst
+# -- Compiling module rv32i_debug_vlg_check_tst
+# -- Compiling module rv32i_debug_vlg_vec_tst
 # 
 # Top level modules:
-# 	gpu_vlg_vec_tst
-# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.gpu_vlg_vec_tst 
-# Loading work.gpu_vlg_vec_tst
-# Loading work.gpu
+# 	rv32i_debug_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.rv32i_debug_vlg_vec_tst 
+# Loading work.rv32i_debug_vlg_vec_tst
+# Loading work.rv32i_debug
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
 # Loading cycloneiii_ver.cycloneiii_clkctrl
@@ -23,9 +23,18 @@
 # Loading cycloneiii_ver.cycloneiii_ena_reg
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
 # Loading altera_ver.dffeas
-# Loading work.gpu_vlg_sample_tst
-# Loading work.gpu_vlg_check_tst
+# Loading work.rv32i_debug_vlg_sample_tst
+# Loading work.rv32i_debug_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from ARP_v.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# Loading timing data from ARP_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /rv32i_debug_vlg_vec_tst File: 4clk_inst.vwf.vt
 # Simulation passed !
-# ** Note: $finish    : gpu.vwf.vt(1135)
-#    Time: 100 us  Iteration: 0  Instance: /gpu_vlg_vec_tst/tb_out
+# ** Note: $finish    : 4clk_inst.vwf.vt(4922)
+#    Time: 10 us  Iteration: 0  Instance: /rv32i_debug_vlg_vec_tst/tb_out

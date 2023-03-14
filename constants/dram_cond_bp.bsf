@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 168 32)
 		(output)
-		(text "dram_cond_va[9..0]" (rect 0 0 113 14)(font "Arial" (font_size 8)))
-		(text "dram_cond_va[9..0]" (rect 34 27 147 41)(font "Arial" (font_size 8)))
+		(text "dram_cond_bp[9..0]" (rect 0 0 113 14)(font "Arial" (font_size 8)))
+		(text "dram_cond_bp[9..0]" (rect 34 27 147 41)(font "Arial" (font_size 8)))
 		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(drawing

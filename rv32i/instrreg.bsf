@@ -24,11 +24,11 @@ applicable agreement for further details.
 	(text "instrreg" (rect 0 0 43 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
-		(pt 88 0)
+		(pt 96 0)
 		(input)
 		(text "DIN[31..0]" (rect 0 -72 54 -58)(font "Arial" (font_size 8)))
-		(text "DIN[31..0]" (rect 80 26 94 80)(font "Arial" (font_size 8))(vertical))
-		(line (pt 88 0)(pt 88 18)(line_width 3))
+		(text "DIN[31..0]" (rect 88 26 102 80)(font "Arial" (font_size 8))(vertical))
+		(line (pt 96 0)(pt 96 16)(line_width 3))
 	)
 	(port
 		(pt 32 192)
@@ -43,6 +43,13 @@ applicable agreement for further details.
 		(text "CLK" (rect 0 -32 23 -18)(font "Arial" (font_size 8)))
 		(text "CLK" (rect 40 143 54 166)(font "Arial" (font_size 8))(vertical))
 		(line (pt 48 192)(pt 48 175))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "LD_IR" (rect 72 24 86 57)(font "Arial" (font_size 8))(vertical))
+		(text "LD_IR" (rect 72 24 86 57)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 0 32)

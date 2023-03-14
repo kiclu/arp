@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 368 256 536 272)
+	(rect 352 256 520 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "DIN[31..0]" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 368 288 536 304)
+	(rect 352 288 520 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 368 272 536 288)
+	(rect 352 272 520 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "LD" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -227,6 +227,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 832 464 1008 480)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LD_IR" (rect 90 0 121 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 552 232 728 360)
 	(text "reg32_ld_clr" (rect 5 0 75 14)(font "Arial" (font_size 8)))
@@ -269,19 +285,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 160 112))
 	)
-)
-(connector
-	(pt 536 264)
-	(pt 552 264)
-	(bus)
-)
-(connector
-	(pt 552 280)
-	(pt 536 280)
-)
-(connector
-	(pt 552 296)
-	(pt 536 296)
 )
 (connector
 	(text "IR[31..0]" (rect 736 248 779 260)(font "Arial" ))
@@ -343,3 +346,29 @@ applicable agreement for further details.
 	(pt 792 456)
 	(bus)
 )
+(connector
+	(pt 520 296)
+	(pt 552 296)
+)
+(connector
+	(pt 520 264)
+	(pt 552 264)
+	(bus)
+)
+(connector
+	(pt 832 472)
+	(pt 536 472)
+)
+(connector
+	(pt 536 472)
+	(pt 536 280)
+)
+(connector
+	(pt 520 280)
+	(pt 536 280)
+)
+(connector
+	(pt 536 280)
+	(pt 552 280)
+)
+(junction (pt 536 280))

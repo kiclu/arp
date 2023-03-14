@@ -1,0 +1,120 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 472 232)
+	(text "wtc_addr_dc" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 152 25 164)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "PX_ADDR[20..0]" (rect 0 16 92 30)(font "Arial" (font_size 8)))
+		(text "PX_ADDR[20..0]" (rect 21 27 113 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "PX_ADDR_DIF[20..0]" (rect 0 16 116 30)(font "Arial" (font_size 8)))
+		(text "PX_ADDR_DIF[20..0]" (rect 21 43 137 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "E" (rect 0 16 7 30)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 59 28 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "BA_1" (rect 168 16 199 30)(font "Arial" (font_size 8)))
+		(text "BA_1" (rect 356 27 387 41)(font "Arial" (font_size 8)))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "BA_0" (rect 168 16 199 30)(font "Arial" (font_size 8)))
+		(text "BA_0" (rect 356 43 387 57)(font "Arial" (font_size 8)))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 208 168)
+		(output)
+		(text "COL_0[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
+		(text "COL_0[7..0]" (rect 200 77 214 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 208 168)(pt 208 152)(line_width 3))
+	)
+	(port
+		(pt 144 168)
+		(output)
+		(text "COL_1[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
+		(text "COL_1[7..0]" (rect 136 77 150 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 144 168)(pt 144 152)(line_width 3))
+	)
+	(port
+		(pt 176 168)
+		(output)
+		(text "COL_2[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
+		(text "COL_2[7..0]" (rect 168 77 182 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 176 168)(pt 176 152)(line_width 3))
+	)
+	(port
+		(pt 112 168)
+		(output)
+		(text "COL_3[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
+		(text "COL_3[7..0]" (rect 104 77 118 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 112 168)(pt 112 152)(line_width 3))
+	)
+	(port
+		(pt 192 168)
+		(output)
+		(text "WE_0" (rect 152 -56 185 -42)(font "Arial" (font_size 8)))
+		(text "WE_0" (rect 184 111 198 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 192 168)(pt 192 152))
+	)
+	(port
+		(pt 160 168)
+		(output)
+		(text "WE_1" (rect 152 -56 185 -42)(font "Arial" (font_size 8)))
+		(text "WE_1" (rect 152 111 166 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 160 168)(pt 160 152))
+	)
+	(port
+		(pt 128 168)
+		(output)
+		(text "WE_2" (rect 152 -56 185 -42)(font "Arial" (font_size 8)))
+		(text "WE_2" (rect 120 111 134 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 128 168)(pt 128 152))
+	)
+	(port
+		(pt 96 168)
+		(output)
+		(text "WE_3" (rect 152 -56 185 -42)(font "Arial" (font_size 8)))
+		(text "WE_3" (rect 88 111 102 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 96 168)(pt 96 152))
+	)
+	(drawing
+		(rectangle (rect 16 16 392 152))
+	)
+)

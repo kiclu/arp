@@ -629,21 +629,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -8 -816 160 -720)
-	(text "dram_cond_bp" (rect 5 0 89 14)(font "Arial" (font_size 8)))
-	(text "inst22" (rect 8 80 37 92)(font "Arial" ))
-	(port
-		(pt 168 32)
-		(output)
-		(text "dram_cond_va[9..0]" (rect 0 0 113 14)(font "Arial" (font_size 8)))
-		(text "dram_cond_va[9..0]" (rect 34 27 147 41)(font "Arial" (font_size 8)))
-		(line (pt 168 32)(pt 152 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 152 80))
-	)
-)
-(symbol
 	(rect 432 -800 496 -752)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst23" (rect 3 37 32 49)(font "Arial" ))
@@ -1325,6 +1310,21 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 128 80))
+	)
+)
+(symbol
+	(rect -8 -816 160 -720)
+	(text "dram_cond_bp" (rect 5 0 89 14)(font "Arial" (font_size 8)))
+	(text "inst22" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 168 32)
+		(output)
+		(text "dram_cond_bp[9..0]" (rect 0 0 113 14)(font "Arial" (font_size 8)))
+		(text "dram_cond_bp[9..0]" (rect 34 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 80))
 	)
 )
 (connector

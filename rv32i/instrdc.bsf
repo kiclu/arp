@@ -24,11 +24,11 @@ applicable agreement for further details.
 	(text "instrdc" (rect 5 0 43 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
-		(pt 88 0)
+		(pt 0 32)
 		(input)
 		(text "opcode[6..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
-		(text "opcode[6..0]" (rect 80 25 94 95)(font "Arial" (font_size 8))(vertical))
-		(line (pt 88 0)(pt 88 17)(line_width 3))
+		(text "opcode[6..0]" (rect 25 24 95 38)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 17 32)(line_width 3))
 	)
 	(port
 		(pt 176 32)
