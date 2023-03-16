@@ -376,56 +376,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 544 -248 760 -120)
-	(text "dram_init" (rect 5 0 55 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 112 25 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 96)
-		(output)
-		(text "init_done" (rect 0 0 50 14)(font "Arial" (font_size 8)))
-		(text "init_done" (rect 24 88 74 102)(font "Arial" (font_size 8)))
-		(line (pt 16 96)(pt 0 96))
-	)
-	(port
-		(pt 216 48)
-		(output)
-		(text "PRECHARGE" (rect 0 0 73 14)(font "Arial" (font_size 8)))
-		(text "PRECHARGE" (rect 128 40 201 54)(font "Arial" (font_size 8)))
-		(line (pt 216 48)(pt 200 48))
-	)
-	(port
-		(pt 216 64)
-		(output)
-		(text "AUTO_REFRESH" (rect 0 0 95 14)(font "Arial" (font_size 8)))
-		(text "AUTO_REFRESH" (rect 112 56 207 70)(font "Arial" (font_size 8)))
-		(line (pt 216 64)(pt 200 64))
-	)
-	(port
-		(pt 216 80)
-		(output)
-		(text "LOAD_MODE_REGISTER" (rect 0 0 140 14)(font "Arial" (font_size 8)))
-		(text "LOAD_MODE_REGISTER" (rect 72 72 212 86)(font "Arial" (font_size 8)))
-		(line (pt 216 80)(pt 200 80))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "A[11..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
-		(text "A[11..0]" (rect 152 24 196 38)(font "Arial" (font_size 8)))
-		(line (pt 216 32)(pt 200 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 112))
-	)
-)
-(symbol
 	(rect 544 -104 760 56)
 	(text "rtc" (rect 5 0 20 14)(font "Arial" (font_size 8)))
 	(text "inst5" (rect 8 144 31 156)(font "Arial" ))
@@ -945,6 +895,56 @@ applicable agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
 )
+(symbol
+	(rect 544 -248 760 -120)
+	(text "dram_init" (rect 5 0 55 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 96)
+		(output)
+		(text "init_done" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "init_done" (rect 24 88 74 102)(font "Arial" (font_size 8)))
+		(line (pt 16 96)(pt 0 96))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "PRECHARGE" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "PRECHARGE" (rect 128 40 201 54)(font "Arial" (font_size 8)))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "AUTO_REFRESH" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "AUTO_REFRESH" (rect 112 56 207 70)(font "Arial" (font_size 8)))
+		(line (pt 216 64)(pt 200 64))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "LOAD_MODE_REGISTER" (rect 0 0 140 14)(font "Arial" (font_size 8)))
+		(text "LOAD_MODE_REGISTER" (rect 72 72 212 86)(font "Arial" (font_size 8)))
+		(line (pt 216 80)(pt 200 80))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "A[11..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "A[11..0]" (rect 152 24 196 38)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 112))
+	)
+)
 (connector
 	(pt 480 104)
 	(pt 544 104)
@@ -954,10 +954,6 @@ applicable agreement for further details.
 	(pt 480 120)
 	(pt 544 120)
 	(bus)
-)
-(connector
-	(pt 544 -152)
-	(pt 512 -152)
 )
 (connector
 	(pt 512 -72)
@@ -986,10 +982,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 544 200)
-	(pt 512 200)
-)
-(connector
 	(pt 544 184)
 	(pt 496 184)
 )
@@ -1014,14 +1006,6 @@ applicable agreement for further details.
 (connector
 	(pt 512 -152)
 	(pt 512 -72)
-)
-(connector
-	(pt 512 -72)
-	(pt 512 200)
-)
-(connector
-	(pt 512 200)
-	(pt 512 256)
 )
 (connector
 	(pt 480 136)
@@ -1050,14 +1034,6 @@ applicable agreement for further details.
 (connector
 	(pt 1024 -232)
 	(pt 1024 -216)
-)
-(connector
-	(pt 480 -264)
-	(pt 496 -264)
-)
-(connector
-	(pt 496 -264)
-	(pt 1040 -264)
 )
 (connector
 	(pt 760 -56)
@@ -1174,14 +1150,6 @@ applicable agreement for further details.
 	(pt 856 -24)
 )
 (connector
-	(pt 760 -168)
-	(pt 872 -168)
-)
-(connector
-	(pt 760 -184)
-	(pt 888 -184)
-)
-(connector
 	(pt 760 168)
 	(pt 808 168)
 )
@@ -1192,10 +1160,6 @@ applicable agreement for further details.
 (connector
 	(pt 760 184)
 	(pt 792 184)
-)
-(connector
-	(pt 760 -200)
-	(pt 904 -200)
 )
 (connector
 	(pt 1000 192)
@@ -1353,11 +1317,45 @@ applicable agreement for further details.
 	(pt 856 592)
 	(pt 856 608)
 )
+(connector
+	(pt 480 -264)
+	(pt 496 -264)
+)
+(connector
+	(pt 496 -264)
+	(pt 1040 -264)
+)
+(connector
+	(pt 760 -168)
+	(pt 872 -168)
+)
+(connector
+	(pt 760 -184)
+	(pt 888 -184)
+)
+(connector
+	(pt 760 -200)
+	(pt 904 -200)
+)
+(connector
+	(pt 544 -152)
+	(pt 512 -152)
+)
+(connector
+	(pt 544 200)
+	(pt 512 200)
+)
+(connector
+	(pt 512 -72)
+	(pt 512 200)
+)
+(connector
+	(pt 512 200)
+	(pt 512 256)
+)
 (junction (pt 528 -56))
 (junction (pt 512 -72))
-(junction (pt 496 -264))
 (junction (pt 496 -216))
-(junction (pt 512 200))
 (junction (pt 1024 -232))
 (junction (pt 920 120))
 (junction (pt 936 136))
@@ -1371,3 +1369,5 @@ applicable agreement for further details.
 (junction (pt 808 280))
 (junction (pt 792 288))
 (junction (pt 776 296))
+(junction (pt 496 -264))
+(junction (pt 512 200))

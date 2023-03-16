@@ -842,37 +842,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1824 120 1872 152)
-	(text "TRI" (rect 1 0 16 10)(font "Arial" (font_size 6)))
-	(text "inst8" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 24 0)
-		(input)
-		(text "OE" (rect 26 0 37 12)(font "Courier New" (bold))(invisible))
-		(text "OE" (rect 26 0 37 12)(font "Courier New" (bold))(invisible))
-		(line (pt 24 12)(pt 24 0))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 32 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 14 25)(pt 14 7))
-		(line (pt 14 25)(pt 32 16))
-		(line (pt 14 7)(pt 32 16))
-	)
-)
-(symbol
 	(rect 416 72 480 120)
 	(text "OR3" (rect 45 0 63 10)(font "Arial" (font_size 6)))
 	(text "inst22" (rect 32 37 61 49)(font "Arial" ))
@@ -1034,7 +1003,7 @@ applicable agreement for further details.
 (symbol
 	(rect 1864 -24 1928 24)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst20" (rect 3 37 32 49)(font "Arial" ))
+	(text "inst10" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1313,11 +1282,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1808 136)
-	(pt 1824 136)
-	(bus)
-)
-(connector
 	(pt 576 72)
 	(pt 720 72)
 )
@@ -1365,11 +1329,6 @@ applicable agreement for further details.
 	(text "pxaddr[20..0]" (rect 1800 399 1812 463)(font "Arial" )(vertical)(invisible))
 	(pt 1816 464)
 	(pt 1816 448)
-	(bus)
-)
-(connector
-	(pt 184 464)
-	(pt 1656 464)
 	(bus)
 )
 (connector
@@ -1425,24 +1384,12 @@ applicable agreement for further details.
 	(pt 1848 -360)
 )
 (connector
-	(pt 1944 0)
-	(pt 1928 0)
-)
-(connector
 	(pt 1848 8)
 	(pt 1864 8)
 )
 (connector
 	(pt 1848 -8)
 	(pt 1864 -8)
-)
-(connector
-	(pt 1848 8)
-	(pt 1848 48)
-)
-(connector
-	(pt 1848 48)
-	(pt 1848 120)
 )
 (connector
 	(pt 1848 -360)
@@ -1453,6 +1400,11 @@ applicable agreement for further details.
 	(pt 1848 -8)
 )
 (connector
+	(pt 1808 136)
+	(pt 1944 136)
+	(bus)
+)
+(connector
 	(pt 1832 -48)
 	(pt 1848 -48)
 )
@@ -1461,17 +1413,60 @@ applicable agreement for further details.
 	(pt 1944 -48)
 )
 (connector
+	(pt 1656 480)
+	(pt 1640 480)
+	(bus)
+)
+(connector
+	(pt 184 464)
+	(pt 1640 464)
+	(bus)
+)
+(connector
+	(pt 1640 464)
+	(pt 1656 464)
+	(bus)
+)
+(connector
+	(pt 1656 496)
+	(pt 1640 496)
+	(bus)
+)
+(connector
+	(pt 1640 464)
+	(pt 1640 480)
+	(bus)
+)
+(connector
+	(pt 1656 512)
+	(pt 1640 512)
+	(bus)
+)
+(connector
+	(pt 1640 480)
+	(pt 1640 496)
+	(bus)
+)
+(connector
+	(pt 1640 496)
+	(pt 1640 512)
+	(bus)
+)
+(connector
+	(pt 1928 0)
+	(pt 1944 0)
+)
+(connector
+	(pt 1848 8)
+	(pt 1848 48)
+)
+(connector
 	(pt 1832 48)
 	(pt 1848 48)
 )
 (connector
 	(pt 1848 48)
 	(pt 1944 48)
-)
-(connector
-	(pt 1872 136)
-	(pt 1944 136)
-	(bus)
 )
 (junction (pt 592 -104))
 (junction (pt 632 -120))
@@ -1482,7 +1477,6 @@ applicable agreement for further details.
 (junction (pt 720 72))
 (junction (pt 736 96))
 (junction (pt 496 64))
-(junction (pt 1848 48))
 (junction (pt 1624 -24))
 (junction (pt 1752 56))
 (junction (pt 1752 40))
@@ -1490,3 +1484,7 @@ applicable agreement for further details.
 (junction (pt 1752 -40))
 (junction (pt 1752 -56))
 (junction (pt 1848 -48))
+(junction (pt 1640 464))
+(junction (pt 1640 480))
+(junction (pt 1640 496))
+(junction (pt 1848 48))
