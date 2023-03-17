@@ -664,16 +664,6 @@ applicable agreement for further details.
 	(pt 976 336)
 )
 (connector
-	(text "ABUS[31]" (rect 912 320 960 332)(font "Arial" )(invisible))
-	(pt 928 336)
-	(pt 912 336)
-)
-(connector
-	(text "ABUS[30]" (rect 922 296 970 308)(font "Arial" )(invisible))
-	(pt 1008 312)
-	(pt 912 312)
-)
-(connector
 	(pt 864 304)
 	(pt 1008 304)
 )
@@ -843,6 +833,16 @@ applicable agreement for further details.
 	(pt 592 160)
 	(pt 592 176)
 	(bus)
+)
+(connector
+	(text "ABUS[30]" (rect 912 320 960 332)(font "Arial" )(invisible))
+	(pt 928 336)
+	(pt 912 336)
+)
+(connector
+	(text "ABUS[31]" (rect 922 296 970 308)(font "Arial" )(invisible))
+	(pt 1008 312)
+	(pt 912 312)
 )
 (junction (pt 1088 272))
 (junction (pt 912 312))

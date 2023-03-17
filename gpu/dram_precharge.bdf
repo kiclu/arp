@@ -248,16 +248,6 @@ applicable agreement for further details.
 	(pt 688 464)
 )
 (connector
-	(text "nPX_J[1]" (rect 719 480 762 492)(font "Arial" ))
-	(pt 768 496)
-	(pt 720 496)
-)
-(connector
-	(text "nPX_J[0]" (rect 724 496 767 508)(font "Arial" ))
-	(pt 768 512)
-	(pt 720 512)
-)
-(connector
 	(pt 720 336)
 	(pt 720 368)
 	(bus)
@@ -295,33 +285,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 688 352)
-	(pt 688 464)
-	(bus)
-)
-(connector
-	(pt 688 464)
-	(pt 688 480)
-	(bus)
-)
-(connector
 	(pt 720 416)
 	(pt 720 432)
-	(bus)
-)
-(connector
-	(pt 720 432)
-	(pt 720 448)
-	(bus)
-)
-(connector
-	(pt 720 448)
-	(pt 720 496)
-	(bus)
-)
-(connector
-	(pt 720 496)
-	(pt 720 512)
 	(bus)
 )
 (connector
@@ -330,12 +295,46 @@ applicable agreement for further details.
 	(pt 768 432)
 )
 (connector
-	(text "PX_J[2]" (rect 722 464 759 476)(font "Arial" ))
-	(pt 688 480)
+	(pt 720 432)
+	(pt 720 448)
+	(bus)
+)
+(connector
+	(pt 720 448)
+	(pt 720 480)
+	(bus)
+)
+(connector
+	(pt 688 352)
+	(pt 688 464)
+	(bus)
+)
+(connector
+	(pt 688 464)
+	(pt 688 496)
+	(bus)
+)
+(connector
+	(pt 688 496)
+	(pt 688 512)
+	(bus)
+)
+(connector
+	(text "nPX_J[2]" (rect 722 464 765 476)(font "Arial" ))
 	(pt 768 480)
+	(pt 720 480)
+)
+(connector
+	(text "PX_J[1]" (rect 722 480 759 492)(font "Arial" ))
+	(pt 768 496)
+	(pt 688 496)
+)
+(connector
+	(text "PX_J[0]" (rect 722 496 759 508)(font "Arial" ))
+	(pt 768 512)
+	(pt 688 512)
 )
 (junction (pt 720 416))
-(junction (pt 720 496))
 (junction (pt 720 368))
 (junction (pt 720 384))
 (junction (pt 720 400))
@@ -344,3 +343,4 @@ applicable agreement for further details.
 (junction (pt 688 272))
 (junction (pt 688 464))
 (junction (pt 720 448))
+(junction (pt 688 496))

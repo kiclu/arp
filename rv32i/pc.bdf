@@ -748,6 +748,11 @@ applicable agreement for further details.
 	(pt 1128 728)
 )
 (connector
+	(pt 968 344)
+	(pt 952 344)
+	(bus)
+)
+(connector
 	(text "IR[31..20]" (rect 536 616 585 628)(font "Arial" )(invisible))
 	(pt 552 632)
 	(pt 536 632)
@@ -882,13 +887,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 968 344)
-	(pt 952 344)
-	(bus)
-)
-(connector
-	(pt 904 632)
 	(pt 952 632)
+	(pt 904 632)
 	(bus)
 )
 (connector
