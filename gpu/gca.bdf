@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 1640 128 1808 144)
+	(rect 1760 128 1928 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "color[15..0]" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
@@ -168,22 +168,6 @@ applicable agreement for further details.
 	(rect 1944 128 2120 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DATA[15..0]" (rect 90 0 150 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 1944 -56 2120 -40)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "FCGCA" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -571,40 +555,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 112 80))
 	)
-)
-(symbol
-	(rect 616 -8 664 56)
-	(text "NAND2" (rect 38 1 48 32)(font "Arial" (font_size 6))(vertical))
-	(text "inst13" (rect -1 3 11 32)(font "Arial" )(vertical))
-	(port
-		(pt 16 0)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 13 2 25 19)(font "Courier New" (bold))(vertical)(invisible))
-		(line (pt 16 0)(pt 16 15))
-	)
-	(port
-		(pt 32 0)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 29 2 41 19)(font "Courier New" (bold))(vertical)(invisible))
-		(line (pt 32 0)(pt 32 15))
-	)
-	(port
-		(pt 24 64)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 21 48 33 65)(font "Courier New" (bold))(vertical)(invisible))
-		(line (pt 24 52)(pt 24 64))
-	)
-	(drawing
-		(line (pt 11 15)(pt 11 32))
-		(line (pt 36 15)(pt 36 32))
-		(line (pt 12 15)(pt 36 15))
-		(arc (pt 12 32)(pt 36 32)(rect 11 20 36 45))
-		(circle (rect 20 44 28 52))
-	)
-	(rotate270)
 )
 (symbol
 	(rect 1768 -88 1832 -8)
@@ -1033,6 +983,32 @@ applicable agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
 )
+(symbol
+	(rect 608 8 640 56)
+	(text "NOT" (rect 22 1 32 21)(font "Arial" (font_size 6))(vertical))
+	(text "inst1" (rect -1 3 11 26)(font "Arial" )(vertical))
+	(port
+		(pt 16 0)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 13 2 25 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 0)(pt 16 13))
+	)
+	(port
+		(pt 16 48)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 39)(pt 16 48))
+	)
+	(drawing
+		(line (pt 7 13)(pt 25 13))
+		(line (pt 25 13)(pt 16 31))
+		(line (pt 7 13)(pt 16 31))
+		(circle (rect 12 31 20 39))
+	)
+	(rotate270)
+)
 (connector
 	(pt 848 -296)
 	(pt 832 -296)
@@ -1227,39 +1203,6 @@ applicable agreement for further details.
 	(pt 1616 -104)
 )
 (connector
-	(pt 576 120)
-	(pt 640 120)
-)
-(connector
-	(text "csr[1]" (rect 616 -34 628 -6)(font "Arial" )(vertical)(invisible))
-	(pt 632 -120)
-	(pt 632 -8)
-)
-(connector
-	(text "csr[4]" (rect 632 -34 644 -6)(font "Arial" )(vertical)(invisible))
-	(pt 648 -120)
-	(pt 648 -8)
-)
-(connector
-	(pt 592 -120)
-	(pt 632 -120)
-	(bus)
-)
-(connector
-	(pt 632 -120)
-	(pt 648 -120)
-	(bus)
-)
-(connector
-	(pt 648 -120)
-	(pt 1616 -120)
-	(bus)
-)
-(connector
-	(pt 640 56)
-	(pt 640 120)
-)
-(connector
 	(pt 480 96)
 	(pt 736 96)
 )
@@ -1282,20 +1225,12 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 576 72)
-	(pt 720 72)
-)
-(connector
 	(pt 736 -24)
 	(pt 736 96)
 )
 (connector
 	(pt 736 96)
 	(pt 736 232)
-)
-(connector
-	(pt 720 72)
-	(pt 1768 72)
 )
 (connector
 	(pt 736 -24)
@@ -1400,17 +1335,8 @@ applicable agreement for further details.
 	(pt 1848 -8)
 )
 (connector
-	(pt 1808 136)
-	(pt 1944 136)
-	(bus)
-)
-(connector
 	(pt 1832 -48)
 	(pt 1848 -48)
-)
-(connector
-	(pt 1848 -48)
-	(pt 1944 -48)
 )
 (connector
 	(pt 1656 480)
@@ -1461,6 +1387,29 @@ applicable agreement for further details.
 	(pt 1848 48)
 )
 (connector
+	(pt 1944 136)
+	(pt 1928 136)
+	(bus)
+)
+(connector
+	(pt 624 56)
+	(pt 624 120)
+)
+(connector
+	(pt 576 120)
+	(pt 624 120)
+)
+(connector
+	(pt 592 -120)
+	(pt 624 -120)
+	(bus)
+)
+(connector
+	(text "csr[4]" (rect 608 -26 620 2)(font "Arial" )(vertical))
+	(pt 624 8)
+	(pt 624 -120)
+)
+(connector
 	(pt 1832 48)
 	(pt 1848 48)
 )
@@ -1468,9 +1417,20 @@ applicable agreement for further details.
 	(pt 1848 48)
 	(pt 1944 48)
 )
+(connector
+	(pt 576 72)
+	(pt 720 72)
+)
+(connector
+	(pt 624 -120)
+	(pt 1616 -120)
+	(bus)
+)
+(connector
+	(pt 720 72)
+	(pt 1768 72)
+)
 (junction (pt 592 -104))
-(junction (pt 632 -120))
-(junction (pt 648 -120))
 (junction (pt 592 -272))
 (junction (pt 400 312))
 (junction (pt 400 216))
@@ -1487,4 +1447,5 @@ applicable agreement for further details.
 (junction (pt 1640 464))
 (junction (pt 1640 480))
 (junction (pt 1640 496))
+(junction (pt 624 -120))
 (junction (pt 1848 48))

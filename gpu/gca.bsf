@@ -59,11 +59,11 @@ applicable agreement for further details.
 		(line (pt 272 224)(pt 288 224))
 	)
 	(port
-		(pt 288 128)
+		(pt 288 112)
 		(input)
 		(text "FCGMC" (rect 237 88 279 102)(font "Arial" (font_size 8)))
-		(text "FCGMC" (rect 232 120 274 134)(font "Arial" (font_size 8)))
-		(line (pt 288 128)(pt 272 128))
+		(text "FCGMC" (rect 232 104 274 118)(font "Arial" (font_size 8)))
+		(line (pt 288 112)(pt 272 112))
 	)
 	(port
 		(pt 96 256)
@@ -99,13 +99,6 @@ applicable agreement for further details.
 		(text "DATA[15..0]" (rect 237 24 306 38)(font "Arial" (font_size 8)))
 		(text "DATA[15..0]" (rect 208 56 277 70)(font "Arial" (font_size 8)))
 		(line (pt 288 64)(pt 272 64)(color 128 0 255)(line_width 3))
-	)
-	(port
-		(pt 288 112)
-		(output)
-		(text "FCGCA" (rect 237 56 279 70)(font "Arial" (font_size 8)))
-		(text "FCGCA" (rect 232 104 274 118)(font "Arial" (font_size 8)))
-		(line (pt 288 112)(pt 272 112))
 	)
 	(port
 		(pt 288 96)

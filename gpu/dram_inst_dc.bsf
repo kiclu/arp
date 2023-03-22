@@ -20,15 +20,15 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 56 56 320 288)
+	(rect 64 64 328 296)
 	(text "dram_inst_dc" (rect 8 0 84 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 216 25 228)(font "Arial" ))
 	(port
-		(pt 0 192)
+		(pt 0 200)
 		(input)
 		(text "init_done" (rect 0 8 50 22)(font "Arial" (font_size 8)))
-		(text "init_done" (rect 21 187 71 201)(font "Arial" (font_size 8)))
-		(line (pt 0 192)(pt 16 192))
+		(text "init_done" (rect 21 195 71 209)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 16 200))
 	)
 	(port
 		(pt 0 40)
@@ -43,13 +43,6 @@ applicable agreement for further details.
 		(text "precharge_read" (rect 0 8 92 22)(font "Arial" (font_size 8)))
 		(text "precharge_read" (rect 21 115 113 129)(font "Arial" (font_size 8)))
 		(line (pt 0 120)(pt 16 120))
-	)
-	(port
-		(pt 0 56)
-		(input)
-		(text "autorefresh" (rect 0 8 67 22)(font "Arial" (font_size 8)))
-		(text "autorefresh" (rect 21 51 88 65)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 16 56))
 	)
 	(port
 		(pt 0 104)
@@ -92,6 +85,20 @@ applicable agreement for further details.
 		(text "active_write" (rect 24 144 94 158)(font "Arial" (font_size 8)))
 		(text "active_write" (rect 24 144 94 158)(font "Arial" (font_size 8)))
 		(line (pt 0 152)(pt 16 152))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "autorefresh_init" (rect 0 8 89 22)(font "Arial" (font_size 8)))
+		(text "autorefresh_init" (rect 21 51 110 65)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "autorefresh" (rect 24 176 91 190)(font "Arial" (font_size 8)))
+		(text "autorefresh" (rect 24 176 91 190)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 16 184))
 	)
 	(port
 		(pt 264 40)
