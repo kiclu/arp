@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1024 -904 1200 -888)
+	(rect 1024 -912 1200 -896)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "PRECHARGE" (rect 90 0 159 12)(font "Arial" ))
 	(pt 0 8)
@@ -810,38 +810,6 @@ applicable agreement for further details.
 	(rect 672 -496 736 -448)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst28" (rect 3 37 32 49)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12))
-		(line (pt 14 37)(pt 31 37))
-		(line (pt 14 12)(pt 14 37))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
-	)
-)
-(symbol
-	(rect 672 -920 736 -872)
-	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst29" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -1761,22 +1729,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 656 -888)
-	(pt 672 -888)
-)
-(connector
-	(pt 864 -896)
-	(pt 864 -848)
-)
-(connector
-	(pt 400 -904)
-	(pt 672 -904)
-)
-(connector
-	(pt 656 -888)
-	(pt 656 -664)
-)
-(connector
 	(pt 656 -664)
 	(pt 656 -528)
 )
@@ -1908,14 +1860,6 @@ applicable agreement for further details.
 	(pt 960 -448)
 )
 (connector
-	(pt 736 -896)
-	(pt 864 -896)
-)
-(connector
-	(pt 864 -896)
-	(pt 1024 -896)
-)
-(connector
 	(pt 672 -416)
 	(pt 528 -416)
 )
@@ -2004,6 +1948,18 @@ applicable agreement for further details.
 	(pt 792 -72)
 	(pt 856 -72)
 )
+(connector
+	(pt 864 -904)
+	(pt 864 -848)
+)
+(connector
+	(pt 864 -904)
+	(pt 1024 -904)
+)
+(connector
+	(pt 400 -904)
+	(pt 864 -904)
+)
 (junction (pt 528 -112))
 (junction (pt 464 -128))
 (junction (pt 464 -16))
@@ -2032,11 +1988,10 @@ applicable agreement for further details.
 (junction (pt 416 -656))
 (junction (pt 176 -800))
 (junction (pt 176 -688))
-(junction (pt 656 -664))
-(junction (pt 864 -896))
 (junction (pt 864 -544))
 (junction (pt 744 -472))
 (junction (pt 760 -440))
 (junction (pt 792 -72))
 (junction (pt 1104 -960))
 (junction (pt 880 -104))
+(junction (pt 864 -904))

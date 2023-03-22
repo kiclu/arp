@@ -153,7 +153,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 -8 392 8)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "autorefresh" (rect 5 0 62 12)(font "Arial" ))
+	(text "autorefresh" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -781,31 +781,6 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
-(symbol
-	(rect 1048 128 1096 160)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst9" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
 (connector
 	(text "DRAM_WE" (rect 1050 72 1105 84)(font "Arial" )(invisible))
 	(pt 1040 88)
@@ -1110,28 +1085,8 @@ applicable agreement for further details.
 	(pt 392 -32)
 )
 (connector
-	(pt 1120 136)
-	(pt 1104 136)
-)
-(connector
 	(pt 1024 136)
-	(pt 1040 136)
-)
-(connector
-	(pt 1104 136)
-	(pt 1104 144)
-)
-(connector
-	(pt 1104 144)
-	(pt 1096 144)
-)
-(connector
-	(pt 1040 136)
-	(pt 1040 144)
-)
-(connector
-	(pt 1040 144)
-	(pt 1048 144)
+	(pt 1120 136)
 )
 (junction (pt 1040 104))
 (junction (pt 1040 120))
