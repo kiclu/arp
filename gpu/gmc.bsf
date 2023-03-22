@@ -52,13 +52,6 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80)(color 0 128 255)(line_width 3))
 	)
 	(port
-		(pt 0 112)
-		(input)
-		(text "FCGCA" (rect 24 88 66 102)(font "Arial" (font_size 8)))
-		(text "FCGCA" (rect 24 104 66 118)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 16 112))
-	)
-	(port
 		(pt 0 96)
 		(input)
 		(text "WR" (rect 24 88 44 102)(font "Arial" (font_size 8)))
@@ -150,11 +143,11 @@ applicable agreement for further details.
 		(line (pt 64 256)(pt 64 240)(color 128 0 255)(line_width 3))
 	)
 	(port
-		(pt 0 128)
+		(pt 0 112)
 		(output)
 		(text "FCGMC" (rect 24 88 66 102)(font "Arial" (font_size 8)))
-		(text "FCGMC" (rect 24 120 66 134)(font "Arial" (font_size 8)))
-		(line (pt 0 128)(pt 16 128))
+		(text "FCGMC" (rect 24 104 66 118)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
 	)
 	(port
 		(pt 208 48)

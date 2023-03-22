@@ -38,13 +38,6 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 0 96)
-		(input)
-		(text "FCGCA" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "FCGCA" (rect 21 91 63 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
 		(pt 0 64)
 		(input)
 		(text "WE" (rect 0 0 18 14)(font "Arial" (font_size 8)))
@@ -52,11 +45,11 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 0 112)
+		(pt 0 96)
 		(input)
 		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 107 44 121)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 16 112))
+		(text "CLK" (rect 21 91 44 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 0 80)
