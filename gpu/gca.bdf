@@ -1195,14 +1195,6 @@ applicable agreement for further details.
 	(pt 400 232)
 )
 (connector
-	(pt 576 -104)
-	(pt 592 -104)
-)
-(connector
-	(pt 592 -104)
-	(pt 1616 -104)
-)
-(connector
 	(pt 480 96)
 	(pt 736 96)
 )
@@ -1231,18 +1223,6 @@ applicable agreement for further details.
 (connector
 	(pt 736 96)
 	(pt 736 232)
-)
-(connector
-	(pt 736 -24)
-	(pt 1624 -24)
-)
-(connector
-	(pt 1624 -24)
-	(pt 1768 -24)
-)
-(connector
-	(pt 1624 -24)
-	(pt 1624 336)
 )
 (connector
 	(pt 1656 448)
@@ -1400,14 +1380,17 @@ applicable agreement for further details.
 	(pt 624 120)
 )
 (connector
-	(pt 592 -120)
-	(pt 624 -120)
-	(bus)
-)
-(connector
 	(text "csr[4]" (rect 608 -26 620 2)(font "Arial" )(vertical))
 	(pt 624 8)
 	(pt 624 -120)
+)
+(connector
+	(pt 576 72)
+	(pt 720 72)
+)
+(connector
+	(pt 720 72)
+	(pt 1768 72)
 )
 (connector
 	(pt 1832 48)
@@ -1418,17 +1401,36 @@ applicable agreement for further details.
 	(pt 1944 48)
 )
 (connector
-	(pt 576 72)
-	(pt 720 72)
+	(pt 736 -24)
+	(pt 1768 -24)
 )
 (connector
+	(pt 576 -104)
+	(pt 592 -104)
+)
+(connector
+	(pt 592 -104)
+	(pt 1728 -104)
+)
+(connector
+	(pt 592 -120)
 	(pt 624 -120)
-	(pt 1616 -120)
 	(bus)
 )
 (connector
-	(pt 720 72)
-	(pt 1768 72)
+	(pt 624 -120)
+	(pt 1624 -120)
+	(bus)
+)
+(connector
+	(pt 1624 -120)
+	(pt 1728 -120)
+	(bus)
+)
+(connector
+	(text "csr[4]" (rect 1608 302 1620 330)(font "Arial" )(vertical))
+	(pt 1624 336)
+	(pt 1624 -120)
 )
 (junction (pt 592 -104))
 (junction (pt 592 -272))
@@ -1437,7 +1439,6 @@ applicable agreement for further details.
 (junction (pt 720 72))
 (junction (pt 736 96))
 (junction (pt 496 64))
-(junction (pt 1624 -24))
 (junction (pt 1752 56))
 (junction (pt 1752 40))
 (junction (pt 1752 24))
@@ -1449,3 +1450,4 @@ applicable agreement for further details.
 (junction (pt 1640 496))
 (junction (pt 624 -120))
 (junction (pt 1848 48))
+(junction (pt 1624 -120))

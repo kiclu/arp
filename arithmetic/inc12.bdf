@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 352 200 520 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A[11..0]" (rect 5 0 44 12)(font "Arial" ))
+	(text "A[11..0]" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -111,6 +111,21 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 504 224 536 240)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(text "X[15..0]" (rect 696 224 733 236)(font "Arial" )(invisible))
 	(pt 696 240)
@@ -156,4 +171,12 @@ applicable agreement for further details.
 	(pt 552 240)
 	(pt 536 240)
 	(bus)
+)
+(connector
+	(pt 552 256)
+	(pt 520 256)
+)
+(connector
+	(pt 520 256)
+	(pt 520 240)
 )

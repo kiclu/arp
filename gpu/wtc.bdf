@@ -445,7 +445,7 @@ applicable agreement for further details.
 	(rotate90)
 )
 (symbol
-	(rect 744 -168 792 -136)
+	(rect 760 -168 808 -136)
 	(text "TRI" (rect 1 22 16 32)(font "Arial" (font_size 6)))
 	(text "inst9" (rect 3 -1 26 11)(font "Arial" ))
 	(port
@@ -1225,22 +1225,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 712 -152)
-	(pt 744 -152)
-)
-(connector
-	(pt 768 -136)
-	(pt 768 -128)
-)
-(connector
-	(pt 768 -128)
-	(pt 800 -128)
-)
-(connector
-	(pt 800 -200)
-	(pt 800 -128)
-)
-(connector
 	(pt 592 192)
 	(pt 528 192)
 	(bus)
@@ -1289,14 +1273,6 @@ applicable agreement for further details.
 (connector
 	(pt 736 -200)
 	(pt 736 -184)
-)
-(connector
-	(pt 736 -200)
-	(pt 800 -200)
-)
-(connector
-	(pt 800 -200)
-	(pt 952 -200)
 )
 (connector
 	(pt 1112 192)
@@ -1409,14 +1385,6 @@ applicable agreement for further details.
 (connector
 	(pt 1048 -136)
 	(pt 1160 -136)
-)
-(connector
-	(pt 792 -152)
-	(pt 1128 -152)
-)
-(connector
-	(pt 1128 -152)
-	(pt 1160 -152)
 )
 (connector
 	(pt 1160 -168)
@@ -1558,7 +1526,38 @@ applicable agreement for further details.
 	(pt 576 256)
 	(pt 576 432)
 )
-(junction (pt 800 -200))
+(connector
+	(pt 816 -200)
+	(pt 816 -128)
+)
+(connector
+	(pt 736 -200)
+	(pt 816 -200)
+)
+(connector
+	(pt 816 -200)
+	(pt 952 -200)
+)
+(connector
+	(pt 784 -128)
+	(pt 784 -136)
+)
+(connector
+	(pt 816 -128)
+	(pt 784 -128)
+)
+(connector
+	(pt 808 -152)
+	(pt 1128 -152)
+)
+(connector
+	(pt 1128 -152)
+	(pt 1160 -152)
+)
+(connector
+	(pt 712 -152)
+	(pt 760 -152)
+)
 (junction (pt 528 368))
 (junction (pt 528 192))
 (junction (pt 1032 -192))
@@ -1574,3 +1573,4 @@ applicable agreement for further details.
 (junction (pt 576 608))
 (junction (pt 576 432))
 (junction (pt 576 256))
+(junction (pt 816 -200))
