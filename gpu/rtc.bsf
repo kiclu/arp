@@ -79,6 +79,13 @@ applicable agreement for further details.
 		(text "BA_1" (rect 164 59 195 73)(font "Arial" (font_size 8)))
 		(line (pt 216 64)(pt 200 64))
 	)
+	(port
+		(pt 216 128)
+		(output)
+		(text "BURST_TERMINATE" (rect 165 120 278 134)(font "Arial" (font_size 8)))
+		(text "BURST_TERMINATE" (rect 96 120 209 134)(font "Arial" (font_size 8)))
+		(line (pt 216 128)(pt 200 128))
+	)
 	(drawing
 		(rectangle (rect 16 16 200 144))
 	)

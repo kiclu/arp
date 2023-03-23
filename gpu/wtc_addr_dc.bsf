@@ -66,18 +66,18 @@ applicable agreement for further details.
 		(line (pt 208 168)(pt 208 152)(line_width 3))
 	)
 	(port
-		(pt 144 168)
-		(output)
-		(text "COL_1[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
-		(text "COL_1[7..0]" (rect 136 77 150 144)(font "Arial" (font_size 8))(vertical))
-		(line (pt 144 168)(pt 144 152)(line_width 3))
-	)
-	(port
 		(pt 176 168)
 		(output)
-		(text "COL_2[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
-		(text "COL_2[7..0]" (rect 168 77 182 144)(font "Arial" (font_size 8))(vertical))
+		(text "COL_1[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
+		(text "COL_1[7..0]" (rect 168 77 182 144)(font "Arial" (font_size 8))(vertical))
 		(line (pt 176 168)(pt 176 152)(line_width 3))
+	)
+	(port
+		(pt 144 168)
+		(output)
+		(text "COL_2[7..0]" (rect 152 -56 219 -42)(font "Arial" (font_size 8)))
+		(text "COL_2[7..0]" (rect 136 77 150 144)(font "Arial" (font_size 8))(vertical))
+		(line (pt 144 168)(pt 144 152)(line_width 3))
 	)
 	(port
 		(pt 112 168)
