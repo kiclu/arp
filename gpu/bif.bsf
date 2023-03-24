@@ -80,20 +80,6 @@ applicable agreement for further details.
 		(line (pt 128 0)(pt 128 16)(line_width 3))
 	)
 	(port
-		(pt 160 0)
-		(output)
-		(text "spr0[31..0]" (rect 80 8 141 22)(font "Arial" (font_size 8)))
-		(text "spr0[31..0]" (rect 152 23 166 84)(font "Arial" (font_size 8))(vertical))
-		(line (pt 160 0)(pt 160 16)(line_width 3))
-	)
-	(port
-		(pt 176 0)
-		(output)
-		(text "spr1[31..0]" (rect 80 8 141 22)(font "Arial" (font_size 8)))
-		(text "spr1[31..0]" (rect 168 23 182 84)(font "Arial" (font_size 8))(vertical))
-		(line (pt 176 0)(pt 176 16)(line_width 3))
-	)
-	(port
 		(pt 288 128)
 		(output)
 		(text "BCLK" (rect 237 144 268 158)(font "Arial" (font_size 8)))
@@ -113,6 +99,13 @@ applicable agreement for further details.
 		(text "color[15..0]" (rect 80 8 143 22)(font "Arial" (font_size 8)))
 		(text "color[15..0]" (rect 136 23 150 86)(font "Arial" (font_size 8))(vertical))
 		(line (pt 144 0)(pt 144 16)(line_width 3))
+	)
+	(port
+		(pt 160 0)
+		(output)
+		(text "spr[255..0]" (rect 80 8 141 22)(font "Arial" (font_size 8)))
+		(text "spr[255..0]" (rect 152 23 166 84)(font "Arial" (font_size 8))(vertical))
+		(line (pt 160 0)(pt 160 16)(line_width 3))
 	)
 	(port
 		(pt 0 48)
