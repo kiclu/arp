@@ -350,4 +350,6 @@ set_global_assignment -name BDF_FILE gpu/bif.bdf
 set_global_assignment -name BDF_FILE misc/perdc.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_11.bdf
 set_global_assignment -name BDF_FILE arithmetic/add_10.bdf
+set_global_assignment -name BDF_FILE sram/sramif.bdf
+set_global_assignment -name BDF_FILE sram/sram_perdc.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

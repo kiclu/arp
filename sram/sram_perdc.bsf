@@ -21,13 +21,13 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 64 64 216 192)
-	(text "perdc" (rect 5 0 38 14)(font "Arial" (font_size 8)))
+	(text "sram_perdc" (rect 5 0 73 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 80)
 		(input)
 		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 24 72 47 86)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 75 44 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
@@ -62,14 +62,14 @@ applicable agreement for further details.
 		(pt 152 64)
 		(output)
 		(text "trien" (rect 0 0 24 14)(font "Arial" (font_size 8)))
-		(text "trien" (rect 103 56 127 70)(font "Arial" (font_size 8)))
+		(text "trien" (rect 107 59 131 73)(font "Arial" (font_size 8)))
 		(line (pt 152 64)(pt 136 64))
 	)
 	(port
 		(pt 152 48)
 		(output)
 		(text "wren" (rect 0 0 30 14)(font "Arial" (font_size 8)))
-		(text "wren" (rect 97 40 127 54)(font "Arial" (font_size 8)))
+		(text "wren" (rect 101 43 131 57)(font "Arial" (font_size 8)))
 		(line (pt 152 48)(pt 136 48))
 	)
 	(drawing
