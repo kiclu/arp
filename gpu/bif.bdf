@@ -1131,7 +1131,7 @@ applicable agreement for further details.
 		(text "ABUS[31..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
 		(text "ABUS[31..0]" (rect 21 27 90 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
-		(inversion (text "FFFE" (rect 89 25 117 39)(font "Arial" (font_size 8)))(hex))
+		(inversion (text "FFFE0000" (rect 89 25 145 39)(font "Arial" (font_size 8)))(hex))
 	)
 	(port
 		(pt 152 96)

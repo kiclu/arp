@@ -1652,63 +1652,6 @@ applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 1112 432 1312 560)
-	(text "gca_dln" (rect 5 0 49 14)(font "Arial" (font_size 8)))
-	(text "inst27" (rect 8 112 37 124)(font "Arial" ))
-	(port
-		(pt 48 128)
-		(input)
-		(text "coord0[20..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
-		(text "coord0[20..0]" (rect 40 27 54 102)(font "Arial" (font_size 8))(vertical))
-		(line (pt 48 128)(pt 48 112)(line_width 3))
-	)
-	(port
-		(pt 64 128)
-		(input)
-		(text "coord1[20..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
-		(text "coord1[20..0]" (rect 56 27 70 102)(font "Arial" (font_size 8))(vertical))
-		(line (pt 64 128)(pt 64 112)(line_width 3))
-	)
-	(port
-		(pt 120 0)
-		(input)
-		(text "start" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "start" (rect 112 25 126 50)(font "Arial" (font_size 8))(vertical))
-		(line (pt 120 0)(pt 120 16))
-	)
-	(port
-		(pt 168 0)
-		(input)
-		(text "step" (rect 0 0 24 14)(font "Arial" (font_size 8)))
-		(text "step" (rect 160 25 174 49)(font "Arial" (font_size 8))(vertical))
-		(line (pt 168 0)(pt 168 16))
-	)
-	(port
-		(pt 32 128)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 24 79 38 102)(font "Arial" (font_size 8))(vertical))
-		(line (pt 32 128)(pt 32 112))
-	)
-	(port
-		(pt 80 128)
-		(output)
-		(text "ADDR[20..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
-		(text "ADDR[20..0]" (rect 72 35 86 104)(font "Arial" (font_size 8))(vertical))
-		(line (pt 80 128)(pt 80 112)(line_width 3))
-	)
-	(port
-		(pt 152 0)
-		(output)
-		(text "FC" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "FC" (rect 144 23 158 38)(font "Arial" (font_size 8))(vertical))
-		(line (pt 152 0)(pt 152 16))
-	)
-	(drawing
-		(rectangle (rect 16 16 184 112))
-	)
-)
-(symbol
 	(rect 2200 432 2416 560)
 	(text "gca_dspr" (rect 8 1 62 15)(font "Arial" (font_size 8)))
 	(text "inst24" (rect 8 112 37 124)(font "Arial" ))
@@ -1822,6 +1765,64 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 16 16))
 		(line (pt 16 16)(pt 24 8))
 		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1112 432 1312 560)
+	(text "gca_dln" (rect 5 0 49 14)(font "Arial" (font_size 8)))
+	(text "inst27" (rect 8 112 37 124)(font "Arial" ))
+	(port
+		(pt 48 128)
+		(input)
+		(text "coord0[20..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "coord0[20..0]" (rect 40 27 54 102)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 128)(pt 48 112)(line_width 3))
+	)
+	(port
+		(pt 64 128)
+		(input)
+		(text "coord1[20..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "coord1[20..0]" (rect 56 27 70 102)(font "Arial" (font_size 8))(vertical))
+		(line (pt 64 128)(pt 64 112)(line_width 3))
+	)
+	(port
+		(pt 168 0)
+		(input)
+		(text "step" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "step" (rect 160 25 174 49)(font "Arial" (font_size 8))(vertical))
+		(line (pt 168 0)(pt 168 16))
+	)
+	(port
+		(pt 32 128)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 24 79 38 102)(font "Arial" (font_size 8))(vertical))
+		(line (pt 32 128)(pt 32 112))
+	)
+	(port
+		(pt 104 0)
+		(input)
+		(text "ld" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "ld" (rect 96 25 110 34)(font "Arial" (font_size 8))(vertical))
+		(line (pt 104 0)(pt 104 16))
+	)
+	(port
+		(pt 152 0)
+		(output)
+		(text "FC" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "FC" (rect 144 23 158 38)(font "Arial" (font_size 8))(vertical))
+		(line (pt 152 0)(pt 152 16))
+		(inversion (text "1" (rect 145 29 152 43)(font "Arial" (font_size 8)))(hex))
+	)
+	(port
+		(pt 80 128)
+		(output)
+		(text "ADDR[20..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "ADDR[20..0]" (rect 72 35 86 104)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 128)(pt 80 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 112))
 	)
 )
 (connector
@@ -2033,11 +2034,6 @@ applicable agreement for further details.
 	(pt 624 240)
 )
 (connector
-	(text "csr[4]" (rect 608 78 620 106)(font "Arial" )(vertical))
-	(pt 624 -120)
-	(pt 624 112)
-)
-(connector
 	(pt 592 -120)
 	(pt 624 -120)
 	(bus)
@@ -2045,10 +2041,6 @@ applicable agreement for further details.
 (connector
 	(pt 624 160)
 	(pt 624 240)
-)
-(connector
-	(pt 1216 320)
-	(pt 1216 256)
 )
 (connector
 	(pt 912 216)
@@ -2103,11 +2095,6 @@ applicable agreement for further details.
 	(pt 1176 240)
 )
 (connector
-	(text "csr[5]" (rect 1160 78 1172 106)(font "Arial" )(vertical))
-	(pt 1176 -120)
-	(pt 1176 112)
-)
-(connector
 	(text "0,1" (rect 744 344 759 356)(font "Arial" ))
 	(pt 768 352)
 	(pt 760 352)
@@ -2136,10 +2123,6 @@ applicable agreement for further details.
 (connector
 	(pt 1280 -104)
 	(pt 1280 432)
-)
-(connector
-	(pt 1232 336)
-	(pt 1232 432)
 )
 (connector
 	(pt 624 -120)
@@ -2257,11 +2240,6 @@ applicable agreement for further details.
 (connector
 	(pt 1632 240)
 	(pt 1720 240)
-)
-(connector
-	(text "csr[6]" (rect 1704 78 1716 106)(font "Arial" )(vertical))
-	(pt 1720 -120)
-	(pt 1720 112)
 )
 (connector
 	(pt 1984 320)
@@ -2545,10 +2523,6 @@ applicable agreement for further details.
 	(pt 1232 176)
 )
 (connector
-	(pt 1232 176)
-	(pt 1232 336)
-)
-(connector
 	(pt 2592 56)
 	(pt 2608 56)
 )
@@ -2575,26 +2549,6 @@ applicable agreement for further details.
 (connector
 	(pt 2608 56)
 	(pt 2704 56)
-)
-(connector
-	(text "csr[4]" (rect 2496 398 2508 426)(font "Arial" )(vertical))
-	(pt 2512 432)
-	(pt 2512 -120)
-)
-(connector
-	(text "csr[5]" (rect 2480 398 2492 426)(font "Arial" )(vertical))
-	(pt 2496 432)
-	(pt 2496 -120)
-)
-(connector
-	(text "csr[6]" (rect 2464 398 2476 426)(font "Arial" )(vertical))
-	(pt 2480 432)
-	(pt 2480 -120)
-)
-(connector
-	(text "csr[7]" (rect 2448 398 2460 426)(font "Arial" )(vertical))
-	(pt 2464 432)
-	(pt 2464 -120)
 )
 (connector
 	(pt 2496 680)
@@ -2822,6 +2776,53 @@ applicable agreement for further details.
 	(pt 2280 656)
 	(bus)
 )
+(connector
+	(pt 1232 176)
+	(pt 1232 336)
+)
+(connector
+	(pt 1216 256)
+	(pt 1216 320)
+)
+(connector
+	(pt 1216 320)
+	(pt 1216 432)
+)
+(connector
+	(text "csr[1]" (rect 608 78 620 106)(font "Arial" )(vertical))
+	(pt 624 -120)
+	(pt 624 112)
+)
+(connector
+	(text "csr[2]" (rect 1160 78 1172 106)(font "Arial" )(vertical))
+	(pt 1176 -120)
+	(pt 1176 112)
+)
+(connector
+	(text "csr[3]" (rect 1704 78 1716 106)(font "Arial" )(vertical))
+	(pt 1720 -120)
+	(pt 1720 112)
+)
+(connector
+	(text "csr[1]" (rect 2496 398 2508 426)(font "Arial" )(vertical))
+	(pt 2512 432)
+	(pt 2512 -120)
+)
+(connector
+	(text "csr[2]" (rect 2480 398 2492 426)(font "Arial" )(vertical))
+	(pt 2496 432)
+	(pt 2496 -120)
+)
+(connector
+	(text "csr[3]" (rect 2464 398 2476 426)(font "Arial" )(vertical))
+	(pt 2480 432)
+	(pt 2480 -120)
+)
+(connector
+	(text "csr[4]" (rect 2448 398 2460 426)(font "Arial" )(vertical))
+	(pt 2464 432)
+	(pt 2464 -120)
+)
 (junction (pt 592 -104))
 (junction (pt 592 -272))
 (junction (pt 624 -120))
@@ -2835,7 +2836,6 @@ applicable agreement for further details.
 (junction (pt 1232 176))
 (junction (pt 1008 184))
 (junction (pt 1280 -104))
-(junction (pt 1232 336))
 (junction (pt 1456 336))
 (junction (pt 1552 184))
 (junction (pt 1776 336))
@@ -2863,4 +2863,4 @@ applicable agreement for further details.
 (junction (pt 2608 -40))
 (junction (pt 2608 56))
 (junction (pt 2320 336))
-(text "csr[5]" (rect 1704 78 1716 106)(font "Arial" )(vertical))
+(junction (pt 1216 320))
