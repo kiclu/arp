@@ -352,4 +352,8 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE gpu/gca_dln_oct0.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln_oct1.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln_oct2.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln_oct3.bdf
+set_global_assignment -name BDF_FILE gpu/gca_drct.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
