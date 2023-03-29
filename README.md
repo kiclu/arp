@@ -128,8 +128,7 @@
 | DBG_LED[9]    | PIN_B1    | Debug LED[9]          |
 
 ## 2. TODO
-- [ ] Test CPU
-- [ ] Finish GPU
+- [ ] Fix GCA draw sprite wiring
 
 ## 3. Links
 
@@ -145,7 +144,8 @@
 
 ### 3.4. GPU
 [VGA timing](http://tinyvga.com/vga-timing/800x600@72Hz)\
-[42S16400 SDRAM Datasheet](https://web.archive.org/web/20200113214256/http://www.issiusa.com/pdf/42S16400.pdf)
+[42S16400 SDRAM Datasheet](https://web.archive.org/web/20200113214256/http://www.issiusa.com/pdf/42S16400.pdf)\
+[Bresenham's line algotithm](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
 
 ### 3.5. PS/2 Controller
 [PS/2 keyboard protocol](http://www-ug.eecg.toronto.edu/msl/nios_devices/datasheets/PS2%20Keyboard%20Protocol.htm)

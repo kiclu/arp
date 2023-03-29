@@ -1386,18 +1386,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "uc0[9..0],x0[10..0],y0[10..0]" (rect 178 168 317 180)(font "Arial" )(invisible))
-	(pt 168 184)
-	(pt 280 184)
-	(bus)
-)
-(connector
-	(text "uc1[9..0],x1[10..0],y1[10..0]" (rect 178 120 317 132)(font "Arial" )(invisible))
-	(pt 168 136)
-	(pt 296 136)
-	(bus)
-)
-(connector
 	(text "addr[21..11]" (rect 2000 168 2059 180)(font "Arial" )(invisible))
 	(pt 2016 184)
 	(pt 2000 184)
@@ -1413,6 +1401,18 @@ applicable agreement for further details.
 	(text "addr[21..11]" (rect 2016 136 2075 148)(font "Arial" )(invisible))
 	(pt 2016 152)
 	(pt 2032 152)
+	(bus)
+)
+(connector
+	(text "uc1[9..0],y1[10..0],x1[10..0]" (rect 178 120 317 132)(font "Arial" )(invisible))
+	(pt 168 136)
+	(pt 296 136)
+	(bus)
+)
+(connector
+	(text "uc0[9..0],y0[10..0],x0[10..0]" (rect 178 168 317 180)(font "Arial" )(invisible))
+	(pt 168 184)
+	(pt 280 184)
 	(bus)
 )
 (junction (pt 512 552))
