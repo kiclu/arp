@@ -134,7 +134,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 4544 -128 4720 -112)
+	(rect 4464 -200 4640 -184)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ld_csr" (rect 90 0 119 12)(font "Arial" ))
 	(pt 0 8)
@@ -182,22 +182,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 4544 -56 4720 -40)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "WR" (rect 90 0 108 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect 4240 616 4256 792)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
 	(text "PX_ADDR[20..0]" (rect 4 90 16 172)(font "Arial" )(vertical))
@@ -212,6 +196,22 @@ applicable agreement for further details.
 		(line (pt 4 78)(pt 8 82))
 	)
 	(rotate270)
+)
+(pin
+	(output)
+	(rect 4544 -56 4720 -40)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "WR" (rect 90 0 108 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 608 -416 672 -368)
@@ -693,39 +693,6 @@ applicable agreement for further details.
 		(arc (pt 15 24)(pt 39 35)(rect 7 -27 70 36))
 	)
 	(flipy)
-)
-(symbol
-	(rect 4464 -144 4528 -96)
-	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst10" (rect 3 37 32 49)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 15 32))
-	)
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 15 16))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 48 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 36)(pt 25 36))
-		(line (pt 14 13)(pt 25 13))
-		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
-		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
-		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
-	)
 )
 (symbol
 	(rect 608 112 640 160)
@@ -3195,18 +3162,6 @@ applicable agreement for further details.
 	(pt 752 320)
 )
 (connector
-	(pt 1264 192)
-	(pt 1264 432)
-)
-(connector
-	(pt 1088 192)
-	(pt 1264 192)
-)
-(connector
-	(pt 1280 -104)
-	(pt 1280 432)
-)
-(connector
 	(pt 1440 320)
 	(pt 1472 320)
 	(bus)
@@ -3319,10 +3274,6 @@ applicable agreement for further details.
 	(pt 592 -104)
 )
 (connector
-	(pt 592 -104)
-	(pt 1280 -104)
-)
-(connector
 	(pt 1808 192)
 	(pt 1808 432)
 )
@@ -3333,14 +3284,6 @@ applicable agreement for further details.
 (connector
 	(pt 1824 -104)
 	(pt 1824 432)
-)
-(connector
-	(pt 1216 256)
-	(pt 1216 320)
-)
-(connector
-	(pt 1216 320)
-	(pt 1216 432)
 )
 (connector
 	(text "csr[1]" (rect 608 78 620 106)(font "Arial" )(vertical))
@@ -3441,24 +3384,12 @@ applicable agreement for further details.
 	(pt 912 576)
 )
 (connector
-	(pt 1144 560)
-	(pt 1144 576)
-)
-(connector
 	(pt 1456 368)
 	(pt 1456 576)
 )
 (connector
 	(pt 1688 560)
 	(pt 1688 576)
-)
-(connector
-	(pt 1144 576)
-	(pt 1456 576)
-)
-(connector
-	(pt 912 576)
-	(pt 1144 576)
 )
 (connector
 	(pt 400 368)
@@ -3473,11 +3404,6 @@ applicable agreement for further details.
 	(pt 912 576)
 )
 (connector
-	(pt 1176 608)
-	(pt 1176 560)
-	(bus)
-)
-(connector
 	(pt 1720 560)
 	(pt 1720 608)
 	(bus)
@@ -3485,11 +3411,6 @@ applicable agreement for further details.
 (connector
 	(pt 1176 -120)
 	(pt 1720 -120)
-	(bus)
-)
-(connector
-	(pt 1160 624)
-	(pt 1160 560)
 	(bus)
 )
 (connector
@@ -3634,10 +3555,6 @@ applicable agreement for further details.
 (connector
 	(pt 688 -472)
 	(pt 4448 -472)
-)
-(connector
-	(pt 4448 -192)
-	(pt 4432 -192)
 )
 (connector
 	(pt 4368 -136)
@@ -4190,10 +4107,6 @@ applicable agreement for further details.
 	(pt 3952 432)
 )
 (connector
-	(pt 1280 -104)
-	(pt 1824 -104)
-)
-(connector
 	(pt 3320 576)
 	(pt 3632 576)
 )
@@ -4325,11 +4238,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1176 608)
-	(pt 1720 608)
-	(bus)
-)
-(connector
 	(pt 2264 608)
 	(pt 2264 560)
 	(bus)
@@ -4357,11 +4265,6 @@ applicable agreement for further details.
 (connector
 	(pt 2248 624)
 	(pt 2248 560)
-	(bus)
-)
-(connector
-	(pt 1160 624)
-	(pt 1704 624)
 	(bus)
 )
 (connector
@@ -4464,21 +4367,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "px_addr_1[20..0]" (rect 1176 560 1188 642)(font "Arial" )(vertical)(invisible))
-	(pt 1192 560)
-	(pt 1192 640)
-	(bus)
-)
-(connector
 	(text "px_addr_2[20..0]" (rect 1720 576 1732 658)(font "Arial" )(vertical)(invisible))
 	(pt 1736 560)
 	(pt 1736 656)
-	(bus)
-)
-(connector
-	(text "px_addr_3[20..0]" (rect 2264 592 2276 674)(font "Arial" )(vertical)(invisible))
-	(pt 2280 560)
-	(pt 2280 672)
 	(bus)
 )
 (connector
@@ -4497,12 +4388,6 @@ applicable agreement for further details.
 	(text "px_addr_6[20..0]" (rect 3896 640 3908 722)(font "Arial" )(vertical)(invisible))
 	(pt 3912 560)
 	(pt 3912 720)
-	(bus)
-)
-(connector
-	(text "px_addr_1[31..0]" (rect 1202 624 1284 636)(font "Arial" )(invisible))
-	(pt 1192 640)
-	(pt 4096 640)
 	(bus)
 )
 (connector
@@ -4542,21 +4427,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "coord1[31..0]" (rect 194 592 258 604)(font "Arial" )(invisible))
-	(pt 184 608)
-	(pt 1176 608)
-	(bus)
-)
-(connector
 	(text "coord0[20..0]" (rect 3864 559 3876 623)(font "Arial" )(vertical)(invisible))
 	(pt 3880 560)
 	(pt 3880 624)
-	(bus)
-)
-(connector
-	(text "coord0[31..0]" (rect 194 608 258 620)(font "Arial" )(invisible))
-	(pt 184 624)
-	(pt 1160 624)
 	(bus)
 )
 (connector
@@ -4615,36 +4488,110 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 4448 -48)
-	(pt 4448 -112)
-)
-(connector
 	(pt 4448 -472)
 	(pt 4448 -192)
 )
 (connector
-	(pt 4448 -192)
-	(pt 4448 -128)
+	(pt 1264 192)
+	(pt 1264 432)
 )
 (connector
-	(pt 4448 -112)
-	(pt 4464 -112)
+	(pt 1088 192)
+	(pt 1264 192)
 )
 (connector
-	(pt 4448 -128)
-	(pt 4464 -128)
+	(pt 1144 576)
+	(pt 1144 560)
 )
 (connector
-	(pt 4528 -120)
-	(pt 4544 -120)
+	(pt 1160 624)
+	(pt 1160 560)
+	(bus)
+)
+(connector
+	(pt 1176 608)
+	(pt 1176 560)
+	(bus)
+)
+(connector
+	(pt 1280 -104)
+	(pt 1280 432)
+)
+(connector
+	(text "px_addr_1[20..0]" (rect 1176 560 1188 642)(font "Arial" )(vertical)(invisible))
+	(pt 1192 640)
+	(pt 1192 560)
+	(bus)
+)
+(connector
+	(text "px_addr_1[31..0]" (rect 1202 624 1284 636)(font "Arial" )(invisible))
+	(pt 4096 640)
+	(pt 1192 640)
+	(bus)
+)
+(connector
+	(pt 912 576)
+	(pt 1144 576)
+)
+(connector
+	(pt 1144 576)
+	(pt 1456 576)
+)
+(connector
+	(text "coord0[31..0]" (rect 194 608 258 620)(font "Arial" )(invisible))
+	(pt 184 624)
+	(pt 1160 624)
+	(bus)
+)
+(connector
+	(pt 1160 624)
+	(pt 1704 624)
+	(bus)
+)
+(connector
+	(text "coord1[31..0]" (rect 194 592 258 604)(font "Arial" )(invisible))
+	(pt 184 608)
+	(pt 1176 608)
+	(bus)
+)
+(connector
+	(pt 1176 608)
+	(pt 1720 608)
+	(bus)
+)
+(connector
+	(pt 1216 256)
+	(pt 1216 320)
+)
+(connector
+	(pt 1216 320)
+	(pt 1216 432)
+)
+(connector
+	(pt 592 -104)
+	(pt 1280 -104)
+)
+(connector
+	(pt 1280 -104)
+	(pt 1824 -104)
+)
+(connector
+	(text "px_addr_3[20..0]" (rect 2264 592 2276 674)(font "Arial" )(vertical)(invisible))
+	(pt 2280 560)
+	(pt 2280 672)
+	(bus)
 )
 (connector
 	(pt 4432 -48)
-	(pt 4448 -48)
+	(pt 4544 -48)
 )
 (connector
-	(pt 4448 -48)
-	(pt 4544 -48)
+	(pt 4432 -192)
+	(pt 4448 -192)
+)
+(connector
+	(pt 4448 -192)
+	(pt 4464 -192)
 )
 (junction (pt 592 -104))
 (junction (pt 624 -120))
@@ -4680,8 +4627,6 @@ applicable agreement for further details.
 (junction (pt 2336 216))
 (junction (pt 2320 176))
 (junction (pt 2264 -120))
-(junction (pt 4448 -192))
-(junction (pt 4448 -48))
 (junction (pt 2544 336))
 (junction (pt 2640 184))
 (junction (pt 3088 336))
@@ -4724,3 +4669,4 @@ applicable agreement for further details.
 (junction (pt 4144 -120))
 (junction (pt 4160 -120))
 (junction (pt 4352 -104))
+(junction (pt 4448 -192))
