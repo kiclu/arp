@@ -149,7 +149,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 456 360 655 376)
+	(rect 424 360 623 376)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "BURST_TERMINATE" (rect 90 0 193 12)(font "Arial" ))
 	(pt 0 8)
@@ -1302,28 +1302,6 @@ applicable agreement for further details.
 	(rotate90)
 )
 (symbol
-	(rect 216 336 440 432)
-	(text "dram_brstterm_b0" (rect 5 0 108 14)(font "Arial" (font_size 8)))
-	(text "inst34" (rect 8 80 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "PX_J[10..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
-		(text "PX_J[10..0]" (rect 21 27 84 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 224 32)
-		(output)
-		(text "dram_brstterm_b0" (rect 0 0 103 14)(font "Arial" (font_size 8)))
-		(text "dram_brstterm_b0" (rect 100 27 203 41)(font "Arial" (font_size 8)))
-		(line (pt 224 32)(pt 208 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 208 80))
-	)
-)
-(symbol
 	(rect 216 144 400 240)
 	(text "dram_rd_b2" (rect 5 0 73 14)(font "Arial" (font_size 8)))
 	(text "inst37" (rect 8 80 37 92)(font "Arial" ))
@@ -1365,6 +1343,28 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 216 336 408 432)
+	(text "dram_brstterm_b0" (rect 5 0 108 14)(font "Arial" (font_size 8)))
+	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "PX_ADDR[20..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "PX_ADDR[20..0]" (rect 16 24 108 38)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "dram_brstterm" (rect -32 0 50 14)(font "Arial" (font_size 8)))
+		(text "dram_brstterm" (rect 104 24 186 38)(font "Arial" (font_size 8)))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 80))
 	)
 )
 (connector
@@ -1995,16 +1995,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 440 368)
-	(pt 456 368)
-)
-(connector
-	(text "PX_ADDR[10..0]" (rect 176 352 258 364)(font "Arial" )(invisible))
-	(pt 176 368)
-	(pt 216 368)
-	(bus)
-)
-(connector
 	(pt 608 -120)
 	(pt 640 -120)
 )
@@ -2119,6 +2109,16 @@ applicable agreement for further details.
 (connector
 	(pt 832 -720)
 	(pt 832 -688)
+)
+(connector
+	(pt 408 368)
+	(pt 424 368)
+)
+(connector
+	(text "PX_ADDR[20..0]" (rect 176 352 258 364)(font "Arial" )(invisible))
+	(pt 176 368)
+	(pt 216 368)
+	(bus)
 )
 (junction (pt 528 -112))
 (junction (pt 464 -16))

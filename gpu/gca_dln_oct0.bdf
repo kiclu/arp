@@ -72,7 +72,7 @@ applicable agreement for further details.
 	(input)
 	(rect -32 160 136 176)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "coord1[31..0]" (rect 5 0 70 12)(font "Arial" ))
+	(text "coord1[31..0]" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -88,7 +88,7 @@ applicable agreement for further details.
 	(input)
 	(rect -32 208 136 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "coord0[31..0]" (rect 5 0 70 12)(font "Arial" ))
+	(text "coord0[31..0]" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2112 176 2288 192)
+	(rect 2112 160 2288 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "FC" (rect 90 0 105 12)(font "Arial" ))
 	(pt 0 8)
@@ -908,10 +908,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2096 184)
-	(pt 2112 184)
-)
-(connector
 	(text "addr[10..0]" (rect 1984 168 2037 180)(font "Arial" )(invisible))
 	(pt 1984 184)
 	(pt 2000 184)
@@ -1414,6 +1410,10 @@ applicable agreement for further details.
 	(pt 1792 344)
 	(pt 1744 344)
 	(bus)
+)
+(connector
+	(pt 2112 168)
+	(pt 2096 168)
 )
 (junction (pt 1776 392))
 (junction (pt 1744 216))

@@ -1161,9 +1161,24 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 112 832 144 848)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst37" (rect 3 5 32 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
 	(rect 680 848 744 896)
 	(text "NOR2" (rect 1 0 26 10)(font "Arial" (font_size 6)))
-	(text "inst14" (rect 3 37 32 49)(font "Arial" ))
+	(text "inst22" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1192,21 +1207,6 @@ applicable agreement for further details.
 		(arc (pt 5 29)(pt 5 19)(rect -16 8 17 41))
 		(arc (pt 23 35)(pt 46 24)(rect -6 -23 53 36))
 		(circle (rect 46 20 54 28))
-	)
-)
-(symbol
-	(rect 112 832 144 848)
-	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "inst37" (rect 3 5 32 17)(font "Arial" )(invisible))
-	(port
-		(pt 16 16)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(line (pt 16 16)(pt 16 8))
-	)
-	(drawing
-		(line (pt 8 8)(pt 24 8))
 	)
 )
 (connector
@@ -1625,30 +1625,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 664 800)
-	(pt 664 864)
-)
-(connector
-	(pt 664 864)
-	(pt 680 864)
-)
-(connector
-	(pt 664 936)
-	(pt 664 880)
-)
-(connector
-	(pt 664 880)
-	(pt 680 880)
-)
-(connector
-	(pt 744 872)
-	(pt 1032 872)
-)
-(connector
-	(pt 1032 872)
-	(pt 1080 872)
-)
-(connector
 	(pt 392 136)
 	(pt 392 248)
 	(bus)
@@ -1676,7 +1652,31 @@ applicable agreement for further details.
 	(pt 128 864)
 )
 (connector
-	(text "0,1,0,0,0,0,0,0,0,0,0" (rect 320 944 420 956)(font "Arial" ))
+	(pt 664 936)
+	(pt 664 880)
+)
+(connector
+	(pt 664 800)
+	(pt 664 864)
+)
+(connector
+	(pt 664 864)
+	(pt 680 864)
+)
+(connector
+	(pt 664 880)
+	(pt 680 880)
+)
+(connector
+	(pt 1032 872)
+	(pt 1080 872)
+)
+(connector
+	(pt 744 872)
+	(pt 1032 872)
+)
+(connector
+	(text "1,0,0,0,0,0,0,0,0,0,0" (rect 320 944 420 956)(font "Arial" ))
 	(pt 416 952)
 	(pt 448 952)
 	(bus)

@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2144 144 2320 160)
+	(rect 2144 128 2320 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "FC" (rect 90 0 105 12)(font "Arial" ))
 	(pt 0 8)
@@ -908,10 +908,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2128 152)
-	(pt 2144 152)
-)
-(connector
 	(pt 1296 416)
 	(pt 1296 632)
 )
@@ -1414,6 +1410,10 @@ applicable agreement for further details.
 	(pt 168 184)
 	(pt 280 184)
 	(bus)
+)
+(connector
+	(pt 2144 136)
+	(pt 2128 136)
 )
 (junction (pt 512 552))
 (junction (pt 512 632))
