@@ -107,6 +107,13 @@ applicable agreement for further details.
 		(text "ncsr[7..0]" (rect 200 171 214 225)(font "Arial" (font_size 8))(vertical))
 		(line (pt 208 256)(pt 208 240)(line_width 3))
 	)
+	(port
+		(pt 288 128)
+		(output)
+		(text "hdae" (rect 237 120 265 134)(font "Arial" (font_size 8)))
+		(text "hdae" (rect 237 120 265 134)(font "Arial" (font_size 8)))
+		(line (pt 288 128)(pt 272 128))
+	)
 	(drawing
 		(rectangle (rect 16 16 272 240))
 	)

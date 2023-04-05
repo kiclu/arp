@@ -117,6 +117,22 @@ applicable agreement for further details.
 	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 120 -128 288 -112)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "hdae" (rect 5 0 29 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 1160 -96 1336 -80)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -947,6 +963,13 @@ applicable agreement for further details.
 	(text "wtc_addr_dc" (rect 0 0 76 14)(font "Arial" (font_size 8)))
 	(text "inst8" (rect 8 152 31 164)(font "Arial" ))
 	(port
+		(pt 0 64)
+		(input)
+		(text "E" (rect 0 16 7 30)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 59 28 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
 		(pt 0 32)
 		(input)
 		(text "PX_ADDR[20..0]" (rect 0 16 92 30)(font "Arial" (font_size 8)))
@@ -961,18 +984,11 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 0 64)
+		(pt 0 80)
 		(input)
-		(text "E" (rect 0 16 7 30)(font "Arial" (font_size 8)))
-		(text "E" (rect 21 59 28 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 408 32)
-		(output)
-		(text "BA_1" (rect 168 16 199 30)(font "Arial" (font_size 8)))
-		(text "BA_1" (rect 356 27 387 41)(font "Arial" (font_size 8)))
-		(line (pt 408 32)(pt 392 32))
+		(text "hdae" (rect 24 72 52 86)(font "Arial" (font_size 8)))
+		(text "hdae" (rect 24 72 52 86)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
 	)
 	(port
 		(pt 408 48)
@@ -980,6 +996,13 @@ applicable agreement for further details.
 		(text "BA_0" (rect 168 16 199 30)(font "Arial" (font_size 8)))
 		(text "BA_0" (rect 356 43 387 57)(font "Arial" (font_size 8)))
 		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "BA_1" (rect 168 16 199 30)(font "Arial" (font_size 8)))
+		(text "BA_1" (rect 356 27 387 41)(font "Arial" (font_size 8)))
+		(line (pt 408 32)(pt 392 32))
 	)
 	(port
 		(pt 208 168)
@@ -1557,6 +1580,10 @@ applicable agreement for further details.
 (connector
 	(pt 712 -152)
 	(pt 760 -152)
+)
+(connector
+	(pt 288 -120)
+	(pt 304 -120)
 )
 (junction (pt 528 368))
 (junction (pt 528 192))
