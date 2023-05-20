@@ -1,4 +1,6 @@
 # ARP
+## 0. TODO:
+- [ ] add 1 to vertical back porch constant
 ## 1. DE0 Pin assignments
 ### 1.1. SDRAM
 | Signal name   | FPGA Pin  | Description                   |
