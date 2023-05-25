@@ -45,6 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "hdae" (rect 24 72 52 86)(font "Arial" (font_size 8)))
+		(text "hdae" (rect 24 72 52 86)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
 		(pt 408 32)
 		(output)
 		(text "BA_1" (rect 168 16 199 30)(font "Arial" (font_size 8)))

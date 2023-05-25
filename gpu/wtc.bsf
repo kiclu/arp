@@ -66,6 +66,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
+		(pt 0 144)
+		(input)
+		(text "hdae" (rect 24 136 52 150)(font "Arial" (font_size 8)))
+		(text "hdae" (rect 24 136 52 150)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
 		(pt 216 80)
 		(output)
 		(text "DOUT[15..0]" (rect -24 32 44 46)(font "Arial" (font_size 8)))

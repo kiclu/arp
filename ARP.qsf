@@ -337,12 +337,49 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/pc.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/regfile.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/rv32i_debug_2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/gmc.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE gpu/artc.bdf
 set_global_assignment -name BDF_FILE constants/tc_1026.bdf
 set_global_assignment -name BDF_FILE gpu/dram_auto_refresh_1.bdf
 set_global_assignment -name BDF_FILE gpu/dram_auto_refresh_2.bdf
 set_global_assignment -name BDF_FILE gpu/dram_brstterm_b0.bdf
+set_global_assignment -name BDF_FILE logic/dc4_16.bdf
+set_global_assignment -name BDF_FILE gpu/bif.bdf
+set_global_assignment -name BDF_FILE misc/perdc.bdf
+set_global_assignment -name BDF_FILE arithmetic/add_11.bdf
+set_global_assignment -name BDF_FILE arithmetic/add_10.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln_oct0.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln_oct1.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln_oct2.bdf
+set_global_assignment -name BDF_FILE gpu/gca_dln_oct3.bdf
+set_global_assignment -name BDF_FILE gpu/gca_drct.bdf
+set_global_assignment -name BDF_FILE registers/reg1_ld_clr_dec.bdf
+set_global_assignment -name BDF_FILE registers/reg11_ld_clr_dec.bdf
+set_global_assignment -name BDF_FILE gpu/sprite_buffer_old.bdf
+set_global_assignment -name BDF_FILE registers/reg1_ld_clr_sh.bdf
+set_global_assignment -name BDF_FILE registers/reg8_ld_clr_sh.bdf
+set_global_assignment -name BDF_FILE registers/reg16_ld_clr_sh.bdf
+set_global_assignment -name BDF_FILE registers/reg32_ld_clr_sh.bdf
+set_global_assignment -name BDF_FILE registers/reg64_ld_clr_sh.bdf
+set_global_assignment -name BDF_FILE registers/reg256_ld_clr_sh.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/gca.vwf
+set_global_assignment -name BDF_FILE logic/mx4e_12b.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/gca_dln.vwf
+set_global_assignment -name BDF_FILE arithmetic/cmp16u.bdf
+set_global_assignment -name BDF_FILE registers/reg1_ld_clr_inc_dec.bdf
+set_global_assignment -name BDF_FILE registers/reg8_ld_clr_inc_dec.bdf
+set_global_assignment -name BDF_FILE registers/reg16_ld_clr_inc_dec.bdf
+set_global_assignment -name VERILOG_FILE gpu/gca_dlnv.v
+set_global_assignment -name BDF_FILE ps2/ps2_buscntrl.bdf
+set_location_assignment PIN_R21 -to PS2_MSCLK
+set_location_assignment PIN_R22 -to PS2_MSDAT
+set_global_assignment -name VERILOG_FILE gpu/wtc_addr_dc_v.v
+set_global_assignment -name BDF_FILE ps2/ps2_dbnc.bdf
+set_global_assignment -name BDF_FILE ps2/ps2_posedge.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/ps2_posedge.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulations/ps2_controller.vwf
+set_global_assignment -name BDF_FILE ps2/ps2_buffer.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

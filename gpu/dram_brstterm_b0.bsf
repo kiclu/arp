@@ -20,24 +20,24 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 240 112)
+	(rect 64 64 256 160)
 	(text "dram_brstterm_b0" (rect 5 0 108 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "PX_J[10..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
-		(text "PX_J[10..0]" (rect 21 27 84 41)(font "Arial" (font_size 8)))
+		(text "PX_ADDR[20..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "PX_ADDR[20..0]" (rect 16 24 108 38)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 224 32)
+		(pt 192 32)
 		(output)
-		(text "dram_brstterm_b0" (rect 0 0 103 14)(font "Arial" (font_size 8)))
-		(text "dram_brstterm_b0" (rect 100 27 203 41)(font "Arial" (font_size 8)))
-		(line (pt 224 32)(pt 208 32))
+		(text "dram_brstterm" (rect -32 0 50 14)(font "Arial" (font_size 8)))
+		(text "dram_brstterm" (rect 104 24 186 38)(font "Arial" (font_size 8)))
+		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 208 80))
+		(rectangle (rect 16 16 176 80))
 	)
 )
