@@ -1,0 +1,30 @@
+module wtc_addr_dc_v(
+	input [20:0] 		PX_ADDR,
+	input [20:0] 		PX_ADDR_DIF,
+	input					E,
+	input					hdae,
+	output reg			BA_0,
+	output reg			BA_1,
+	output reg [7:0]	COL_0,
+	output reg			WE_0,
+	output reg [7:0]	COL_1,
+	output reg			WE_1,
+	output reg [7:0]	COL_2,
+	output reg			WE_2,
+	output reg [7:0]	COL_3,
+	output reg			WE_3
+);
+	wire [10:0] x_dif;
+	wire [9:0]	y_dif;
+	wire [10:0]	x;
+	wire [9:0]	y;
+	
+	assign {y_dif, x_dif} = PX_ADDR_DIF;
+	assign {y, x} = PX_ADDR;
+
+	always @(*) begin
+		if((x_dif >= 800 || y_dif >= 600) && x_dif < 1024) begin
+			
+		end
+	end
+endmodule

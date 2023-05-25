@@ -120,7 +120,7 @@ applicable agreement for further details.
 	(input)
 	(rect 120 -128 288 -112)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "hdae" (rect 5 0 29 12)(font "Arial" ))
+	(text "hdae" (rect 5 0 28 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -961,14 +961,7 @@ applicable agreement for further details.
 (symbol
 	(rect 304 -200 712 -32)
 	(text "wtc_addr_dc" (rect 0 0 76 14)(font "Arial" (font_size 8)))
-	(text "inst8" (rect 8 152 31 164)(font "Arial" ))
-	(port
-		(pt 0 64)
-		(input)
-		(text "E" (rect 0 16 7 30)(font "Arial" (font_size 8)))
-		(text "E" (rect 21 59 28 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
+	(text "inst14" (rect 8 152 37 164)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -984,6 +977,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "E" (rect 0 16 7 30)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 59 28 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
 		(pt 0 80)
 		(input)
 		(text "hdae" (rect 24 72 52 86)(font "Arial" (font_size 8)))
@@ -991,18 +991,18 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 408 48)
-		(output)
-		(text "BA_0" (rect 168 16 199 30)(font "Arial" (font_size 8)))
-		(text "BA_0" (rect 356 43 387 57)(font "Arial" (font_size 8)))
-		(line (pt 408 48)(pt 392 48))
-	)
-	(port
 		(pt 408 32)
 		(output)
 		(text "BA_1" (rect 168 16 199 30)(font "Arial" (font_size 8)))
 		(text "BA_1" (rect 356 27 387 41)(font "Arial" (font_size 8)))
 		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "BA_0" (rect 168 16 199 30)(font "Arial" (font_size 8)))
+		(text "BA_0" (rect 356 43 387 57)(font "Arial" (font_size 8)))
+		(line (pt 408 48)(pt 392 48))
 	)
 	(port
 		(pt 208 168)

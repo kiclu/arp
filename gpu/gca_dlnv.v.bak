@@ -1,0 +1,57 @@
+module gca_dlnv(
+    input [31:0]    coord0,
+    input [31:0]    coord1,
+    input           ld,
+    input           step,
+    input           CLK,
+    output reg      FC,
+    output [20:0]   ADDR
+);
+    reg signed [15:0] x0, y0, x1, y1;
+
+    reg signed [15:0] sx, sy;
+
+    reg signed [15:0] dx, dy, error;
+    wire signed [15:0] err;
+
+    assign err = error << 1;
+
+    assign ADDR = (y0[9:0] << 11) | x0[10:0];
+
+    always @(posedge CLK) begin
+        FC <= 0;
+        if(ld) begin
+            x0 <= {5'b0, coord0[10:0]};
+            x1 <= {5'b0, coord1[10:0]};
+            y0 <= {6'b0, coord0[20:11]};
+            y1 <= {6'b0, coord1[20:11]};
+
+            dx <= (x1 - x0 > 0) ? (x1 - x0) : (x0 - x1);
+            dy <= (y1 - y0 > 0) ? (y0 - y1) : (y1 - y0);
+
+            error <= dx + dy;
+        end
+
+        if(step) begin
+            if(x0 == x1 && y0 == y1 || err >= dy && x0 == x1 || err <= dx && y0 == y1)
+                FC <= 1;
+			
+            if(err >= dy) begin
+                error <= error + dy;
+                if(x0 < x1)
+                    x0 <= x0 + 1;
+                else
+                    x0 <= x0 - 1;
+            end
+            
+            if(err <= dx) begin
+                error <= error + dx;
+                if(y0 < y1)
+                    y0 <= y0 + 1;
+                else
+                    y0 <= y0 - 1;
+            end
+        end
+    end
+
+endmodule
