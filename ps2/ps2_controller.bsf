@@ -72,27 +72,6 @@ applicable agreement for further details.
 		(text "DBUS[31..0]" (rect 143 43 211 57)(font "Arial" (font_size 8)))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
-	(port
-		(pt 0 64)
-		(output)
-		(text "data[7..0]" (rect 24 56 77 70)(font "Arial" (font_size 8)))
-		(text "data[7..0]" (rect 24 56 77 70)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(color 128 0 255)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(output)
-		(text "par" (rect 24 72 42 86)(font "Arial" (font_size 8)))
-		(text "par" (rect 24 72 42 86)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(color 0 128 255))
-	)
-	(port
-		(pt 0 96)
-		(output)
-		(text "pc" (rect 24 88 38 102)(font "Arial" (font_size 8)))
-		(text "pc" (rect 24 88 38 102)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
 	(drawing
 		(rectangle (rect 16 16 216 112))
 	)

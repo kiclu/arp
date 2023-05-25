@@ -780,20 +780,6 @@ applicable agreement for further details.
 	(text "ps2_controller" (rect 5 0 86 14)(font "Arial" (font_size 8)))
 	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
 	(port
-		(pt 232 32)
-		(input)
-		(text "ABUS[31..0]" (rect 40 0 109 14)(font "Arial" (font_size 8)))
-		(text "ABUS[31..0]" (rect 138 24 207 38)(font "Arial" (font_size 8)))
-		(line (pt 216 32)(pt 232 32)(line_width 3))
-	)
-	(port
-		(pt 232 96)
-		(input)
-		(text "CLK" (rect 40 0 63 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 184 88 207 102)(font "Arial" (font_size 8)))
-		(line (pt 216 96)(pt 232 96))
-	)
-	(port
 		(pt 0 32)
 		(input)
 		(text "PS2_KBCLK" (rect 0 0 69 14)(font "Arial" (font_size 8)))
@@ -806,6 +792,13 @@ applicable agreement for further details.
 		(text "PS2_KBDAT" (rect 0 0 70 14)(font "Arial" (font_size 8)))
 		(text "PS2_KBDAT" (rect 21 43 91 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 232 32)
+		(input)
+		(text "ABUS[31..0]" (rect 40 0 109 14)(font "Arial" (font_size 8)))
+		(text "ABUS[31..0]" (rect 138 24 207 38)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 232 32)(line_width 3))
 	)
 	(port
 		(pt 232 64)
@@ -822,32 +815,18 @@ applicable agreement for further details.
 		(line (pt 216 80)(pt 232 80))
 	)
 	(port
+		(pt 232 96)
+		(input)
+		(text "CLK" (rect 40 0 63 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 184 88 207 102)(font "Arial" (font_size 8)))
+		(line (pt 216 96)(pt 232 96))
+	)
+	(port
 		(pt 232 48)
 		(output)
 		(text "DBUS[31..0]" (rect 40 0 108 14)(font "Arial" (font_size 8)))
 		(text "DBUS[31..0]" (rect 143 43 211 57)(font "Arial" (font_size 8)))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(output)
-		(text "data[7..0]" (rect 24 56 77 70)(font "Arial" (font_size 8)))
-		(text "data[7..0]" (rect 24 56 77 70)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(color 128 0 255)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(output)
-		(text "par" (rect 24 72 42 86)(font "Arial" (font_size 8)))
-		(text "par" (rect 24 72 42 86)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(color 0 128 255))
-	)
-	(port
-		(pt 0 96)
-		(output)
-		(text "pc" (rect 24 88 38 102)(font "Arial" (font_size 8)))
-		(text "pc" (rect 24 88 38 102)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
 	)
 	(drawing
 		(rectangle (rect 16 16 216 112))
@@ -1093,12 +1072,6 @@ applicable agreement for further details.
 	(pt 416 640)
 )
 (connector
-	(text "LED[7..0]" (rect 368 664 415 676)(font "Arial" ))
-	(pt 432 672)
-	(pt 416 672)
-	(bus)
-)
-(connector
 	(pt 680 496)
 	(pt 680 640)
 	(bus)
@@ -1183,16 +1156,6 @@ applicable agreement for further details.
 (connector
 	(pt 992 704)
 	(pt 1008 704)
-)
-(connector
-	(text "LED[8]" (rect 424 672 458 684)(font "Arial" ))
-	(pt 432 688)
-	(pt 416 688)
-)
-(connector
-	(text "LED[9]" (rect 352 696 386 708)(font "Arial" ))
-	(pt 432 704)
-	(pt 416 704)
 )
 (junction (pt 680 248))
 (junction (pt 696 264))
