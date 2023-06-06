@@ -213,11 +213,6 @@ applicable agreement for further details.
 	(pt 1072 384)
 )
 (connector
-	(text "nA[0]" (rect 936 456 961 468)(font "Arial" ))
-	(pt 992 472)
-	(pt 928 472)
-)
-(connector
 	(text "nA[8]" (rect 936 328 961 340)(font "Arial" ))
 	(pt 992 344)
 	(pt 928 344)
@@ -263,19 +258,9 @@ applicable agreement for further details.
 	(pt 896 456)
 )
 (connector
-	(pt 928 440)
-	(pt 928 472)
-	(bus)
-)
-(connector
 	(text "nA[2]" (rect 936 424 961 436)(font "Arial" ))
 	(pt 992 440)
 	(pt 928 440)
-)
-(connector
-	(pt 928 424)
-	(pt 928 440)
-	(bus)
 )
 (connector
 	(text "nA[3]" (rect 936 408 961 420)(font "Arial" ))
@@ -323,22 +308,37 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(text "A[7]" (rect 904 344 924 356)(font "Arial" ))
+	(pt 992 360)
+	(pt 896 360)
+)
+(connector
+	(pt 928 424)
+	(pt 928 440)
+	(bus)
+)
+(connector
+	(text "A[0]" (rect 904 456 924 468)(font "Arial" ))
+	(pt 992 472)
+	(pt 896 472)
+)
+(connector
 	(pt 896 360)
 	(pt 896 456)
 	(bus)
 )
 (connector
-	(text "A[7]" (rect 904 344 924 356)(font "Arial" ))
-	(pt 992 360)
-	(pt 896 360)
+	(pt 896 456)
+	(pt 896 472)
+	(bus)
 )
 (junction (pt 976 296))
 (junction (pt 928 344))
 (junction (pt 896 200))
 (junction (pt 896 328))
-(junction (pt 928 440))
 (junction (pt 928 424))
 (junction (pt 928 408))
 (junction (pt 928 392))
 (junction (pt 928 376))
 (junction (pt 896 360))
+(junction (pt 896 456))
